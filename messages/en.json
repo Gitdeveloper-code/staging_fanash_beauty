@@ -1,0 +1,110 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "about": "About",
+    "team": "Team",
+    "collection": "Collection",
+    "contact": "Contact",
+    "jobs": "Jobs"
+  },
+  "Testimonial": {
+    "testimonialdescription": "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."
+  },
+
+  "Footer": {
+    "copyright": "2023 Fanash Beauty | All rights reserved",
+    "learnmore": "Learn More",
+    "home": "Home",
+    "faq": "FAQ",
+    "privacypolicy": "Privacy Policy",
+    "collection": "Collection",
+    "contactus": "Contact Us",
+    "adminofficer": "Admin Officer",
+    "social": "Social"
+  },
+
+  "About": {
+    "abouttheauthor": "About the author",
+    "Bookyourslot": "Book Your Slot",
+
+    "whoweare?": "WHO WE ARE?",
+    "fatmarahman": "Fatma Rahman",
+    "aboutuspara": "Fanash Beauty is the brainchild of the talented and dedicated owner, Fatma Rahman. Fatma is a certified beauty therapist with extensive experience and a deep passion for the beauty industry. Her qualifications include iTec and QQI certifications, along with specialization in Dermalogica skin care from Ireland. Fatma's vision and commitment to excellence drive the salon's success and innovation. Fatma also holds a diploma in fine arts. At Fanash Beauty, our mission is to elevate beauty therapy to an art form, creating exclusive looks inspired by our customers' personal style, event needs, and individual taste. We blend the world of fine arts with beauty, turning every appointment into a canvas where we pay meticulous attention to detail.",
+    "learnmore": " Learn More",
+
+    "anyquestions?lookhere": "Any Questions? Look Here",
+    "lookheredescription": "There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form.",
+
+    "howlongwedeliveryourfirstblogpost?": "How long we deliver your first blog post?",
+    "howlongwedeliveryourfirstblogpostdescription": "It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+  },
+  "Home": {
+    "fanashbeauty": "Fanash Beauty",
+    "fanashbeautydescription": "Our team of experts uses a methodology to identify the credit cards most likely to fit your needs. We examine annual percentage rates, annual fees.",
+
+    "serviceweoffer": "SERVICES WE OFFER",
+    "makeup": "Make Up",
+    "makeupdescription": "Makeup should never be used to hide yourself. It should be used to enhance your natural beauty",
+
+    "hairstyling": "Hair Styling",
+    "hairstylingdescription": "Your hair tells a story; make it a masterpiece",
+
+    "threading": "THREADING",
+    "eyebrows": "eye brows",
+    "face": "Face",
+    "chin": "Chin",
+    "upperlips": "Upper Lips",
+    "forehead": "Forehead",
+    "sideface": "Side Face",
+    "neck": "Neck",
+
+    "waxing": "WAXING",
+    "fullhand": "Full Hand",
+    "sugarepilation": "SUGAR EPILATION",
+    "facial": "FACIAL",
+    "manicure": "MANICURE",
+    "pedicure": "PEDICURE",
+    "fullpedicurespa": "Full Pedicure Spa",
+    "fullpedicure": "Full Pedicure",
+
+    "massage": "MASSAGE",
+
+    "homepagequote": "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."
+  },
+
+  "Team": {
+    "ourteam": "Our Team",
+    "meetourstylist": "Meet our Stylist",
+    "bonnieyellow": "Bonnie Yellow",
+    "dermatologist": "Dermatologist",
+    "dermatologistdescription": "A dermatologist is a medical doctor who specializes in conditions that affect the skin, hair, and nails.",
+
+    "bonniered": "Bonnie Red",
+    "Bonnieblue": "Bonnie Blue",
+    "bonniepink": "Bonnie Pink",
+    "hairstylist": "Hair stylist",
+    "hairstylistdescription": "Cosmetologist, Hair Stylist, Hairdresser, Hairstylist. What they do: Provide beauty services, such as cutting, coloring, and styling hair, and massaging and treating scalp. May shampoo hair, apply makeup, dress wigs, remove hair, and provide nail and skincare services.",
+    "afucenttechnology": "Afucent Technology",
+    "researchanalyst": "Research Analyst",
+    "researchanalystdescription": "A research analyst is a professional who prepares investigative reports on securities or assets for in-house or client use."
+  },
+  "Collection": {
+    "mycollection": "My Collection"
+  },
+  "Contact": {
+    "contactformcheckboxtext": "Send me a copy of this message",
+    "send": "SEND",
+    "technicalsupport": "Technical support",
+    "technicalsupportmail": "support@example.com",
+    "technicalsupportnumber": "+1 234-567-89",
+
+    "salesquestions": "Sales questions",
+    "salesquestionsmail": "sales@example.com",
+
+    "press": "Press",
+    "pressmail": "press@example.com",
+
+    "bugreport": "Bug report",
+    "bugsreportmail" : "bugs@example.com"
+  }
+}

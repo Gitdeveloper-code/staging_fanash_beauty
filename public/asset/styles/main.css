@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+
+html {
+  @apply font-body antialiased;
+}
+
+@font-face {
+  font-family: 'Oswald-Bold';
+  src: url('/public/asset/font/Oswald/Oswald-Bold.ttf');
+  font-weight: normal
+}
+@tailwind utilities;

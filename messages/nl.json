@@ -1,0 +1,115 @@
+{
+  "Navigation": {
+    "home": "Startpagina",
+    "about": "Over ons",
+    "team": "Team",
+    "collection": "Collectie",
+    "contact": "Contact",
+    "jobs": "Banen"
+  },
+
+  "Testimonial": {
+    "testimonialdescription": "Flowbite is gewoon geweldig. Het bevat een overvloed aan voorgebouwde componenten en pagina's, vanaf het inlogscherm tot complexe dashboards. De perfecte keuze voor uw volgende SaaS-toepassing."
+  },
+  "Footer": {
+    "copyright": "2023 Fanash Beauty | Alle rechten voorbehouden",
+    "learnmore": "Meer informatie",
+    "home": "Startpagina",
+    "faq": "Veelgestelde vragen",
+    "privacypolicy": "Privacybeleid",
+    "collection": "Collectie",
+    "contactus": "Neem contact met ons op",
+    "adminofficer": "Administratief medewerker",
+    "social": "Sociaal"
+  },
+
+  "About": {
+    "abouttheauthor": "Over de auteur",
+    "Bookyourslot": "Boek Je Plek",
+    "whoweare?": "WIE ZIJN WIJ?",
+    "fatmarahman": "Fatma Rahman",
+    "aboutuspara": "Fanash Beauty is het geesteskind van de getalenteerde en toegewijde eigenaar, Fatma Rahman. Fatma is een gecertificeerde schoonheidstherapeute met uitgebreide ervaring en een diepe passie voor de schoonheidsindustrie. Haar kwalificaties omvatten iTec- en QQI-certificeringen, evenals specialisatie in Dermalogica huidverzorging uit Ierland. Fatma's visie en toewijding aan uitmuntendheid drijven het succes en de innovatie van de salon aan. Fatma heeft ook een diploma in de schone kunsten. Bij Fanash Beauty is onze missie om schoonheidstherapie te verheffen tot een kunstvorm, waarbij we exclusieve looks creëren geïnspireerd door de persoonlijke stijl, evenementbehoeften en individuele smaak van onze klanten. We combineren de wereld van de schone kunsten met schoonheid, waardoor elke afspraak een doek wordt waar we minutieuze aandacht besteden aan detail.",
+    "learnmore": "Leer Meer.",
+
+    "anyquestions?lookhere": "Heeft u vragen? Kijk hier.",
+    "lookheredescription": "Er zijn veel variaties van passages van Lorem Ipsum beschikbaar, maar het merendeel heeft op de een of andere manier wijzigingen ondergaan.",
+
+    "howlongwedeliveryourfirstblogpost?": "Hoe lang duurt het voordat we je eerste blogbericht leveren?",
+    "howlongwedeliveryourfirstblogpostdescription": "Het duurt 2-3 weken om je eerste blogbericht klaar te krijgen. Dat omvat het diepgaande onderzoek en de creatie van je maandelijkse contentmarketingstrategie die we doen voordat we je eerste blogbericht schrijven, Ipsum beschikbaar."
+  },
+
+  "Home": {
+    "fanashbeauty": "Fanash Beauty",
+    "fanashbeautydescription": "Ons team van experts maakt gebruik van een methodologie om de creditcards te identificeren die waarschijnlijk het beste aansluiten bij uw behoeften. We onderzoeken jaarlijkse rentepercentages en jaarlijkse kosten.",
+    
+    "makeup": "Visagie.",
+
+    "serviceweoffer": "Diensten die wij aanbieden.",
+    "makeupdescription": "Make-up moet nooit worden gebruikt om jezelf te verbergen. Het moet worden gebruikt om je natuurlijke schoonheid te benadrukken.",
+
+    "hairstyling": "Kapselstyling.",
+    "hairstylingdescription": "Je haar vertelt een verhaal; maak er een meesterwerk van.",
+
+    "threading": "EPILEREN MET DRAAD",
+    "eyebrows": "wenkbrauwen.",
+    "face": "Gezicht.",
+    "chin": "Kin.",
+    "upperlips": "Bovenlip.",
+    "forehead": "Voorhoofd.",
+    "sideface": "Zijprofiel.",
+    "neck": "Nek.",
+
+    "waxing": "HARSEN",
+
+    "sugarepilation": "SUIKEREPILATIE.",
+
+    "facial": "GEZICHTSBEHANDELING",
+
+    "manicure": "MANICURE",
+
+    "pedicure": "PEDICURE",
+    "fullpedicurespa": "Full Pedicure Spa",
+    "fullpedicure": "Volledige Pedicure",
+
+    "massage": "MASSAGE",
+
+    "homepagequote": "Flowbite is gewoon geweldig. Het bevat tal van voorgebouwde componenten en pagina's, variërend van het aanmeldingsscherm tot een complex dashboard. De perfecte keuze voor jouw volgende SaaS-toepassing."
+  },
+  "Team": {
+    "ourteam": "Ons Team",
+    "meetourstylist": "Ontmoet onze Stylist",
+    "bonnieyellow": "Bonnie Yellow",
+
+    "dermatologist": "Dermatoloog.",
+    "dermatologistdescription": "Een dermatoloog is een medisch arts gespecialiseerd in aandoeningen die de huid, het haar en de nagels beïnvloeden.",
+
+    "bonniered": "Bonnie Red",
+    "Bonnieblue": "Bonnie Blue",
+    "bonniepink": "Bonnie Pink",
+    "hairstylist": "Hair stylist",
+    "hairstylistdescription": "Cosmetoloog, Haarstylist, Kapper, Hairstylist. Wat ze doen: Bieden schoonheidsdiensten aan, zoals knippen, kleuren en stylen van haar, en masseren en behandelen van de hoofdhuid. Kunnen ook haar wassen, make-up aanbrengen, pruiken verzorgen, haar verwijderen, en nagel- en huidverzorgingsdiensten leveren.",
+    "afucenttechnology": "Afucent Technology",
+    "researchanalyst": "Onderzoeksanalist",
+    "researchanalystdescription": "Een onderzoeksanalist is een professional die onderzoeksrapporten opstelt over effecten of activa voor intern gebruik of gebruik door klanten."
+  },
+
+  "Collection": {
+    "mycollection": "Mijn Collectie" 
+  },
+  "Contact": {
+    "contactformcheckboxtext": "Stuur mij een kopie van dit bericht",
+    "send": "VERZENDEN",
+    "technicalsupport": "Technische ondersteuning",
+    "technicalsupportmail": "support@example.com",
+    "technicalsupportnumber": "+1 234-567-89",
+
+    "salesquestions": "Verkoopvragen",
+    "salesquestionsmail": "verkoop@example.com",
+
+    "press": "Pers",
+    "pressmail": "pers@example.com",
+
+    "bugreport": "Foutenrapport",
+    "bugsreportmail": "fouten@example.com"
+  }
+}
