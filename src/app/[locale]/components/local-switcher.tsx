@@ -17,10 +17,9 @@ export default function LocalSwitcher() {
   };
   return (
     <label className='border-2 rounded'>
-      <p className='sr-only'>change language</p>
       <select
         defaultValue={localActive}
-        className='bg-transparent py-2'
+        className='bg-transparent py-2 text-tertiary focus:outline-none'
         onChange={onSelectChange}
         disabled={isPending}
       >
