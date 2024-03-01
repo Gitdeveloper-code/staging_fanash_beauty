@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
-import Button from '../../[locale]/components/Button';
-import AdminNavBar from '../../[locale]/components/AdminNavBar';
+import Button from '../../components/Button';
+import AdminNavBar from '../../components/AdminNavBar';
 
 
 const Page = () => {

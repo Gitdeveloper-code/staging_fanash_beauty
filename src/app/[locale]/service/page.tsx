@@ -1,6 +1,6 @@
-import Service from "../[locale]/components/Service"
-import Hero from "../[locale]/components/Hero"
-import { THREADING, WAXING } from "../[locale]/constants"
+import Service from "../components/Service"
+import Hero from "../components/Hero"
+import { THREADING, WAXING } from "../constants"
 
 
 const getServices = async () => {
@@ -21,7 +21,7 @@ const getServices = async () => {
 
 
 
-const page =async () => {
+const Page =async () => {
 
 
   const servicesApi= await getServices()
@@ -63,4 +63,4 @@ const services = [
   )
 }
 
-export default page
+export default Page
