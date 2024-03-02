@@ -34,92 +34,62 @@ const t = useTranslations('Navigation');
     );
   };
   return (
-    <nav className=" flexBetween max-container pt-4 padding-container fixed top-0 left-0 right-0 z-30 bg-transparent">
+  <nav className="flexBetween max-container pt-2 pb-2 padding-container fixed top-0 left-0 right-0 z-30 bg-transparent backdrop-filter backdrop-blur-md bg-opacity-25  border-opacity-75 border-solid rounded-md shadow-md">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-2">
         <div className="relative flex h-16 items-center justify-between">
-          {/* <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-      <button type="button" className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-      <span className="absolute -inset-0.5"></span>
-          <span className="sr-only">Open main menu</span>
-          <svg className="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
-          <svg className="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-      </button>
-        </div> */}
-          <Link className="flex mt-4" href={"/"}>
-            <Image src="/asset/img/fanash.png" width={100} height={100} alt="fanash"></Image> 
-            <span className="text-white mt-4 p-4 flex flex-col"> Fanash
-            <span>Beauty</span> </span>
-          </Link>
+            <Link className="flex items-center" href={"/"}>
+                <div className="flex items-center">
+                    <div className="rounded-full overflow-hidden mr-2 w-17 h-15">
+    <Image src="/asset/img/fanash.png" width={80} height={80} alt="fanash" />
+</div>
+
+                    <span className="text-white p-4 flex flex-col"> Fanash <span className="text-gray-300">Beauty</span> </span>
+                </div>                </Link>
             <ul className="hidden h-full gap-8 lg:flex items-right py-3">
       {NAV_LINKS.map((link) => (
         <Link
-          className="hover:bg-tertiary hover:text-primary rounded-md px-3 py-2 text-sm font-medium regular-16 text-white flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
-          href={link.href}
+          className="hover:bg-tertiary hover:text-primary rounded-md px-3 py-2 text-sm font-medium regular-16 text-white flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"         href={link.href}
           key={link.key}
         >
           {t(link.label)} {/* Dynamically translate link label */}
         </Link>
       ))}
     </ul>
+            <div className="flex items-center px-2">
+             <div className="flex gap-3 text-tertiary text-4xl" style={{ lineHeight: "1.5rem" }}>
 
-
-          <div className="flex justify-center items-center px-2">
-            
-        
-          
-            <div className="flex gap-3 text-tertiary text-4xl">
-                {/* <Logo/> */}
-                {/* <Link href='/login'>
-                <Button
-                title="Login"
-                />
-                </Link> */}
-     
-                 <Link href='/login'>
-                <Button
-                title="Login"
-                />
-                </Link>             
-              <IoIosMenu onClick={toggleSidebar}
-
-               className="inline-block cursor-pointer lg:hidden "/>
-            
+                    <Link href='/login'>
+                        <Button title="Login" />
+                    </Link>
+                    <IoIosMenu onClick={toggleSidebar} className="inline-block cursor-pointer lg:hidden" />
+                </div>
             </div>
-
-            
-          </div>
         </div>
-      </div>
-      {/* Sidebar */}
-      {isSidebarOpen && (
+    </div>
+    {/* Sidebar */}
+    {isSidebarOpen && (
         <div className="lg:hidden fixed inset-0 bg-gray-800 bg-opacity-75 z-50">
-          <div className="flex justify-end p-4">
-            {/* Close button */}
-            <IoIosMenu
-              className="text-white cursor-pointer"
-              onClick={toggleSidebar}
-            />
-          </div>
-          <div className="flex flex-col items-center">
-            {/* Sidebar items */}
-            {NAV_LINKS.map((link) => (
-              <Link
-                className=" hover:bg-tertiary hover:text-primary rounded-md px-3 py-2 text-sm font-medium regular-16 text-white flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
-                href={link.href}
-                key={link.key}
-                onClick={toggleSidebar} // Close the sidebar on item click
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
+            <div className="flex justify-end p-4">
+                {/* Close button */}
+                <IoIosMenu className="text-white cursor-pointer" onClick={toggleSidebar} />
+            </div>
+            <div className="flex flex-col items-center">
+                {/* Sidebar items */}
+                {NAV_LINKS.map((link) => (
+                    <Link
+                        className="hover:bg-tertiary hover:text-primary rounded-md px-3 py-2 text-sm font-medium regular-16 text-white flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
+                        href={link.href}
+                        key={link.key}
+                        onClick={toggleSidebar} // Close the sidebar on item click
+                    >
+                        {link.label}
+                    </Link>
+                ))}
+            </div>
         </div>
-      )}
-    </nav>
+    )}
+   </nav>
+
   )
 }
 
