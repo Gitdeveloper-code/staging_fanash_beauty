@@ -31,7 +31,7 @@ const Hero = ({ path, height, isVisible, title, description }: HeroProps) => {
 
   return (
     <section
-      className=' bg-cover bg-no-repeat w-full'
+      className=' bg-cover bg-no-repeat w-full bg-top'
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8))  ,url(${path})`,
         height: height,
@@ -43,7 +43,7 @@ const Hero = ({ path, height, isVisible, title, description }: HeroProps) => {
 
       <div id="home" className={`flex md:flex-row flex-col sm:py-16 py-6 bg-no-repeat bg-cover`}>
         <div className="flex-1 flex justify-center items-start flex-col xl:px-4 sm:px-16  ">
-          <div className="flex flex-col justify-between items-center w-full relative mt-20">
+          <div className="flex flex-col justify-between items-center w-full relative mt-28">
             <h1 className={`font-mono ss:text-[68px] text-[52px] ss:leading-[100.8px] leading-[75px] w-full text-center text-white `}>
               {title}
             </h1>
