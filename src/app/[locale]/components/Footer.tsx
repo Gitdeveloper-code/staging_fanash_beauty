@@ -21,7 +21,7 @@ const Footer = () => {
       </div>
     </Link>
     <div className="mt-4">
-      <p>Change Language</p>
+      <p className='text-white'>{t("changelanguage")}</p>
       <LocalSwitcher />
     </div>
   </div>

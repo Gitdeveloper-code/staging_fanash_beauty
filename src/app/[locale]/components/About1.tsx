@@ -6,11 +6,11 @@ const About1 = () => {
 const a = useTranslations('About');
   return (
     <>
-      <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
+      <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 items-center flex">
                 {/* Author's Picture */}
                 <div className="relative lg:max-w-md">
 
-                    <Image  src="/asset/img/fatma.png" alt="aboutimage" height={500} width={500} 
+                    <Image  src="/asset/img/fatma.png" alt="aboutimage" height={700} width={700} 
                         className="relative z-10 object-cover w-full rounded h-96 border-2 border-tertiary"/>
                     {/* <div
                         className="absolute mt-11 bottom-0 right-0 z-10 p-8 bg-white border-4 border-secondary rounded shadow dark:border-blue-400 lg:-mb-20 lg:-mr-11 sm:p-8 dark:text-gray-300 dark:bg-gray-800 ">
@@ -26,7 +26,7 @@ const a = useTranslations('About');
                     </div> */}
                 </div>
             </div>
-    <div className="w-full px-6 mb-10 lg:w-1/2 lg:mb-0 ">
+    <div className="w-full px-6 mb-10 lg:w-1/2 lg:mb-5 ">
                 {/* Author's Name */}
                 <div className="pl-4 mb-6 border-l-4 border-tertiary ">
                     <span className="text-sm text-tertiary uppercase dark:text-gray-400">{a("whoweare?")}</span>
@@ -37,10 +37,11 @@ const a = useTranslations('About');
                 <p className="mb-6 text-base leading-7 text-white dark:text-gray-400 text-justify">
                 {a("aboutuspara")}
                 </p>
-                <Button
+                <div className="flex justify-center">
+                <Button 
                 title={a("learnmore")}
                 />
-               
+               </div>
             </div>
     </>
      )
