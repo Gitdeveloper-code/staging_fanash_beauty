@@ -43,7 +43,7 @@ const Hero = ({ path, height, isVisible, title, description }: HeroProps) => {
 
       <div id="home" className={`flex md:flex-row flex-col sm:py-16 py-6 bg-no-repeat bg-cover`}>
         <div className="flex-1 flex justify-center items-start flex-col xl:px-4 sm:px-16  ">
-          <div className="flex flex-col justify-between items-center w-full relative mt-28">
+          <div className="flex flex-col justify-between items-center w-full relative mt-24">
             <h1 className={`font-mono ss:text-[68px] text-[52px] ss:leading-[100.8px] leading-[75px] w-full text-center text-white `}>
               {title}
             </h1>
