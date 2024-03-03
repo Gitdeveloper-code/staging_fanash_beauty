@@ -6,6 +6,7 @@ import React, { useState, useEffect } from 'react';
 import { IoIosMenu } from "react-icons/io";
 import { NAV_LINKS } from "../constants";
 import { useTranslations } from 'next-intl';
+import { IoClose } from "react-icons/io5"; // Importing close icon
 
 const Navbar = () => {
   const t = useTranslations('Navigation');
@@ -73,27 +74,27 @@ const Navbar = () => {
         </div>
       </div>
       {/* Sidebar */}
-      {isSidebarOpen && (
-        <div className="lg:hidden fixed inset-0 bg-gray-800 bg-opacity-75 z-50">
-          <div className="flex justify-end p-4">
-            {/* Close button */}
-            <IoIosMenu className="text-white cursor-pointer" onClick={toggleSidebar} />
-          </div>
-          <div className="flex flex-col items-center">
-            {/* Sidebar items */}
-            {NAV_LINKS.map((link) => (
-              <Link
-                className="hover:bg-tertiary hover:text-primary rounded-md px-3 py-2 text-sm font-medium regular-16 text-white flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
-                href={link.href}
-                key={link.key}
-                onClick={toggleSidebar} // Close the sidebar on item click
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      )}
+     {isSidebarOpen && (
+       <div className="lg:hidden fixed inset-0 bg-gray-800 bg-opacity-75 z-50">
+       <div className="flex justify-end p-4">
+         {/* Close button */}
+         <IoClose className="text-white cursor-pointer text-4xl" onClick={toggleSidebar} />
+       </div>
+       <div className="flex flex-col items-center gap-6">
+         {/* Sidebar items */}
+         {NAV_LINKS.map((link) => (
+           <Link
+             className="hover:bg-tertiary text-2xl hover:text-primary rounded-md px-3 py-2  font-medium  text-white flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold capitalize"
+             href={link.href}
+             key={link.key}
+             onClick={toggleSidebar} // Close the sidebar on item click
+           >
+            {t(link.label)}
+           </Link>
+         ))}
+       </div>
+     </div>
+    )}
     </nav>
   );
 }
