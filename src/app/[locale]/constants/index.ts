@@ -7,7 +7,7 @@ export const NAV_LINKS =[
     {href: '/team', key:'team', label:'team'},
     {href: '/collection', key:'login', label:'collection'},
     {href: '/contact', key:'contact', label:'contact'},
-    {href: '/career', key:'career', label:'jobs'},
+    {href: '/job', key:'job', label:'job'},
 
 ]
 export const LINKS =[
