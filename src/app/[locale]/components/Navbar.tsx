@@ -32,6 +32,8 @@ const Navbar = () => {
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
+    // Toggle body scrolling when sidebar opens/closes
+    document.body.style.overflow = isSidebarOpen ? 'auto' : 'hidden';
   };
 
   const navStyle = {
