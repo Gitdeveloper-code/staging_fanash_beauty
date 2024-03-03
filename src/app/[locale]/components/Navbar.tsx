@@ -32,15 +32,16 @@ const Navbar = () => {
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
-    // Toggle body scrolling when sidebar opens/closes
     document.body.style.overflow = isSidebarOpen ? 'auto' : 'hidden';
+    // document.body.style.backdropFilter = isSidebarOpen ? 'none' : 'blur(10px)';
   };
 
-  const navStyle = {
-    backgroundColor: isScrolled ? 'none' : 'transparent',
-    backdropFilter: isScrolled ? 'blur(10px)' : 'none',
-    transition: 'background-color 0.3s ease',
-  };
+ const navStyle = {
+  backgroundColor: isScrolled ? 'none' : 'transparent',
+  backdropFilter: isScrolled && !isSidebarOpen ? 'blur(10px)' : 'none',
+  transition: 'background-color 0.3s ease',
+};
+
 
   return (
     <nav className="flexBetween max-container pt-2 pb-2 padding-container fixed top-0 left-0 right-0 z-30 border-opacity-75 border-solid " style={navStyle}>
