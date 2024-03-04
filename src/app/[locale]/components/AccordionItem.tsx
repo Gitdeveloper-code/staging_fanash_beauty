@@ -40,7 +40,7 @@ export const AccordionItem = ({ header, text }: AccordionProps) => {
           </div>
   
           <div className="w-full">
-            <h4 className="mt-1 text-lg font-semibold text-dark dark:text-white">
+            <h4 className="mt-1 text-lg font-semibold text-dark dark:text-black">
               {header}
             </h4>
           </div>
@@ -51,7 +51,7 @@ export const AccordionItem = ({ header, text }: AccordionProps) => {
             active ? "block" : "hidden"
           }`}
         >
-          <p className="py-3 text-base leading-relaxed text-body-color dark:text-dark-6">
+          <p className="py-3 text-base leading-relaxed text-body-color dark:text-black">
             {text}
           </p>
         </div>

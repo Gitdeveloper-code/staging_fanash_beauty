@@ -11,10 +11,10 @@ const Faq = () => {
               <span className="mb-2 block text-lg font-semibold text-primary">
                 FAQ
               </span>
-              <h2 className="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-[40px]/[48px]">
+              <h2 className="mb-4 text-3xl font-bold text-dark dark:text-black sm:text-[40px]/[48px]">
                 Any Questions? Look Here
               </h2>
-              <p className="text-base text-body-color dark:text-dark-6">
+              <p className="text-base text-body-color dark:text-black">
                 There are many variations of passages of Lorem Ipsum available
                 but the majority have suffered alteration in some form.
               </p>
@@ -22,7 +22,7 @@ const Faq = () => {
           </div>
         </div>
 
-        <div className="-mx-4 flex flex-wrap">
+        <div className="-mx-4 flex flex-wrap px-7 lg:px-10">
           <div className="w-full px-4 lg:w-1/2">
             <AccordionItem
               header="How long we deliver your first blog post?"
