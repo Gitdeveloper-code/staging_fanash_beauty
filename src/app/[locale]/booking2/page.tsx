@@ -5,7 +5,7 @@ import Hero from '../components/Hero';
 
  
 const Page= () => {
-    
+
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [service, setService] = useState("");
@@ -37,39 +37,41 @@ const Page= () => {
 
 };
 
-  
   useEffect(() => {
-  
-    const fetchServices = async () => {
-      try {
-        const response = await fetch("https://fanash-beauty.netlify.app/api/services", { cache: "no-store" });
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        const data = await response.json();
-        setServicesApi(data);
-      } catch (error) {
-        console.error('Error fetching services:', error);
+  const fetchServices = async () => {
+    try {
+      const response = await fetch("https://fanash-beauty.netlify.app/api/services", { cache: "no-store" });
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
       }
-    };
+      const data = await response.json();
+      console.log("Services API data:", data); // Log the data to check
+      setServicesApi(data);
+    } catch (error) {
+      console.error('Error fetching services:', error);
+    }
+  };
 
-    const fetchBookingApi = async () => {
-      try {
-        const response = await fetch("https://fanash-beauty.netlify.app/api/availabity", { cache: "no-store" });
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        const data = await response.json();
-        setBookingApi(data);
-      } catch (error) {
-        console.error('Error fetching availability:', error);
-      }
-    };
-    // Call the async functions
-    fetchServices();
-    fetchBookingApi();
+  const fetchBookingApi = async () => {
+  try {
+    const response = await fetch("https://fanash-beauty.netlify.app/api/availabity", { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const data = await response.json();
+    console.log("Booking API data:", data); // Log the data to check
+    setBookingApi(data);
+  } catch (error) {
+    console.error('Error fetching availability:', error);
+    setError('Error fetching availability. Please try again later.');
+  }
+};
 
-  }, []);
+  // Call the async functions
+  fetchServices();
+  fetchBookingApi();
+}, []);
+
 
 
   
@@ -123,100 +125,118 @@ const Page= () => {
 
   
 
-  return (
-    <div className='grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2'>
-   
-  <div className="bg-gray-50 dark:bg-gray-900 col-span-2">
-      <Hero
-      height={400}
-      isVisible={false}
-      path='/asset/img/login.png'
-      title='Reserve Your Slot'
-      />
-    <div>
-    <div className="flex items-center justify-center p-12">
-        
+return (
+    <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2">
+      <div className="bg-gray-50 dark:bg-gray-900 col-span-2">
+        <Hero
+          height={400}
+          isVisible={false}
+          path="/asset/img/login.png"
+          title="Reserve Your Slot"
+        />
+        <div>
+          <div className="flex items-center justify-center p-12">
+            <div className="mx-auto w-full h-full">
+              <form action="" method="POST">
+                <div className="mb-5 flex flex-wrap items-start">
+                  {/* Date */}
+                  <div className="w-full px-3 sm:w-1/2">
+                    <div className="mb-5">
+                      <h3 className="mb-3 block text-base font-medium text-tertiary">
+                        {" "}
+                        Date{" "}
+                      </h3>
+                      <input
+                        type="date"
+                        name="date"
+                        id="date"
+                        value={date}
+                        onChange={(e) => setDate(e.target.value)}
+                        className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                      />
+                    </div>
+                  </div>
 
-    <div className="mx-auto w-full h-full">
-      <form action="" method="POST">
-      
-        {/* Date */}
-        <div className="mb-5">
-          <div className="w-full px-3 sm:w-1/2">
-            <div className="mb-5">
-              <h3 className="mb-3 block text-base font-medium text-tertiary"> Date </h3>
+                  {/* Time */}
+                  <div className="w-full px-3 sm:w-1/2">
+                    <div className="mb-5">
+                      <h3 className="mb-3 block text-base font-medium text-tertiary">
+                        {" "}
+                        Time slots{" "}
+                      </h3>
+                      <select
+                        value={time}
+                        onChange={(e) => setTime(e.target.value)}
+                        className="dropdown w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                      >
+                        <option className="m-1 btn btn-outline btn-secondary">
+                          Choose..
+                        </option>
+                        {bookingApi?.result.map((t) => (
+                          <option key={t.id}>{t.time}</option>
+                        ))}
+                      </select>
+                    </div>
+                  </div>
+                </div>
 
-              <input type="date" name="date" id="date" value={date} onChange={(e)=> setDate(e.target.value)}
-                className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-              />
-            </div>
-          </div>
+                <div className="mb-5 flex">
+                  {/* Service Type */}
+                  <div className="w-full px-3 sm:w-1/2">
+                    <div className="mb-5 pt-3">
+                      <label className="mb-5 block text-base font-semibold text-tertiary sm:text-xl">
+                        Service Type
+                      </label>
+                      <select
+                        value={service}
+                        onChange={(e) => setService(e.target.value)}
+                        className="dropdown w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                      >
+                        <option className="m-1 btn btn-outline btn-secondary">
+                          Choose..
+                        </option>
 
-         
-        </div>
-  {/* Time */}
-        <div className="mb-5 pt-3">
-          <label
-            className="mb-5 block text-base font-semibold text-tertiary sm:text-xl"
-          >
-            Time slots
-          </label>
-          <select value={time} onChange={(e)=> setTime(e.target.value)} className="dropdown w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md">
-    <option className="m-1 btn btn-outline btn-secondary">Choose..</option>
-    
-       {bookingApi?.result.map((t) => (
-    <option key={t.id}>{t.time}</option>
-))}
+                        {services.map((service) => (
+                          <option key={service.title}>{service.title}</option>
+                        ))}
+                      </select>
+                    </div>
+                  </div>
+                  {/* Service */}
+                  <div className="w-full px-3 sm:w-1/2">
+                    <div className="mb-5 pt-3">
+                      <label className="mb-5 block text-base font-semibold text-tertiary sm:text-xl">
+                        Service Type
+                      </label>
+                      <select
+                        value={service1}
+                        onChange={(e) => setService1(e.target.value)}
+                        className="dropdown w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                      >
+                        <option className="m-1 btn btn-outline btn-secondary">
+                          Choose..
+                        </option>
 
-  </select>
-  </div>
-        
-        <div className="mb-5 flex">
-          {/* Service Type */}
-          <div className='w-full px-3 sm:w-1/2'>
-          
-          <div className='mb-5 pt-3'><label
-            className="mb-5 block text-base font-semibold text-tertiary sm:text-xl"
-          >
-            Service Type
-          </label>
-          <select value={service} onChange={(e)=> setService(e.target.value)} className="dropdown w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md">
-    <option className="m-1 btn btn-outline btn-secondary">Choose..</option>
-    
-    {services.map((service) => (
-    <option key={service.title}>{service.title}</option>
-))}
- 
-    
-  </select></div>
-  
-  </div>
-  {/* Service */}
-  <div className='w-full px-3 sm:w-1/2'>
-          
-          <div className='mb-5 pt-3'><label
-            className="mb-5 block text-base font-semibold text-tertiary sm:text-xl"
-          >
-            Service Type
-          </label>
-          <select value={service1} onChange={(e)=> setService1(e.target.value)} className="dropdown w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md">
-    <option className="m-1 btn btn-outline btn-secondary">Choose..</option>
-    
-    
-         {servicesApi?.result
-    .filter((item: { category: string }) => item.category === service)
-    .map((item: { category: string; name: string; price: string }) => (
-        <option key={item.name}>{item.name}</option>
-    ))}
+                        {servicesApi?.result
+                          .filter(
+                            (item: { category: string }) =>
+                              item.category === service
+                          )
+                          .map(
+                            (item: {
+                              category: string;
+                              name: string;
+                              price: string;
+                            }) => (
+                              <option key={item.name}>{item.name}</option>
+                            )
+                          )}
+                      </select>
+                    </div>
+                  </div>
+                </div>
 
-    
-  </select></div>
-  
-  </div>
-  </div>
-
-
-{/* <div className='w-full px-3'>
+                {/* <div className='w-full px-3'>
               <div className='mb-5 pt-3'>
                 <label className="mb-5 block text-base font-semibold text-tertiary sm:text-xl">
                   Select Services
@@ -242,7 +262,7 @@ const Page= () => {
         <div className='bg-slate-300'>
         {selectedServices.map((value, index) => (
             <span key={index} className="mr-2">
-                 {`${index+1} ${value}`}
+                 {${index+1} ${value}}
 
             </span>
           ))}
@@ -259,9 +279,44 @@ const Page= () => {
               </div>
             </div> */}
 
-        
-  
-  <div className="mb-5">
+                <div className="mb-5 flex flex-wrap">
+                  {/* Email Input */}
+                  <div className="w-full px-3 sm:w-1/2">
+                    <label className="mb-5 block text-base font-semibold text-tertiary sm:text-xl">
+                      Email Id
+                    </label>
+                    <input
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Enter email"
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                      title="Enter a valid email"
+                      className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                    />
+                  </div>
+
+                  {/* Contact Input */}
+                  <div className="w-full px-3 sm:w-1/2">
+                    <label className="mb-5 block text-base font-semibold text-tertiary sm:text-xl">
+                      Contact Number
+                    </label>
+                    <input
+                      value={contact}
+                      onChange={(e) => setContact(e.target.value)}
+                      type="tel"
+                      name="contact"
+                      id="contact"
+                      placeholder="Enter contact number"
+                      title="Enter a 10-digit contact number"
+                      className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                    />
+                  </div>
+                </div>
+
+                {/* <div className="mb-5">
   <label
             className="mb-5 block text-base font-semibold text-tertiary sm:text-xl"
           >
@@ -278,7 +333,7 @@ const Page= () => {
                   className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                   />
             </div>
-            <div className="mb-5">
+ <div className="mb-5">
   <label
             className="mb-5 block text-base font-semibold text-tertiary sm:text-xl"
           >
@@ -293,47 +348,20 @@ const Page= () => {
                   title="Enter a 10-digit contact number"
                   className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                 />
+            </div> */}
+
+                <div className="text-center p-5 m-5 ">
+                  <Button action={booking} title="Proceed to Payment" />
+                  {error && <p style={{ color: "red" }}>{error}</p>}
+                </div>
+              </form>
             </div>
-
-        <div className='text-center p-5 m-5 '>
-          <Button
-       action={booking}
-          title='Proceed to Payment'
-          />
-                {error && <p style={{ color: 'red' }}>{error}</p>}
-
-                 
+          </div>
         </div>
-      </form>
-    </div>
+      </div>
+      <div className="col-span-1"></div>
   </div>
-  </div>
-  </div>
-  <div className='col-span-1'>
-    
-  </div>
-
-    </div>
-  
-  )
-}
+ );
+};
 
 export default Page
-
-
-
-
-{/* 
-checkbox for each service
-{servicesApi?.result.map((service: { name: string, price: string }) => (
-                  <div key={service.name} className="mb-2">
-                    <input
-                      type="checkbox"
-                      id={service.name}
-                      value={service.name}
-                      checked={selectedServices.includes(service.name)}
-                      onChange={() => handleServiceToggle(service.name)}
-                    />
-                    <label htmlFor={service.name} className="ml-2">{service.name + " - €" + service.price}</label>
-                  </div>
-                ))} */}
