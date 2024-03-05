@@ -3,8 +3,17 @@ import React, { useState, useEffect } from 'react';
 import Button from '../components/Button';
 import Hero from '../components/Hero';
 
- 
-const Page= () => {
+const Page = () => {
+  const [bookingSuccess, setBookingSuccess] = useState(false);
+  const [bookingDetails, setBookingDetails] = useState<{
+    date: string;
+    time: string;
+    selectedServices: string[];
+  }>({
+    date: '',
+    time: '',
+    selectedServices: [],
+  });
 
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
@@ -13,29 +22,111 @@ const Page= () => {
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
   const [email, setEmail] = useState("");
   const [contact, setContact] = useState("");
-  const [servicesApi, setServicesApi] =useState<{ result: any[] } | null>(null);
+  const [servicesApi, setServicesApi] = useState<{ result: any[] } | null>(null);
   const [bookingApi, setBookingApi] = useState<{ result: any[] } | null>(null);
-  const [clickedItem, setClickedItem] = useState<string | null>(null);
-  const [clickedValues, setClickedValues] = useState<string[]>([]);
-  const [error, setError] = useState<string>('');
+  const [errors, setErrors] = useState<any>({});
 
 
-  
-  const handleItemClick = (itemName: string, itemCategory:string) => {
-    setClickedItem(prevItem => (prevItem === itemName ? prevItem : itemName));
-    setClickedValues(prevValues => [...prevValues, itemName]);
-    setSelectedServices((prevSelectedServices) => {
-        if (prevSelectedServices.includes(itemCategory)) {
-          // If service is already selected, remove it
-          return prevSelectedServices.filter((service) => service);
+ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+      e.preventDefault();
+    if (validateForm()) {
+      try {
+        const response = await fetch('http://localhost:3000/api/bookings', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            date,
+            time,
+            service: service1,
+            email,
+            contact,
+            selectedServices,
+          }),
+        });
+
+
+        if (response.ok) {
+          const responseData = await response.json();
+          console.log('Booking successful:', responseData);
+
+          setBookingSuccess(true);
+          setBookingDetails({
+            date,
+            time,
+            selectedServices,
+          });
+
+          resetForm();
         } else {
-          // If service is not selected, add it
-          return [...prevSelectedServices, itemCategory];
+          const errorMessage = await response.text();
+          console.error('Error during booking:', errorMessage);
+          setErrors({ booking: 'Error during booking. Please try again later.' });
         }
-      });
+      } catch (error) {
+        console.error('Error during booking:', error);
+        setErrors({ booking: 'Error during booking. Please try again later.' });
+      }
+    }
+  };
+
+  const resetForm = () => {
+    setDate('');
+    setTime('');
+    setService('');
+    setService1('');
+    setSelectedServices([]);
+    setEmail('');
+    setContact('');
+    setErrors({});
+  };
 
 
-};
+  const validateForm = () => {
+    const newErrors: any = {};
+
+    // Date validation
+    if (!date) {
+      newErrors.date = 'Date is required';
+    }
+
+    // Time validation
+    if (!time) {
+      newErrors.time = 'Time is required';
+    }
+
+    // Service validation
+    if (!service) {
+      newErrors.service = 'Service is required';
+    }
+
+    // Service1 validation
+    if (!service1) {
+      newErrors.service1 = 'Service1 is required';
+    }
+
+    // Email validation
+    if (!email) {
+      newErrors.email = 'Email is required';
+    } else {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        newErrors.email = 'Invalid email format';
+      }
+    }
+
+    // Contact validation
+    if (!contact) {
+      newErrors.contact = 'Contact is required';
+    } else if (!/^\d{10}$/i.test(contact)) {
+      newErrors.contact = 'Invalid contact number';
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
 
   useEffect(() => {
   const fetchServices = async () => {
@@ -63,7 +154,7 @@ const Page= () => {
     setBookingApi(data);
   } catch (error) {
     console.error('Error fetching availability:', error);
-    setError('Error fetching availability. Please try again later.');
+    
   }
 };
 
@@ -73,43 +164,6 @@ const Page= () => {
 }, []);
 
 
-
-  
-  const booking = async()=> {
-    const data = {
-      date: date,
-      time: time,
-      service: service,
-      email: email,
-      contact: contact,
-      seriviceType: selectedServices
-    }
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const contactNumberRegex = /^\d{10}$/;
-
-   if (emailRegex.test(email)) {
-      console.log("Email Id Error "+ {email})
-
-      setError(`${email} Invalid Email`);
-    } 
-    else if (contactNumberRegex.test(contact)) {
-       setError(`${contact} Invalid Contact details`);
-     }   
-     else if  (!date || !email || !time || !service || contact || selectedServices) {
-      console.log("Blank Fields")
-      setError('All fields are necessary');
-    } 
-     else{
-      console.log(contact,email,date,time,service,selectedServices)
-      const result = await fetch("http://localhost:3000/api/bookings", {
-      method: "POST",
-      body: JSON.stringify(data)
-    });
-     
-    }    
-   
-
-  }
 
 
   const services = servicesApi ? [
@@ -137,12 +191,12 @@ return (
         <div>
           <div className="flex items-center justify-center p-12">
             <div className="mx-auto w-full h-full">
-              <form action="" method="POST">
+              <form onSubmit={handleSubmit} method="POST">
                 <div className="mb-5 flex flex-wrap items-start">
                   {/* Date */}
                   <div className="w-full px-3 sm:w-1/2">
                     <div className="mb-5">
-                      <h3 className="mb-3 block text-base font-medium text-tertiary">
+                      <h3 className="mb-5 block text-base font-semibold text-tertiary sm:text-xl">
                         {" "}
                         Date{" "}
                       </h3>
@@ -154,13 +208,14 @@ return (
                         onChange={(e) => setDate(e.target.value)}
                         className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                       />
+                  {errors.date && <small className="text-red-500">{errors.date}</small>}
                     </div>
                   </div>
 
                   {/* Time */}
                   <div className="w-full px-3 sm:w-1/2">
                     <div className="mb-5">
-                      <h3 className="mb-3 block text-base font-medium text-tertiary">
+                      <h3 className="mb-5 block text-base font-semibold text-tertiary sm:text-xl">
                         {" "}
                         Time slots{" "}
                       </h3>
@@ -176,6 +231,7 @@ return (
                           <option key={t.id}>{t.time}</option>
                         ))}
                       </select>
+                  {errors.time && <small className="text-red-500">{errors.time}</small>}
                     </div>
                   </div>
                 </div>
@@ -184,9 +240,9 @@ return (
                   {/* Service Type */}
                   <div className="w-full px-3 sm:w-1/2">
                     <div className="mb-5 pt-3">
-                      <label className="mb-5 block text-base font-semibold text-tertiary sm:text-xl">
+                      <h3 className="mb-5 block text-base font-semibold text-tertiary sm:text-xl">
                         Service Type
-                      </label>
+                      </h3>
                       <select
                         value={service}
                         onChange={(e) => setService(e.target.value)}
@@ -200,14 +256,15 @@ return (
                           <option key={service.title}>{service.title}</option>
                         ))}
                       </select>
+                  {errors.service && <small className="text-red-500">{errors.service1}</small>}
                     </div>
                   </div>
                   {/* Service */}
                   <div className="w-full px-3 sm:w-1/2">
                     <div className="mb-5 pt-3">
-                      <label className="mb-5 block text-base font-semibold text-tertiary sm:text-xl">
+                      <h3 className="mb-5 block text-base font-semibold text-tertiary sm:text-xl">
                         Service Type
-                      </label>
+                      </h3>
                       <select
                         value={service1}
                         onChange={(e) => setService1(e.target.value)}
@@ -232,59 +289,18 @@ return (
                             )
                           )}
                       </select>
+                         {errors.service1 && <small className="text-red-500">{errors.service1}</small>}
                     </div>
                   </div>
                 </div>
 
-                {/* <div className='w-full px-3'>
-              <div className='mb-5 pt-3'>
-                <label className="mb-5 block text-base font-semibold text-tertiary sm:text-xl">
-                  Select Services
-                </label>
-                <div className='flex flex-row'>
-                {servicesApi?.result.filter((item: {category:string})=> item.category===service).map((item: {category:string, name:string, price:string})=>
-                <div key={item.name} className="mb-2 mr-2 flex flex-wrap">
-             
-             <span id={item.name}
-          key={item.name}
-          onClick={() => handleItemClick(item.name, item.category)}
-          className={`hover:cursor-pointer text-xs font-semibold inline-block py-1 px-2 rounded-full text-secondary uppercase last:mr-0 mr-1 ${
-            clickedItem === item.name ? 'bg-tertiary' : 'bg-gray-400'
-          }`}
-        >
-          {item.name}
-        </span>
-              </div>
-                )}</div>
-                    <div className="mb-4">
-        <strong>Selected Services:</strong>
-     
-        <div className='bg-slate-300'>
-        {selectedServices.map((value, index) => (
-            <span key={index} className="mr-2">
-                 {${index+1} ${value}}
-
-            </span>
-          ))}
-          </div>
-          <div>
-          {clickedValues.map((value, index) => (
-            <span key={index} className="mr-2">
-             {` ${value} , `}
-            </span>
-          ))}
-        </div>
-      </div>
-                
-              </div>
-            </div> */}
 
                 <div className="mb-5 flex flex-wrap">
                   {/* Email Input */}
                   <div className="w-full px-3 sm:w-1/2">
-                    <label className="mb-5 block text-base font-semibold text-tertiary sm:text-xl">
+                    <h3 className="mb-5 block text-base font-semibold text-tertiary sm:text-xl">
                       Email Id
-                    </label>
+                    </h3>
                     <input
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
@@ -296,13 +312,14 @@ return (
                       title="Enter a valid email"
                       className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                     />
+                  {errors.email && <small className="text-red-500">{errors.email}</small>}
                   </div>
 
                   {/* Contact Input */}
                   <div className="w-full px-3 sm:w-1/2">
-                    <label className="mb-5 block text-base font-semibold text-tertiary sm:text-xl">
+                    <h3 className="mb-5 block text-base font-semibold text-tertiary sm:text-xl">
                       Contact Number
-                    </label>
+                    </h3>
                     <input
                       value={contact}
                       onChange={(e) => setContact(e.target.value)}
@@ -313,53 +330,40 @@ return (
                       title="Enter a 10-digit contact number"
                       className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
                     />
+                  {errors.contact && <small className="text-red-500" >{errors.contact}</small>}
                   </div>
                 </div>
 
-                {/* <div className="mb-5">
-  <label
-            className="mb-5 block text-base font-semibold text-tertiary sm:text-xl"
-          >
-            Email Id
-          </label>
-
-          <input value={email} onChange={(e)=> setEmail(e.target.value)} 
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Enter email"
-                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                  title='Enter a valid email'
-                  className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                  />
-            </div>
- <div className="mb-5">
-  <label
-            className="mb-5 block text-base font-semibold text-tertiary sm:text-xl"
-          >
-            Contact Number
-          </label>
-
-          <input value={contact} onChange={(e)=> setContact(e.target.value)} 
-                  type="tel"
-                  name="contact"
-                  id="contact"
-                 
-                  title="Enter a 10-digit contact number"
-                  className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                />
-            </div> */}
-
                 <div className="text-center p-5 m-5 ">
-                  <Button action={booking} title="Proceed to Payment" />
-                  {error && <p style={{ color: "red" }}>{error}</p>}
+
+                <button type="submit"  className="text-white font-mono  w-fit  bg-tertiary hover:bg-primary hover:text-secondary focus:ring-4 focus:outline-none focus:ring-gray-500 font-medium  text-sm px-5 py-2.5 text-center inline-flex gap-3 items-center">Proceed to Payment</button>
                 </div>
+
               </form>
+
             </div>
           </div>
         </div>
       </div>
       <div className="col-span-1"></div>
+{/* Pop-up message */}
+{bookingSuccess && (
+  <div className="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center bg-gray-800 bg-opacity-50 z-50">
+    <div className="bg-white p-8 rounded-lg shadow-lg text-black"> {/* Apply text-black class here */}
+      <h2 className="text-xl font-semibold mb-4">Appointment Successfully Booked</h2>
+      <p>Date: {bookingDetails.date}</p>
+      <p>Time: {bookingDetails.time}</p>
+      <p>Selected Services: {bookingDetails.selectedServices.join(', ')}</p>
+      <button
+        onClick={() => setBookingSuccess(false)}
+        className="text-white font-mono  w-fit  bg-tertiary hover:bg-primary hover:text-secondary focus:ring-4 focus:outline-none focus:ring-gray-500 font-medium  text-sm px-5 py-2.5 text-center inline-flex gap-3 items-center"
+      >
+        Close
+      </button>
+    </div>
+  </div>
+)}
+
   </div>
  );
 };
