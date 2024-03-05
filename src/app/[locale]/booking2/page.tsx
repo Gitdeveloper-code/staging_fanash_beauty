@@ -40,7 +40,7 @@ const Page= () => {
   useEffect(() => {
   const fetchServices = async () => {
     try {
-      const response = await fetch("https://fanash-beauty.netlify.app/api/services", { cache: "no-store" });
+      const response = await fetch("http://localhost:3000/api/services", { cache: "no-store" });
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
@@ -54,7 +54,7 @@ const Page= () => {
 
   const fetchBookingApi = async () => {
   try {
-    const response = await fetch("https://fanash-beauty.netlify.app/api/availabity", { cache: "no-store" });
+    const response = await fetch("http://localhost:3000/api/availabity", { cache: "no-store" });
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
@@ -101,7 +101,7 @@ const Page= () => {
     } 
      else{
       console.log(contact,email,date,time,service,selectedServices)
-      const result = await fetch("https://fanash-beauty.netlify.app/api/bookings", {
+      const result = await fetch("http://localhost:3000/api/bookings", {
       method: "POST",
       body: JSON.stringify(data)
     });

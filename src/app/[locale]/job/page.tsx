@@ -16,7 +16,7 @@ const Page: React.FC = () => {
     const getJobs = async () => {
       try {
         console.log("Fetching jobs...");
-       let response= await fetch("https://fanash-beauty.netlify.app/api/jobs", {cache:"no-store"})
+       let response= await fetch("http://localhost:3000/api/jobs", {cache:"no-store"})
         console.log("Response:", response);
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
