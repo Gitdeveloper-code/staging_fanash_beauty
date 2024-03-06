@@ -4,7 +4,8 @@ import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import Hero from '../components/Hero';
 import { useTranslations } from 'next-intl';
-
+import StickyButton from "../components/StickyButton"
+import Link from 'next/link'
 
 const Page = () => {
 const myCollection = useTranslations('Collection');
@@ -111,7 +112,12 @@ const myCollection = useTranslations('Collection');
    </div> */}
    
 
-      
+       <div className="block group-hover:hidden">
+                 
+                <Link href='\booking2'>
+                    <StickyButton title="" icon="/asset/img/calendar.png" />
+                  </Link>  
+                </div>
       </main>
 
 

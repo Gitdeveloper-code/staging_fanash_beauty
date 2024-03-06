@@ -11,7 +11,7 @@ const a = useTranslations('About');
                 <div className="relative lg:max-w-md">
 
                     <Image  src="/asset/img/fatma.png" alt="aboutimage" height={700} width={700} 
-                        className="relative z-10 object-cover w-full rounded h-96 border-2 border-tertiary"/>
+                        className=" object-cover w-full rounded h-96 border-2 border-tertiary"/>
                     {/* <div
                         className="absolute mt-11 bottom-0 right-0 z-10 p-8 bg-white border-4 border-secondary rounded shadow dark:border-blue-400 lg:-mb-20 lg:-mr-11 sm:p-8 dark:text-gray-300 dark:bg-gray-800 ">
                         <p className="text-lg font-semibold md:w-72 ">

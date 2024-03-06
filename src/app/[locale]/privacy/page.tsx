@@ -1,4 +1,5 @@
-
+import StickyButton from "../components/StickyButton"
+import Link from 'next/link'
 const page = () => {
   return (
     <div className="bg-gray-100 text-dark dark:text-black md:px-10">
@@ -124,6 +125,12 @@ const page = () => {
             This privacy policy is subject to change without notice.
         </p>
     </div>
+ <div className="block group-hover:hidden">
+                 
+                <Link href='\booking2'>
+                    <StickyButton title="" icon="/asset/img/calendar.png" />
+                  </Link>  
+                </div>
 </div>
   )
 }

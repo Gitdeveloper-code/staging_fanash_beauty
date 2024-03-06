@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Navbar from './Navbar'
 import Link from 'next/link'
 import Button from "./Button"
+
 import 'react-datetime-picker/dist/DateTimePicker.css';
 import 'react-calendar/dist/Calendar.css';
 import 'react-clock/dist/Clock.css';
@@ -75,6 +76,7 @@ const Hero = ({ path, height, isVisible, title, description }: HeroProps) => {
           </div>
         </div>
       </div>
+              
     </section>
   );
 };

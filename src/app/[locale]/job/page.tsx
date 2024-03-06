@@ -1,6 +1,8 @@
 "use client"
 import React, { useEffect, useState } from 'react';
 import Hero from '../components/Hero';
+import StickyButton from "../components/StickyButton"
+import Link from 'next/link'
 
 interface Job {
   category: string;
@@ -41,9 +43,10 @@ const Page: React.FC = () => {
         path='/asset/img/hero_opening.png'
         title='Featured Job'
       />
+       <div className='flex justify-center flex-wrap'>
       {jobs.map((item: Job, index: number) => (
         <div key={index} id='openings' className='container p-5 m-5 md:m-5 bg-white border rounded-xl md:w-[90%] mx-auto'>
-          <div className='flex flex-col md:flex-row justify-between items-center -m-2'>
+          <div className='flex flex-col md:flex-row justify-between m-2'>
             <div className='md:mr-5 mb-5 md:mb-0'>
               <h3 className='inline-block px-2.5 py-1 text-xs text-white font-medium bg-tertiary uppercase rounded-md mb-2 md:mb-4'>
                 {item.category}
@@ -56,6 +59,16 @@ const Page: React.FC = () => {
           </div>
         </div>
       ))}
+      </div>
+
+
+                 <div className="block group-hover:hidden">
+                 
+                <Link href='\booking2'>
+                    <StickyButton title="" icon="/asset/img/calendar.png" />
+                  </Link>  
+                </div>
+
     </div>
   );
 };

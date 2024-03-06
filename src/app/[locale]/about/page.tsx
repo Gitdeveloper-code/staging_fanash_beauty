@@ -2,7 +2,8 @@ import About1 from '../components/About1'
 import Hero from '../components/Hero'
 import Faq from "../components/Faq";
 import { useTranslations } from 'next-intl';
-
+import StickyButton from "../components/StickyButton"
+import Link from 'next/link'
 const Page = () => {
 const a = useTranslations('About');
   return (
@@ -112,6 +113,12 @@ const a = useTranslations('About');
         </div>
     </div>
 </div>
+                 <div className="block group-hover:hidden">
+                 
+                <Link href='\booking2'>
+                    <StickyButton title="" icon="/asset/img/calendar.png" />
+                  </Link>  
+                </div>
 </div>
 
   )
