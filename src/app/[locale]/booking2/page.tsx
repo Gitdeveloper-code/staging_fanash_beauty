@@ -357,18 +357,20 @@ const Page = () => {
                       <h3 className="mb-2 block text-base font-semibold text-tertiary sm:text-xl">
                         Time slots*
                       </h3>
-                      <select
-            value={time}
-            onChange={(e) => setTime(e.target.value)}
-            className="w-full h-11 rounded-md border border-[#e0e0e0] bg-white py-3 px-4 sm:px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-        >
-            <option key="default" className="m-1 btn btn-outline btn-secondary">
-                Choose..
-            </option>
-            {bookingApi?.result.map((t: Option) => (
-                <option key={t.id}>{t.time}</option>
-            ))}
-        </select>
+                    <select
+                        value={time}
+                        onChange={(e) => setTime(e.target.value)}
+                        className="w-full h-11 rounded-md border border-[#e0e0e0] bg-white py-3 px-4 sm:px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                    >
+                        <option key="default" className="m-1 btn btn-outline btn-secondary">
+                            Choose..
+                        </option>
+                        {bookingApi?.result.map((t: Option, index: number) => (
+                            <option key={t.id || index}>{t.time}</option>
+                        ))}
+                    </select>
+
+
                       {errors.time && (
                         <small className="text-red-500">{errors.time}</small>
                       )}
