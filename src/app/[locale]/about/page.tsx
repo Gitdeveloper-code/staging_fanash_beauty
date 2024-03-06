@@ -16,7 +16,7 @@ const a = useTranslations('About');
         title={a("abouttheauthor")}
         
         />
-    <div className='flex items-center  dark:bg-gray-800'>        
+    <div className='flex items-center  dark:bg-gray-800' style={{ backgroundColor: "#111827" }}>        
         <div className='justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6'>
 
         <div className="flex flex-wrap ">

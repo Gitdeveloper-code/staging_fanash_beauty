@@ -9,6 +9,9 @@ interface Option {
     id: string;
     time: string;
 }
+interface ExistingBookings {
+  result: any[]; // Adjust the type accordingly based on your actual data structure
+}
 
 interface BookingApi {
     result: Option[];
@@ -56,110 +59,116 @@ const Page = () => {
       Enter a Valid Date!
     </small>
   );
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    if (validateForm()) {
-      try {
-        // Fetch existing bookings
-        const response = await fetch("http://localhost:3000/api/bookings");
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        const existingBookings = await response.json();
+ const BOOKINGS_API_URL = "http://localhost:3000/api/bookings";
 
-        // Filter existing bookings for the selected date and time
-        const filteredBookings = existingBookings.result.filter(
-          (entry: any) => {
-            return entry.date === date && entry.time === time;
-          }
-        );
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
 
-        // Check if the slot is available
-        const isSlotAvailable = filteredBookings.length === 0;
+  if (!validateForm()) return;
 
-        if (isSlotAvailable) {
-          try {
-            const templateParams = {
-              name: "Fanash Beauty Website",
-              date: date,
-              time: time,
-              service: service,
-              email: email,
-              contact: contact,
-              serviceType: selectedServices.join(", "), // Convert array to string
-            };
+  try {
+    const existingBookings = await fetchExistingBookings();
+    const filteredBookings = filterBookings(existingBookings);
 
-            const emailResponse = await emailjs.send(
-              "service_rbc43qh", // Replace with your Email.js service ID
-              "template_ibi6ngg", // Replace with your Email.js template ID
-              templateParams,
-              "D2L4M77ORaA2dX64b" // Replace with your Email.js user ID
-            );
+    const isSlotAvailable = filteredBookings.length === 0;
 
-            console.log("Email sent successfully:", emailResponse);
-          } catch (error) {
-            console.error("Error sending email:", error);
-            setErrors("Error sending email. Please try again later.");
-          }
-
-          console.log(contact, email, date, time, service, selectedServices);
-
-          // Proceed with the booking
-          const bookingResponse = await fetch(
-            "http://localhost:3000/api/bookings",
-            {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify({
-                date,
-                time,
-                service: service1,
-                email,
-                contact,
-                serviceType: selectedServices,
-              }),
-            }
-          );
-
-          if (bookingResponse.ok) {
-            const responseData = await bookingResponse.json();
-            console.log("Booking successful:", responseData);
-
-            // Update state and reset form
-            setBookingSuccess(true);
-            setBookingDetails({
-              date,
-              time,
-              selectedServices,
-            });
-            setErrors1(true);
-
-            resetForm();
-          } else {
-            const errorMessage = await bookingResponse.text();
-            console.error("Error during booking:", errorMessage);
-
-            setErrors({
-              booking: "Error during booking. Please try again later.",
-            });
-          }
-        } else {
-          // Slot is not available
-          console.log("Slot is not available");
-          setErrors1(false);
-
-          setErrors({
-            booking: "Slot is not available for the selected date and time.",
-          });
-        }
-      } catch (error) {
-        console.error("Error during booking:", error);
-        setErrors({ booking: "Error during booking. Please try again later." });
-      }
+    if (isSlotAvailable) {
+      await handleBooking();
+    } else {
+      handleSlotNotAvailable();
     }
-  };
+  } catch (error) {
+    handleError("Error during booking. Please try again later.");
+  }
+};
+
+const fetchExistingBookings = async () => {
+  const response = await fetch(BOOKINGS_API_URL);
+  if (!response.ok) {
+    throw new Error(`HTTP error! Status: ${response.status}`);
+  }
+  return await response.json();
+};
+
+const filterBookings = (existingBookings: ExistingBookings) => {
+  return existingBookings.result.filter((entry: any) => {
+    return entry.date === date && entry.time === time;
+  });
+};
+
+const handleBooking = async () => {
+  try {
+    const bookingResponse = await fetch(BOOKINGS_API_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        date,
+        time,
+        service: service1,
+        email,
+        contact,
+        serviceType: selectedServices,
+      }),
+    });
+
+    if (bookingResponse.ok) {
+      const responseData = await bookingResponse.json();
+    //   console.log("Booking successful:", responseData);
+
+      setBookingSuccess(true);
+      setBookingDetails({
+        date,
+        time,
+        selectedServices,
+      });
+      setErrors1(true);
+
+      resetForm();
+    } else {
+      const errorMessage = await bookingResponse.text();
+    //   console.error("Error during booking:", errorMessage);
+      setErrors({ booking: "Error during booking. Please try again later." });
+    }
+      const templateParams = {
+      name: "Fanash Beauty Website",
+      date,
+      time,
+      service: service,
+      email,
+      contact,
+      serviceType: selectedServices.join(", "), // Convert array to string
+    };
+
+    const emailResponse = await emailjs.send(
+      "service_rbc43qh",
+      "template_ibi6ngg",
+      templateParams,
+      "D2L4M77ORaA2dX64b"
+    );
+
+    // console.log("Email sent successfully:", emailResponse);
+
+  } catch (error) {
+    // console.error("Error sending email:", error);
+    setErrors("Error sending email. Please try again later.");
+  }
+};
+
+const handleSlotNotAvailable = () => {
+//   console.log("Slot is not available");
+  setErrors1(false);
+  setErrors({
+    booking: "Slot is not available for the selected date and time.",
+  });
+};
+
+const handleError = (errorMessage: string) => {
+//   console.error("Error during booking:", errorMessage);
+  setErrors({ booking: errorMessage });
+};
+
 
   const resetForm = () => {
     setDate("");
@@ -231,10 +240,10 @@ const Page = () => {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
         const data = await response.json();
-        console.log("Services API data:", data); // Log the data to check
+        // console.log("Services API data:", data); // Log the data to check
         setServicesApi(data);
       } catch (error) {
-        console.error("Error fetching services:", error);
+        // console.error("Error fetching services:", error);
       }
     };
 
@@ -247,10 +256,10 @@ const Page = () => {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
         const data = await response.json();
-        console.log("Booking API data:", data); // Log the data to check
+        // console.log("Booking API data:", data); // Log the data to check
         setBookingApi(data);
       } catch (error) {
-        console.error("Error fetching availability:", error);
+        // console.error("Error fetching availability:", error);
       }
     };
 
@@ -317,14 +326,14 @@ const Page = () => {
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2">
-      <div className="bg-gray-50 dark:bg-gray-900 col-span-2">
+      <div className="bg-gray-50 dark:bg-gray-900 col-span-2" style={{ backgroundColor: "#111827" }}>
         <Hero
           height={400}
           isVisible={false}
           path="/asset/img/login.png"
           title="Reserve Your Slot"
         />
-        <div>
+        <div style={{ backgroundColor: "#111827" }}>
           <div className="flex items-center justify-center p-12">
             <div className="mx-auto w-full h-full">
               <form onSubmit={handleSubmit} method="POST">

@@ -39,14 +39,14 @@ const team = await getTranslations('Team');
     
        
 
- <div className='dark:bg-gray-900 justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-16  md:px-6  py-8  mx-auto max-w-screen-xl lg:py-16 lg:px-6'>
+ <div className='dark:bg-gray-900 justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-16  md:px-6  py-8  mx-auto max-w-screen-xl lg:py-16 lg:px-6'style={{ backgroundColor: "#111827" }}>
        <div className="flex flex-wrap ">
         <About1/>
         </div>
      </div>
 
       <section className="dark:bg-gray-900 py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-     <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+     <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2" style={{ backgroundColor: "#111827" }}>
   {Array.isArray(serviceApi.result) ? 
     serviceApi.result.map((item: { name: string; design: string; description: string }, index: number) => (
       <TeamMembers
