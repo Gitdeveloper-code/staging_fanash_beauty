@@ -44,7 +44,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className="flexBetween max-container pt-2 pb-2 padding-container fixed top-0 left-0 right-0 z-30 border-opacity-75 border-solid " style={navStyle}>
+    <nav className="flexBetween max-container pt-2 pb-2 padding-container fixed top-0 left-0 right-0 z-40 border-opacity-75 border-solid " style={navStyle}>
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-2">
         <div className="relative flex h-16 items-center justify-between">
           <Link href={"/"}>
