@@ -25,7 +25,7 @@ const Page = () => {
     selectedServices: [],
   });
 
-  const [date, setDate] = useState<any>();
+   const [date, setDate] = useState<string>('');
  const [time, setTime] = useState<string>('');
   const [service, setService] = useState("");
   const [service1, setService1] = useState("");
