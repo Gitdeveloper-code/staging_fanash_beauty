@@ -18,7 +18,7 @@ const Page: React.FC = () => {
     const getJobs = async () => {
       try {
         console.log("Fetching jobs...");
-       let response= await fetch("http://localhost:3000/api/jobs", {cache:"no-store"})
+       let response= await fetch("https://stage-fanashbeauty.netlify.app/api/jobs", {cache:"no-store"})
         console.log("Response:", response);
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
@@ -60,14 +60,13 @@ const Page: React.FC = () => {
         </div>
       ))}
       </div>
+        <div className="block group-hover:hidden">
+        <Link href='https://fanash-beauty.salonized.com'>
+            <StickyButton  icon="/asset/img/fanash.png" />
+        </Link>  
+        </div>
 
-
-                 <div className="block group-hover:hidden">
-                 
-                <Link href='\booking2'>
-                    <StickyButton title="" icon="/asset/img/calendar.png" />
-                  </Link>  
-                </div>
+                
 
     </div>
   );

@@ -14,7 +14,7 @@ pnpm dev
 bun dev
 ```
 
-Open [https://fanash-beauty.netlify.app](https://fanash-beauty.netlify.app) with your browser to see the result.
+Open [https://stage-fanashbeauty.netlify.app](https://stage-fanashbeauty.netlify.app) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 

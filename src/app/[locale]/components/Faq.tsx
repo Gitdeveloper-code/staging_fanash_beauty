@@ -8,50 +8,45 @@ const Faq = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div className="mx-auto mb-[60px] max-w-[520px] text-center lg:mb-20">
-              <span className="mb-2 block text-lg font-semibold text-primary">
-                FAQ
-              </span>
+             
               <h2 className="mb-4 text-3xl font-bold text-dark dark:text-black sm:text-[40px]/[48px]">
-                Any Questions? Look Here
+                Comprehensive Beauty Services
               </h2>
-              <p className="text-base text-body-color dark:text-black">
-                There are many variations of passages of Lorem Ipsum available
-                but the majority have suffered alteration in some form.
-              </p>
+              
             </div>
           </div>
         </div>
+<div className="-mx-4 flex flex-wrap px-7 md:px-16 items-center text-base text-body-color dark:text-black">
+      <h2 className="text-2xl font-bold mt-6 mb-2 text-justify">About Fanash Beauty</h2>
+      <p>
+        Fanash Beauty is an esteemed beauty salon that redefines the world of beauty therapy by seamlessly integrating the realms of fine arts and expert skincare. Located at Meander 787, Amstelveen, our salon is more than just a place for beauty; it&apos;s an artistic canvas where every appointment transforms into a masterpiece.
+      </p>
 
-        <div className="-mx-4 flex flex-wrap px-7 lg:px-10">
-          <div className="w-full px-4 lg:w-1/2">
-            <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
-            />
-            <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
-            />
-            <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
-            />
-          </div>
-          <div className="w-full px-4 lg:w-1/2">
-            <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
-            />
-            <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
-            />
-            <AccordionItem
-              header="How long we deliver your first blog post?"
-              text="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
-            />
-          </div>
-        </div>
+      <h2 className="text-2xl font-bold mt-6 mb-2 text-justify">Our Expertise</h2>
+      <p>
+        At Fanash Beauty, we take pride in our commitment to excellence. Our owner, Fatma Rahman, is an iTec and QQI certified beauty therapist with a specialization in Dermalogica skin care. With years of expertise and a passion for perfection, Fatma is delivering unparalleled beauty services.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-6 mb-2 text-justify">Crafting Unique Looks</h2>
+      <p>
+        What sets Fanash Beauty apart is our dedication to crafting exclusive looks inspired by our clients&apos; personal style, event needs, and individual tastes. We believe that beauty is a form of self-expression, and we work closely with our clients to bring their unique visions to life.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-6 mb-2 text-justify">The Fanash Experience</h2>
+      <p>
+        We believe that true beauty lies in the details. From the moment you step into our salon, you&apos;ll experience a level of care and attention like no other. Our goal is to not only enhance your beauty but also elevate your confidence and self-esteem.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-6 mb-2 text-justify">Artistry and Beauty</h2>
+      <p>
+        Fanash Beauty is where artistry and beauty converge. Every treatment, every stroke of the brush, and every skincare regimen is a testament to our commitment to transforming beauty therapy into a genuine art form. We believe that your beauty should be as unique as you are.
+      </p>
+
+      <h2 className="text-2xl font-bold mt-6 mb-2 text-justify">Our Reputation</h2>
+      <p>
+        With a perfect five-star rating from all our customer reviews, Fanash Beauty has earned a reputation for excellence and unwavering customer satisfaction. Our clients trust us to provide exceptional beauty services and an atmosphere of warmth and professionalism.
+      </p>
+    </div>
       </div>
 
       <div className="absolute bottom-0 right-0 z-[-1]">

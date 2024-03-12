@@ -4,6 +4,7 @@
     "about": "About",
     "team": "Team",
     "collection": "Collection",
+    "price":"Price",
     "contact": "Contact",
     "job": "Job"
   },
@@ -12,13 +13,17 @@
   },
 
   "Footer": {
+    "bookyourslot": "Book Your Slot",
+    "bookappointment": "Book appointment",
     "copyright": "2023 Fanash Beauty | All rights reserved",
     "learnmore": "Learn More",
     "home": "Home",
-    "faq": "FAQ",
-    "privacypolicy": "Privacy Policy",
+    "about": "About",
+    "team": "Team",
     "collection": "Collection",
+    "job": "Job",
     "contactus": "Contact Us",
+    "address":"Address:",
     "adminofficer": "Admin Officer",
     "social": "Social",
     "changelanguage":"Change Language"
@@ -26,8 +31,7 @@
 
   "About": {
     "abouttheauthor": "About the author",
-    "Bookyourslot": "Book Your Slot",
-
+     "bookyourslot": "Book Your Slot",
     "whoweare?": "WHO WE ARE?",
     "fatmarahman": "Fatma Rahman",
     "aboutuspara": "Fanash Beauty is the brainchild of the talented and dedicated owner, Fatma Rahman. Fatma is a certified beauty therapist with extensive experience and a deep passion for the beauty industry. Her qualifications include iTec and QQI certifications, along with specialization in Dermalogica skin care from Ireland. Fatma's vision and commitment to excellence drive the salon's success and innovation. Fatma also holds a diploma in fine arts. At Fanash Beauty, our mission is to elevate beauty therapy to an art form, creating exclusive looks inspired by our customers' personal style, event needs, and individual taste. We blend the world of fine arts with beauty, turning every appointment into a canvas where we pay meticulous attention to detail.",
@@ -40,15 +44,12 @@
     "howlongwedeliveryourfirstblogpostdescription": "It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
   },
   "Home": {
+     "bookyourslot": "Book Your Slot",
     "fanashbeauty": "Fanash Beauty",
     "fanashbeautydescription": "Our team of experts uses a methodology to identify the credit cards most likely to fit your needs. We examine annual percentage rates, annual fees.",
 
     "serviceweoffer": "SERVICES WE OFFER",
-    "makeup": "Make Up",
-    "makeupdescription": "Makeup should never be used to hide yourself. It should be used to enhance your natural beauty",
 
-    "hairstyling": "Hair Styling",
-    "hairstylingdescription": "Your hair tells a story; make it a masterpiece",
 
     "threading": "THREADING",
     "eyebrows": "eye brows",
@@ -74,12 +75,12 @@
   },
 
   "Team": {
+   "bookyourslot": "Book Your Slot",
     "ourteam": "Our Team",
     "meetourstylist": "Meet our Stylist",
     "bonnieyellow": "Bonnie Yellow",
     "dermatologist": "Dermatologist",
     "dermatologistdescription": "A dermatologist is a medical doctor who specializes in conditions that affect the skin, hair, and nails.",
-
     "bonniered": "Bonnie Red",
     "Bonnieblue": "Bonnie Blue",
     "bonniepink": "Bonnie Pink",
@@ -90,9 +91,11 @@
     "researchanalystdescription": "A research analyst is a professional who prepares investigative reports on securities or assets for in-house or client use."
   },
   "Collection": {
+    "bookyourslot": "Book Your Slot",
     "mycollection": "My Collection"
   },
   "Contact": {
+    "bookyourslot": "Book Your Slot",
     "contactformcheckboxtext": "Send me a copy of this message",
     "send": "SEND",
     "technicalsupport": "Technical support",
@@ -107,5 +110,100 @@
 
     "bugreport": "Bug report",
     "bugsreportmail" : "bugs@example.com"
-  }
+  },
+ "Services":{
+
+     "makeup": "Make Up",
+    "makeupdescription": "Makeup should never be used to hide yourself. It should be used to enhance your natural beauty",
+
+    "hairstyling": "Hair Styling",
+    "hairstylingdescription": "Your hair tells a story; make it a masterpiece",
+
+    "threading": "Threading",
+    "theredingDiscription": "Just as each thread contributes to the tapestry of beauty, so does every detail in threading enhance the allure of one's features.",
+
+    "waxing": "Waxing",
+    "waxingDiscription":"Waxing isn't just a treatment; it's a ritual of self-care, where each strip signifies a step towards embracing your natural beauty.",
+    
+    "sugarepilation": "Sugar Epilation",
+    "sugarepilationDiscription":"Sugaring is not just a hair removal method; it's a gentle embrace of self-care, where each application represents a step towards nurturing your natural beauty.",
+
+    "facial": "Facial",
+    "facialDiscription":"Facials aren't just about cleansing and moisturizing; they're about self-love and taking the time to care for yourself, both inside and out.",
+
+    "manicure": "Manicure",
+    "manicureDiscription":"A manicure is the perfect finishing touch, adding polish to your look and confidence to your stride.",
+
+    "pedicure": "Pedicure",
+    "pedicureDiscription":"A pedicure isn't just about pretty toes; it's about stepping into confidence, one pampered foot at a time.",
+
+    "massage": "Massage",
+    "massageDiscription":"Massage is the art of melting away stress and tension, leaving you feeling lighter, brighter, and more at peace.",
+    
+     "learnmore": " Learn More"
+
+   },
+  "ServicesDetails":{
+
+    
+   "threading": "Benefits of threading",
+   "theredingDetails": "Benefits of threading include precision, as it allows for more control in shaping the eyebrows compared to other methods like waxing or tweezing. It's also relatively gentle on the skin and doesn't involve the use of chemicals. Additionally, because it removes hair from the root, it typically lasts longer than other methods.Threading can also be used to remove hair from other parts of the face, such as the upper lip, chin, or cheeks. Some people prefer threading for these areas as well because of its precision and minimal irritation.",
+
+   "threading2": "upper lip threading",
+   "theredingDetails2": "upper lip threading offers a range of benefits, including precision, minimal discomfort, long-lasting results, and suitability for various hair types. If you're considering upper lip threading, it's advisable to visit a professional esthetician or salon experienced in this technique to ensure safe and effective hair removal.",
+
+   "threading3": "Chin threading",
+   "theredingDetails3": "Benefits of threading include precision, as it allows for more control in shaping the eyebrows compared to other methods like waxing or tweezing. It's also relatively gentle on the skin and doesn't involve the use of chemicals. Additionally, because it removes hair from the root, it typically lasts longer than other methods.Threading can also be used to remove hair from other parts of the face, such as the upper lip, chin, or cheeks. Some people prefer threading for these areas as well because of its precision and minimal irritation.",
+
+   "threading4": "Forehead threading",
+   "theredingDetails4": "Benefits of threading include precision, as it allows for more control in shaping the eyebrows compared to other methods like waxing or tweezing. It's also relatively gentle on the skin and doesn't involve the use of chemicals. Additionally, because it removes hair from the root, it typically lasts longer than other methods.Threading can also be used to remove hair from other parts of the face, such as the upper lip, chin, or cheeks. Some people prefer threading for these areas as well because of its precision and minimal irritation.",
+
+   
+
+   "waxing": "Waxing",
+   "waxingDetails":"Waxing provides longer-lasting results compared to shaving because it removes hair from the root. However, it can be painful, especially for those with sensitive skin or in more sensitive areas of the body. With regular waxing, hair tends to grow back finer and softer over time.Overall, waxing is a popular choice for hair removal because it provides smooth results and can be done relatively quickly, but the level of discomfort and duration of results vary depending on individual pain tolerance and hair growth cycles",
+
+   "waxing2": "Longer-lasting results",
+   "waxingDetails2":"Waxing removes hair from the root, which means it takes longer for hair to grow back compared to shaving or using depilatory creams. Depending on individual hair growth cycles, results can last from two to six weeks.",
+   "waxing3": "Smooth skin",
+   "waxingDetails3":"Waxing not only removes hair but also exfoliates the skin by removing dead skin cells from the surface. This can leave the skin feeling smoother and more radiant after the treatment.",
+   "waxing4": "Suitable for various hair types",
+   "waxingDetails4":"Waxing is effective for removing hair of different lengths and textures, making it suitable for most people, regardless of their hair type.",
+   
+   "sugarepilation": "Sugar Epilation",
+   "sugarepilationDetails":"Sugaring offers several benefits over traditional waxing. Since the paste adheres primarily to the hair rather than the skin, there's less risk of irritation, redness, or allergic reactions. Additionally, sugaring paste can be applied at room temperature, reducing the risk of burns compared to hot wax. Furthermore, sugaring is a natural and environmentally friendly hair removal method since the paste is made from simple, biodegradable ingredients.",
+
+   "facial": "Facial",
+   "facialDetails":"Improved Skin Texture Facial treatments such as exfoliation, chemical peels, and microdermabrasion can help remove dead skin cells, revealing smoother, more radiant skin underneath.",
+
+
+   "facial2": "Hydration",
+   "facialDetails2":" Facials often include moisturizing treatments that can hydrate and nourish the skin, helping to maintain its moisture balance and prevent dryness.Deep Cleansing: Facial cleansing techniques, such as steam and extractions, can help remove impurities, excess oil, and debris from the skin's surface and pores, reducing the risk of breakouts and promoting clearer skin.",
+
+   "facial3": "Anti-Aging Effects",
+   "facialDetails3":" Many facial treatments, including those containing antioxidants, vitamins, and collagen-boosting ingredients, can help reduce the appearance of fine lines, wrinkles, and other signs of aging, promoting a more youthful complexion.Even Skin Tone: Certain facial treatments, such as chemical peels and laser therapies, can help fade dark spots, hyperpigmentation, and uneven skin tone, resulting in a more uniform and balanced complexion",
+
+   "facial4": "Acne Management",
+   "facialDetails4":" Facials targeting acne-prone skin may include treatments designed to unclog pores, reduce inflammation, and kill acne-causing bacteria, helping to prevent and manage breakouts.Improved Blood Circulation: Facial massages and certain treatments can help stimulate blood flow to the skin, promoting a healthy, rosy complexion and enhancing the delivery of oxygen and nutrients to skin cells.Tightening and Firming: Some facials incorporate treatments like radiofrequency, microcurrent, or ultrasound therapy, which can help tighten sagging skin and improve facial contours.",
+
+
+   "manicure": "Healthy Nails",
+   "manicureDetails":" Regular manicures involve cleaning, trimming, and shaping the nails, which helps to keep them healthy and prevents issues such as hangnails, ingrown nails, and nail infections.Improved Nail Growth: Massaging the nails and cuticles during a manicure increases blood circulation to the nail bed, which can stimulate nail growth and strengthen the nails.Improved Appearance: Well-groomed nails can enhance your overall appearance and boost self-confidence, whether for professional or social occasions.",
+
+   "manicure2": "Hydration and Moisture",
+   "manicureDetails2":" Manicures often include soaking the hands in warm water or applying moisturizing treatments, which helps to hydrate the skin and prevent dryness and cracking.Exfoliation: Many manicures include exfoliation of the hands and forearms to remove dead skin cells, revealing softer, smoother skin underneath.Relaxation and Stress Relief: Getting a manicure can be a relaxing experience, providing an opportunity to unwind and de-stress while receiving a hand massage or soaking in warm water.",
+
+   "pedicure": "Pedicure",
+   "pedicureDetails":"Improved Foot Health Pedicures involve soaking the feet in warm water, which helps to soften the skin and nails, making it easier to remove dead skin cells and calluses. This can help prevent conditions such as cracked heels and corns.Nail Care: Pedicures include trimming, shaping, and buffing the toenails, which helps to prevent ingrown nails and maintain healthy nail growth. Properly groomed nails also reduce the risk of nail infections.Exfoliation: Many pedicures include exfoliating treatments to remove dead skin cells from the feet and lower legs, leaving the skin smooth and soft.",
+
+   "pedicure2": "Moisturization",
+   "pedicureDetails2":" Pedicures typically involve moisturizing the feet and lower legs, which helps to hydrate the skin and prevent dryness and cracking.Stress Relief  Like manicures, pedicures can be a relaxing experience, providing an opportunity to unwind and de-stress while receiving a foot massage or soaking in warm water.",
+
+   "massage": "Massage",
+   "massageDetails":"Regular massage therapy offers a holistic approach to health and wellness, addressing both physical and mental well-being. Whether you're seeking relief from muscle tension, stress reduction, or simply a moment of relaxation and self-care, massage therapy can provide numerous benefits for your overall health and quality of life.",
+   "massage2": "Relaxation",
+   "massageDetails2":"One of the most immediate benefits of massage is relaxation. The manipulation of muscles helps to release tension and promote a sense of calmness and relaxation throughout the body.Massage therapy has been shown to reduce levels of stress hormones such as cortisol, while simultaneously increasing levels of serotonin and dopamine, neurotransmitters associated with relaxation and happiness.Pain Relief Massage can alleviate various types of pain, including muscle pain, tension headaches, migraines, and chronic conditions such as arthritis and fibromyalgia. It can help to improve blood circulation and release trigger points, promoting pain relief and relaxation."
+   
+
+ }
 }

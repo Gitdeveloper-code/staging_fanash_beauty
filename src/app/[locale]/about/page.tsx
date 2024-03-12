@@ -113,12 +113,12 @@ const a = useTranslations('About');
         </div>
     </div>
 </div>
-                 <div className="block group-hover:hidden">
-                 
-                <Link href='\booking2'>
-                    <StickyButton title="" icon="/asset/img/calendar.png" />
-                  </Link>  
-                </div>
+<div className="block group-hover:hidden">
+  <Link href='https://fanash-beauty.salonized.com'>
+    <StickyButton  icon="/asset/img/fanash.png" />
+  </Link>  
+</div>
+                
 </div>
 
   )

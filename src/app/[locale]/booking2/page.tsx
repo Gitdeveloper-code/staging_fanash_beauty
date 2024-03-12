@@ -59,7 +59,7 @@ const Page = () => {
       Enter a Valid Date!
     </small>
   );
- const BOOKINGS_API_URL = "http://localhost:3000/api/bookings";
+ const BOOKINGS_API_URL = "https://stage-fanashbeauty.netlify.app/api/bookings";
 
 const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
@@ -233,7 +233,7 @@ const handleError = (errorMessage: string) => {
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/services", {
+        const response = await fetch("https://stage-fanashbeauty.netlify.app/api/services", {
           cache: "no-store",
         });
         if (!response.ok) {
@@ -249,7 +249,7 @@ const handleError = (errorMessage: string) => {
 
     const fetchBookingApi = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/availabity", {
+        const response = await fetch("https://stage-fanashbeauty.netlify.app/api/availabity", {
           cache: "no-store",
         });
         if (!response.ok) {

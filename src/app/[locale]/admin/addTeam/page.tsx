@@ -15,7 +15,7 @@ const Page = () => {
           description:description
         };
         console.log(name,design,description)
-        const result = await fetch("http://localhost:3000/api/teams", {
+        const result = await fetch("https://stage-fanashbeauty.netlify.app/api/teams", {
           method: "POST",
           body: JSON.stringify(data)
   

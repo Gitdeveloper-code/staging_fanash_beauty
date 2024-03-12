@@ -1,20 +1,21 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 import { FOOTER_CONTACT_INFO, FOOTER_LINKS, SOCIALS } from '../constants'
 import Button from './Button'
 import { FaFacebook } from "react-icons/fa";
 import { useTranslations } from 'next-intl';
-import LocalSwitcher from './local-switcher';
+import StickyButton from "./StickyButton"
+import Link from 'next/link'
+// import LocalSwitcher from './local-switcher';
 
 const Footer = () => {
   const t = useTranslations('Footer');
 
   return (
-    <footer className='flexCenter pt-10 bg-cover' style={{ background: "#000"}}>
+    <footer className='flexCenter pt-10 bg-cover' style={{ background: "#262626"}}>
       <div className='padding-container max-container flex w-full flex-col gap-7'>
-       <div className='flex flex-col items-start px-5 justify-center gap-[14%] md:flex-row '>
-  <div className="mb-4 md:mb-0">
+       <div className='flex flex-col items-start px-5 justify-center gap-[30%] md:flex-row '>
+  {/* <div className="mb-4 md:mb-0">
     <Link href="/">
       <div className='block'>
         <Image src="/asset/img/fanash.png" width={74} height={29} alt="fanash" />
@@ -24,11 +25,11 @@ const Footer = () => {
       <p className='text-white'>{t("changelanguage")}</p>
       <LocalSwitcher />
     </div>
-  </div>
+  </div> */}
 
   <div className="mb-4">
     <FooterColumn title={t('learnmore')}>
-      <ul className="regular-14 flex flex-col gap-4 text-gray-600">
+      <ul className="regular-14 flex flex-col gap-3 text-sm text-white">
         {FOOTER_LINKS.map((link) => (
           <li key={link.key}>
             <Link href={link.href}>
@@ -40,24 +41,32 @@ const Footer = () => {
     </FooterColumn>
   </div>
 
-  <div className="mb-4">
-    <FooterColumn title={t(FOOTER_CONTACT_INFO.title)}>
-      {FOOTER_CONTACT_INFO.links.map((link) => (
-        <Link href="/contact" key={link.label}>
-          <Button title={t(link.label)} />
-        </Link>
-      ))}
-    </FooterColumn>
+  <div className="mb-4  text-white">
+   <FooterColumn title={t(FOOTER_CONTACT_INFO.title)}>
+              {/* This part has been removed */}
+              
+               <div className="text-sm text-gray-30 regular-14 ">
+    <p className="mb-2">{t("address")}</p>  
+    <p className="mb-2">Binnenhof 43, 1181 ZH</p>
+    <p className="mb-2">Amstelveen (Shopping Center)</p>
+    <p className="mb-2 text-blue-500">info@fanashbeauty.nl</p>
+    <p className="mb-2">+31 6 86271027</p>
+</div>
+
+               
+              
+            </FooterColumn>
   </div>
+
 
   <div className="mb-4">
     <FooterColumn title={t(SOCIALS.title)}>
-      <ul className="text-sm text-gray-30">
+      <ul className="text-sm text-gray-30 regular-14 flex flex-col gap-2 ">
         {SOCIALS.links.map((link, index) => (
           <li key={index}>
             <Link href={link.href} className="flex items-center mb-2">
               <Image src={link.src} alt="logo" width={15} height={15} /> 
-              <span className="ml-1 text-gray-600">{link.label}</span>
+              <span className="ml-1 text-white">{link.label}</span>
             </Link>
           </li>
         ))}
@@ -65,8 +74,10 @@ const Footer = () => {
     </FooterColumn>
   </div>
 </div>
-
-        <p className="regular-14 w-full text-center text-gray-700 pb-3">{t('copyright')}</p>
+        <hr className="w-full border-gray-600" />
+        
+        <p className="regular-14 w-full text-center text-white pb-5">{t('copyright')}</p>
+        
       </div>
     </footer>
   )
@@ -77,12 +88,16 @@ type FooterColumnProps = {
   children: React.ReactNode;
 }
 
-const FooterColumn = ({ title, children }: FooterColumnProps) => {
+const FooterColumn = ({ title,children }: FooterColumnProps) => {
   return (
+<>   
     <div className="flex flex-col gap-5">
-      <h4 className="bold-18 text-white whitespace-nowrap ">{title}</h4>
+      <h4 className="bold-18 text-white whitespace-nowrap font-bold ">{title}</h4>
       {children}
     </div>
+
+
+</>
   )
 }
 

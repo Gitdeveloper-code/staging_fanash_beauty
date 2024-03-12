@@ -26,7 +26,10 @@ export default function RootLayout({ children, params: { locale } }: RootLayoutP
     <html lang={locale}>
       
       <head>
-    
+    <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+/>
 
       </head>
  <NextIntlClientProvider locale={locale} messages={messages}>

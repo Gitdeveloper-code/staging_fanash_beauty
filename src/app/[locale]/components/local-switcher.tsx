@@ -1,31 +1,54 @@
-'use client';
-
+import React from 'react';
 import { useLocale } from 'next-intl';
 import { useRouter } from 'next/navigation';
-import { ChangeEvent, useTransition } from 'react';
 
 export default function LocalSwitcher() {
-  const [isPending, startTransition] = useTransition();
-  const router = useRouter();
-  const localActive = useLocale();
+    const router = useRouter();
+    const localeActive = useLocale();
 
-  const onSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
-    const nextLocale = e.target.value;
-    startTransition(() => {
-      router.replace(`/${nextLocale}`);
-    });
-  };
-  return (
-    <label className='border-2 rounded'>
-      <select
-        defaultValue={localActive}
-        className='bg-transparent py-2 text-tertiary focus:outline-none'
-        onChange={onSelectChange}
-        disabled={isPending}
-      >
-        <option value='en'>English</option>
-        <option value='nl'>Dutch</option>
-      </select>
-    </label>
-  );
+    const onLanguageChange = (locale: string) => {
+        router.push(`/${locale}`);
+    };
+
+    return (
+        <div className="flex text-white font-mono w-fit">
+            <style jsx>{`
+        button {
+          transition: background-color 0.3s ease;
+          cursor: pointer;
+          padding: 0.3rem 1rem;
+          border: 1px solid #bfa75d;
+          border-radius: 0.5rem;
+          margin-right: 0.5rem;
+        }
+
+        button:hover {
+          background-color: #333; /* Change to desired hover color */
+        }
+
+        .text-color-en {
+          color: ${localeActive === 'en' ? '#bfa75d' : 'inherit'};
+        }
+
+        .text-color-nl {
+          color: ${localeActive === 'nl' ? '#bfa75d' : 'inherit'};
+        }
+
+        .icon {
+          margin-right: 0.5rem;
+          color: white;
+        }
+      `}</style>
+            <button
+                onClick={() => onLanguageChange(localeActive === 'en' ? 'nl' : 'en')}
+                className={`rounded bg-transparent ${localeActive === 'en' ? 'text-color-en' : 'text-color-nl'
+                    }`}
+            >
+                <span className="icon material-icons">
+                    {localeActive === 'en' ? 'language' : 'translate'}
+                </span>
+                {localeActive === 'en' ? 'en' : 'nl'}
+            </button>
+        </div>
+    );
 }

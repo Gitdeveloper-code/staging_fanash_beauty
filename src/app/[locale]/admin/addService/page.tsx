@@ -17,7 +17,7 @@ const Page = () => {
         category:category
       };
       console.log(name,price,category)
-      const result = await fetch("http://localhost:3000/api/services", {
+      const result = await fetch("https://stage-fanashbeauty.netlify.app/api/services", {
         method: "POST",
         body: JSON.stringify(data)
       });

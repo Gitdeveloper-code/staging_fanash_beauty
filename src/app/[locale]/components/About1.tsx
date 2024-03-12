@@ -29,7 +29,7 @@ const a = useTranslations('About');
     <div className="w-full px-6 mb-10 lg:w-1/2 lg:mb-5 ">
                 {/* Author's Name */}
                 <div className="pl-4 mb-6 border-l-4 border-tertiary ">
-                    <span className="text-sm text-tertiary uppercase dark:text-gray-400">{a("whoweare?")}</span>
+                    {/* <span className="text-sm text-tertiary uppercase dark:text-gray-400">{a("whoweare?")}</span> */}
                     <h1 className="mt-2 text-3xl font-black text-gray-700 md:text-5xl dark:text-gray-300">
                         Fatma Rahman
                     </h1>

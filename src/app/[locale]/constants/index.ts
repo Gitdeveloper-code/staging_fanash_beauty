@@ -5,7 +5,8 @@ export const NAV_LINKS =[
     {href: '/about', key:'about', label:'about'},
     // {href: '/service', key:'services', label:'Service'},
     {href: '/team', key:'team', label:'team'},
-    {href: '/collection', key:'login', label:'collection'},
+    {href: '/price', key:'price', label:'price'},
+    // {href: '/collection', key:'login', label:'collection'},
     {href: '/contact', key:'contact', label:'contact'},
     {href: '/job', key:'job', label:'job'},
 
@@ -19,9 +20,12 @@ export const LINKS =[
 
 export const FOOTER_LINKS =[
   {href: '/', key:'home', label:'home'},
-  {href: '/faq', key:'faq', label:'faq'},
-  {href: '/privacy', key:'privacy', label:'privacypolicy'},
-  {href: '/collection', key:'login', label:'collection'},
+    {href: '/about', key:'about', label:'about'},
+    // {href: '/service', key:'services', label:'Service'},
+    {href: '/team', key:'team', label:'team'},
+    // {href: '/collection', key:'login', label:'collection'},
+    // {href: '/contact', key:'contact', label:'contact'},
+    {href: '/job', key:'job', label:'job'},
 ]
 
 
@@ -37,11 +41,11 @@ export const FOOTER_LINKS =[
   export const SOCIALS = {
     title: 'social',
     links: [
-      {label: 'Instagram', src:'/asset/img/instagram.png',href: '/', key:'instagram'},
-      {label: 'Facebook', src:'/asset/img/facebook.png',href:"https://www.facebook.com/profile.php?id=61551450869435", key:'facebook'},
-      {label: 'Twitter', src:'/asset/img/twitter.png',href: '/', key:'twitter'},
+      {label: 'Instagram', src:'/asset/img/instagram.png',href: 'https://www.instagram.com/fanashbeauty/', key:'instagram'},
+      {label: 'Facebook', src:'/asset/img/facebook.png',href:" https://www.facebook.com/profile.php?id=61551450869435", key:'facebook'},
+    //   {label: 'Twitter', src:'/asset/img/twitter.png',href: '/', key:'twitter'},
       {label: 'Whatsapp', src:'/asset/img/whatsapp.png',href:"https://chatwith.io/s/fanash-beauty", key:'whatsapp'},
-      {label: 'LinkedIn', src:'/asset/img/linkedin.png',href: '/', key:'linkedin'},
+      {label: 'LinkedIn', src:'/asset/img/linkedin.png',href: 'https://www.linkedin.com/company/100554068/', key:'linkedin'},
 
      
     ],

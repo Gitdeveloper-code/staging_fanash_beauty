@@ -115,7 +115,7 @@ const myCollection = useTranslations('Collection');
        <div className="block group-hover:hidden">
                  
                 <Link href='\booking2'>
-                    <StickyButton title="" icon="/asset/img/calendar.png" />
+                    <StickyButton  icon="/asset/img/calendar.png" />
                   </Link>  
                 </div>
       </main>

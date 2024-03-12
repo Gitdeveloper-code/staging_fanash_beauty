@@ -33,7 +33,7 @@ const Page = () => {
     // }   
      else{
       console.log(uname,email,contact,password)
-      const result = await fetch("http://localhost:3000/api/user", {
+      const result = await fetch("https://stage-fanashbeauty.netlify.app/api/user", {
         method: "POST",
         body: JSON.stringify(data)
       });

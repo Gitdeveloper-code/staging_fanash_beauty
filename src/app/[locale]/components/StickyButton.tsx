@@ -1,27 +1,29 @@
 import Image from "next/image"
 import Link from "next/link"
-type ButtonProps=
-{
-    title:string
-    icon?:string
-    action?: () => void
+import { useTranslations } from 'next-intl';
 
-}
-const StickyButton = ({title, icon, action}:ButtonProps) => {
+type ButtonProps =
+    {
+    
+        icon?: string
+        action?: () => void
 
-  return (
-    <div>
+    }
+const StickyButton = ({ icon, action }: ButtonProps) => {
 
-      <button className="fixed bottom-4 right-4 md:right-[6rem] px-4 py-4 rounded-full shadow animate-bounce z-30 text-white font-mono w-fit bg-tertiary hover:bg-primary hover:text-secondary focus:ring-4 focus:outline-none focus:ring-gray-500 font-medium"
-      onClick={action}
-    >
-        {icon && <Image src={icon} alt={title} height={29} width={29} 
-        />}
-       
-        <label>{title}</label>
+  const t = useTranslations('Footer');
 
-        </button>
-    </div>
-  )
+    return (
+      <div>
+   <button className="fixed bottom-8 right-4 md:right-[2rem] flex items-center px-2 py-2 shadow z-30 text-white font-mono bg-black border border-tertiary rounded-md hover:bg-primary hover:text-secondary focus:ring-4 focus:outline-none focus:ring-gray-500 font-medium ">
+    {icon && (
+        <Image src={icon} alt={""} className="mr-2" height={29} width={29} />
+    )}
+    <span> | {t("bookappointment")}</span>
+</button>
+
+</div>
+
+    )
 }
 export default StickyButton
