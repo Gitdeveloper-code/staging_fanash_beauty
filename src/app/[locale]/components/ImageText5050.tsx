@@ -89,7 +89,7 @@ const ImageText5050: React.FC<ImageText5050> = ({
                     ))}
                 </div>
                 <div className="flex justify-center mt-8">
-                    <Link href="https://fanash-beauty.salonized.com">
+                    <Link href="/price">
                         <StarButton title="Book Your Slot" />
                     </Link>
                 </div>

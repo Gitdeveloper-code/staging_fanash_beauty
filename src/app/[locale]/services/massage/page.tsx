@@ -25,7 +25,7 @@ const Page = () => {
         path='/asset/img/massage2.avif'
         height={450}
         isVisible={true}
-        title="massage"
+        title="Massage"
         
         />
    {/* Render AnotherComponent dynamically for each object in the componentsData array */}

@@ -23,6 +23,8 @@ export const FOOTER_LINKS =[
     {href: '/about', key:'about', label:'about'},
     // {href: '/service', key:'services', label:'Service'},
     {href: '/team', key:'team', label:'team'},
+    {href: '/price', key:'price', label:'price'},
+
     // {href: '/collection', key:'login', label:'collection'},
     // {href: '/contact', key:'contact', label:'contact'},
     {href: '/job', key:'job', label:'job'},
