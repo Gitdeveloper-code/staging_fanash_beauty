@@ -13,7 +13,7 @@ const Page = () => {
         paragraph1: `${msg('massageDetails')}`,
         title2: `${msg('manicure2')}`,
         paragraph2: `${msg('massageDetails2')}`,
-        imagePath1: '/asset/img/massage1.avif',
+        imagePath1: '/asset/img/massage1.png',
         imagePath2: '/asset/img/massage4.jpg',
     }
   ]
