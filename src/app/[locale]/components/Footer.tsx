@@ -96,7 +96,11 @@ const FooterColumn = ({ title,children }: FooterColumnProps) => {
       {children}
     </div>
 
-
+<div className="block group-hover:hidden">
+  <Link href='/price'>
+    <StickyButton  icon="/asset/img/fanash.png" />
+  </Link>  
+</div>
 </>
   )
 }

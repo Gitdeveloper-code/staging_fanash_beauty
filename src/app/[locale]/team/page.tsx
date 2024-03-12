@@ -62,11 +62,7 @@ const team = await getTranslations('Team');
 
 
       </section>
-<div className="block group-hover:hidden">
-  <Link href='https://fanash-beauty.salonized.com'>
-    <StickyButton  icon="/asset/img/fanash.png" />
-  </Link>  
-</div>
+
     </div>
   )
 }
