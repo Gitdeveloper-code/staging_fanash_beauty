@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image"
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { MdClose } from 'react-icons/md'; // Import the close icon from react-icons
@@ -28,7 +29,7 @@ const StickyButton = ({ icon, action }: ButtonProps) => {
                 onClick={toggleIframe}
             >
                 {icon && (
-                    <img
+                    <Image
                         src={icon}
                         alt=""
                         className="mr-2 pr-2"
