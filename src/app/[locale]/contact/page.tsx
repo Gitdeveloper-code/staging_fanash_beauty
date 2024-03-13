@@ -1,4 +1,3 @@
-import About1 from "../components/About1"
 import Button from "../components/Button"
 import Hero from "../components/Hero"
 import Navbar from "../components/Navbar"
@@ -12,13 +11,13 @@ const t = useTranslations('Testimonial');
 
   return (
     <div>
-      {/* <Hero
-      height={500}
-      isVisible={false}
-      path="/asset/img/fanash_bg.webp"
-      title="Say Hi !"
-      description="Monday through Sunday 10:00 AM – 6:00 PM"
-      /> */}
+     <Hero
+        height={500}
+        isVisible={false}
+        path="/asset/img/contact-banner.webp"
+        title="Say Hi !"
+        description="Monday through Sunday 10:00 AM - 6:00 PM"
+     />
       <Navbar/>
      
       

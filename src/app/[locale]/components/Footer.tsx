@@ -46,8 +46,7 @@ const Footer = () => {
               {/* This part has been removed */}
               
                <div className="text-sm text-gray-30 regular-14 ">
-    <p className="mb-2">{t("address")}</p>  
-    <p className="mb-2">Binnenhof 43, 1181 ZH</p>
+    <p className="mb-2">Meander 787, 1181 WN,</p>
     <p className="mb-2">Amstelveen (Shopping Center)</p>
     <p className="mb-2 text-blue-500">info@fanashbeauty.nl</p>
     <p className="mb-2">+31 6 86271027</p>
