@@ -21,7 +21,7 @@
     "team": "Team",
     "collection": "Collectie",
     "job": "Banen",
-     "price":"Prijs",
+      "price":"Prijs",
     "contactus": "Neem contact op met ons",
     "address":"Adres:",
     "adminofficer": "Administratief medewerker",
@@ -30,7 +30,7 @@
   },
 
   "About": {
-    "abouttheauthor": "Over de auteur",
+    "abouttheauthor": "Over Fanash Beauty",
     "bookyourslot": "Boek Je Plek",
     "whoweare?": "WIE ZIJN WIJ?",
     "fatmarahman": "Fatma Rahman",
@@ -47,7 +47,7 @@
   "Home": {
     "bookyourslot": "Boek Je Plek",
     "fanashbeauty": "Fanash Beauty",
-    "fanashbeautydescription": "Ons team van experts maakt gebruik van een methodologie om de creditcards te identificeren die waarschijnlijk het beste aansluiten bij uw behoeften. We onderzoeken jaarlijkse rentepercentages en jaarlijkse kosten.",
+    "fanashbeautydescription": "Uitgebreide schoonheidsdiensten - waar kunstzinnigheid en schoonheid samenkomen",
     
     "serviceweoffer": "Diensten die wij aanbieden.",
     
@@ -212,5 +212,26 @@
   "massageDetails2":"Een van de meest directe voordelen van massage is ontspanning. De manipulatie van spieren helpt spanning los te laten en bevordert een gevoel van kalmte en ontspanning in het hele lichaam. Massage therapie is aangetoond om niveaus van stresshormonen zoals cortisol te verminderen, terwijl tegelijkertijd niveaus van serotonine en dopamine toenemen, neurotransmitters geassocieerd met ontspanning en geluk. Pijnverlichting Massage kan verschillende soorten pijn verlichten, waaronder spierpijn, spanningshoofdpijn, migraine en chronische aandoeningen zoals artritis en fibromyalgie. Het kan helpen om de bloedcirculatie te verbeteren en triggerpoints los te laten, waardoor pijnverlichting en ontspanning worden bevorderd."
   
 
-}
+},
+
+"faq":{
+  "faqtitle1":"WIE ZIJN WIJ?",
+  "faqDetails1":"Fanash Beauty is een gerenommeerde schoonheidssalon die de wereld van schoonheidstherapie herdefinieert door naadloos de gebieden van de schone kunsten en deskundige huidverzorging te integreren. Gelegen in het hart van het winkelcentrum van Amstelveen, is onze salon meer dan alleen een plek voor schoonheid; het is een artistiek canvas waar elke afspraak verandert in een meesterwerk.",
+
+  "OurExpertise":"Onze expertise",
+  "OurExpertiseDetails":"Bij Fanash Beauty zijn we trots op onze toewijding aan uitmuntendheid. Onze eigenaar, Fatma Rahman, is een gecertificeerde schoonheidsspecialiste met iTec- en QQI-certificering en heeft zich gespecialiseerd in Dermalogica huidverzorging. Met jarenlange expertise en een passie voor perfectie levert Fatma ongeëvenaarde schoonheidsdiensten.",
+
+"CraftingUniqueLooks":"Het creëren van unieke looks",
+"CraftingLookperagrapg" :"Wat Fanash Beauty onderscheidt, is onze toewijding aan het creëren van exclusieve looks geïnspireerd door de persoonlijke stijl, evenementbehoeften en individuele smaken van onze klanten. We geloven dat schoonheid een vorm van zelfexpressie is, en we werken nauw samen met onze klanten om hun unieke visies tot leven te brengen.",
+
+"TheFanashExperience":"De Fanash-ervaring",
+"TheFanashExperagrapg":"Wij geloven dat ware schoonheid in de details ligt. Vanaf het moment dat je onze salon binnenstapt, ervaar je een niveau van zorg en aandacht zoals geen ander. Ons doel is niet alleen om je schoonheid te verbeteren, maar ook om je zelfvertrouwen en eigenwaarde te verhogen.",
+
+"ArtistryandBeauty":"Kunstzinnigheid en Schoonheid",
+"ArtistryBeautyperagraph":"Fanash Beauty is waar kunstzinnigheid en schoonheid samenkomen. Elke behandeling, elke penseelstreek en elk huidverzorgingsregime getuigt van onze toewijding om schoonheidstherapie om te vormen tot een authentieke kunstvorm. Wij geloven dat jouw schoonheid net zo uniek moet zijn als jij bent.",
+
+"Our Reputation":"Onze reputatie",
+"OurReputationPera":"Met een perfecte vijfsterrenbeoordeling van al onze klantrecensies heeft Fanash Beauty een reputatie opgebouwd van uitmuntendheid en onwankelbare klanttevredenheid. Onze klanten vertrouwen erop dat wij uitzonderlijke schoonheidsdiensten bieden en een sfeer van warmte en professionaliteit creëren."
+
+ }
 }
