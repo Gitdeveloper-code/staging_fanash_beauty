@@ -16,7 +16,7 @@ export default function LocalSwitcher() {
         button {
           transition: background-color 0.3s ease;
           cursor: pointer;
-          padding: 0.3rem 1rem;
+          padding: 0.4rem 1rem;
           border: 1px solid #bfa75d;
           border-radius: 0.5rem;
           margin-right: 0.5rem;
@@ -44,10 +44,10 @@ export default function LocalSwitcher() {
                 className={`rounded bg-transparent ${localeActive === 'en' ? 'text-color-en' : 'text-color-nl'
                     }`}
             >
-                <span className="icon material-icons">
-                    {localeActive === 'en' ? 'language' : 'translate'}
-                </span>
-                {localeActive === 'en' ? 'en' : 'nl'}
+                {/* <span className="icon material-icons"> */}
+                    {/* {localeActive === 'en' ? 'language' : 'translate'} */}
+                {/* </span> */}
+                {localeActive === 'en' ? 'ENGLISH' : 'DUTCH'}
             </button>
         </div>
     );
