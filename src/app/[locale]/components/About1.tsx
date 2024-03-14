@@ -34,7 +34,7 @@ const a = useTranslations('About');
                         Fatma Rahman
                     </h1>
                 </div>
-                <p className="mb-6 text-base leading-7 text-white dark:text-gray-400 text-justify">
+                <p className="mb-6 leading-7 text-white dark:text-gray-400 text-justify" style={{fontSize:"0.9rem"}}>
                 {a("aboutuspara")}
                 </p>
                 <div className="flex justify-center">

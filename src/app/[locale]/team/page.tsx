@@ -33,9 +33,9 @@ const team = await getTranslations('Team');
       <Hero
         height={500}
         isVisible={true}
-        title={team("ourteam")}
+        title={team("meetourstylist")}
         path='/asset/img/bg.png'
-        description={team("meetourstylist")}
+        // description={team("meetourstylist")}
       />
     
        
