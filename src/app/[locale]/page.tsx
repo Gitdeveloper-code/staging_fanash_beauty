@@ -106,14 +106,14 @@ const Page = async () => {
                         </div>
 
                         {/* Image */}
-                        <div className='border border-tertiary p-4 flex items-center order-1 sm:order-2' style={{ border: '2px solid #ccc' }}>
+                        <div className='border border-tertiary p-4 flex items-center order-1 sm:order-2'>
                             <Image className='w-full h-full border border-tertiary' src='/asset/img/service1.png' width={500} height={500} alt='' />
                         </div>
                     </div>
 
                     <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 items-stretch p-3'>
                         {/* Image */}
-                        <div className='border border-tertiary p-4 flex items-center' style={{ border: '2px solid #ccc' }}>
+                        <div className='border border-tertiary p-4 flex items-center'>
                             <Image className='w-full h-full border border-tertiary' src='/asset/img/service10.png' width={500} height={500} alt='' />
                         </div>
 
@@ -158,14 +158,14 @@ const Page = async () => {
                         </div>
 
                         {/* Image */}
-                        <div className='border border-tertiary p-4 flex items-center order-1 sm:order-2' style={{ border: '2px solid #ccc' }}>
+                        <div className='border border-tertiary p-4 flex items-center order-1 sm:order-2'>
                             <Image className='w-full h-full border border-tertiary' src='/asset/img/service3.png' width={500} height={500} alt='' />
                         </div>
                     </div>
 
                     <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 items-stretch p-3'>
                         {/* Image */}
-                        <div className='border border-tertiary p-4 flex items-center' style={{ border: '2px solid #ccc' }}>
+                        <div className='border border-tertiary p-4 flex items-center'>
                             <Image className='w-full h-full border border-tertiary' src='/asset/img/service9.png' width={500} height={500} alt='' />
                         </div>
 
@@ -210,14 +210,14 @@ const Page = async () => {
                         </div>
 
                         {/* Image */}
-                        <div className='border border-tertiary p-4 flex items-center order-1 sm:order-2' style={{ border: '2px solid #ccc' }}>
+                        <div className='border border-tertiary p-4 flex items-center order-1 sm:order-2'>
                             <Image className='w-full h-full border border-tertiary' src='/asset/img/service5.png' width={500} height={500} alt='' />
                         </div>
                     </div>
 
                     <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 items-stretch p-3'>
                         {/* Image */}
-                        <div className='border border-tertiary p-4 flex items-center' style={{ border: '2px solid #ccc' }}>
+                        <div className='border border-tertiary p-4 flex items-center'>
                             <Image className='w-full h-full border border-tertiary' src='/asset/img/service6.png' width={500} height={500} alt='' />
                         </div>
 
@@ -261,7 +261,7 @@ const Page = async () => {
                         </div>
 
                         {/* Image */}
-                        <div className='border border-tertiary p-4 flex items-center order-1 sm:order-2' style={{ border: '2px solid #ccc' }}>
+                        <div className='border border-tertiary p-4 flex items-center order-1 sm:order-2'>
                             <Image className='w-full h-full border border-tertiary' src='/asset/img/service8.png' width={500} height={500} alt='' />
                         </div>
                     </div>
