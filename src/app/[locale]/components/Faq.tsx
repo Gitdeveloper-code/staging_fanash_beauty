@@ -17,33 +17,33 @@ const f = useTranslations('faq');
             </div> */}
           </div>
         </div>
-<div className="-mx-4 flex flex-wrap px-7 md:px-16 items-center text-base text-body-color dark:text-white">
-      <h2 className="text-2xl font-bold mt-6 mb-2 text-justify">{f("faqtitle1")}</h2>
+<div className="-mx-4 text-center flex flex-wrap px-7 md:px-16 items-center text-base text-body-color dark:text-white">
+      <h2 className="text-2xl font-bold mx-auto mt-6 mb-2 text-justify">{f("faqtitle1")}</h2>
       <p>
         {f("faqDetails1")}
       </p>
 
-      <h2 className="text-2xl font-bold mt-6 mb-2 text-justify">{f("OurExpertise")}</h2>
+      <h2 className="text-2xl mx-auto font-bold mt-6 mb-2 text-justify">{f("OurExpertise")}</h2>
       <p>
       {f("OurExpertiseDetails")}
       </p>
 
-      <h2 className="text-2xl font-bold mt-6 mb-2 text-justify">{f("CraftingUniqueLooks")}</h2>
+      <h2 className="text-2xl mx-auto font-bold mt-6 mb-2 text-justify">{f("CraftingUniqueLooks")}</h2>
       <p>
         {f("CraftingLookperagrapg")}
       </p>
 
-      <h2 className="text-2xl font-bold mt-6 mb-2 text-justify">{f("TheFanashExperience")}</h2>
+      <h2 className="text-2xl mx-auto font-bold mt-6 mb-2 text-justify">{f("TheFanashExperience")}</h2>
       <p>
         {f("TheFanashExperagrapg")}
       </p>
 
-      <h2 className="text-2xl font-bold mt-6 mb-2 text-justify">{f("ArtistryandBeauty")}</h2>
+      <h2 className="text-2xl mx-auto font-bold mt-6 mb-2 text-justify">{f("ArtistryandBeauty")}</h2>
       <p>
         {f("ArtistryBeautyperagraph")}
       </p>
 
-      <h2 className="text-2xl font-bold mt-6 mb-2 text-justify">{f("Our Reputation")}</h2>
+      <h2 className="text-2xl mx-auto font-bold mt-6 mb-2 text-justify">{f("Our Reputation")}</h2>
       <p>
        {f("OurReputationPera")}
       </p>

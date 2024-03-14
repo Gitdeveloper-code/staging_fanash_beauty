@@ -16,7 +16,7 @@ const a = useTranslations('About');
         
         />
     <div className='flex items-center bg-black'>        
-        <div >
+        <div>
 
         <div className="flex flex-wrap ">
         
