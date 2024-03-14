@@ -327,7 +327,7 @@ const Page = () => {
           </div>
           {/*Right Section:  */}
           <div className="flex-auto px-4 mb-8 md:w-1/3 mt-8">
-          <div className="relative h-[580px] overflow-hidden  bg-cover bg-[50%] bg-no-repeat ">
+          <div className="relative h-[450px] md:h-[580px] overflow-hidden  bg-cover bg-[50%] bg-no-repeat ">
           <iframe
             className="object-cover rounded-lg"
             style={{ border: 1, height: "100%", width: "100%" }}
