@@ -6,7 +6,7 @@ const About1 = () => {
 const a = useTranslations('About');
   return (
     <>
-      <div className="w-full px-2 mb-10 lg:w-1/2 lg:mb-0 justify-center items-center flex">
+      <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 justify-center items-center flex">
                 {/* Author's Picture */}
                 <div className="relative lg:max-w-md">
 
