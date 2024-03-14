@@ -19,6 +19,7 @@ export const LINKS =[
 ]
 
 export const FOOTER_LINKS =[
+  {href: '/login', key:'login', label:'admin'},
   {href: '/', key:'home', label:'home'},
     {href: '/about', key:'about', label:'about'},
     // {href: '/service', key:'services', label:'Service'},

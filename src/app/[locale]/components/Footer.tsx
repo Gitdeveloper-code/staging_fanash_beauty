@@ -41,21 +41,26 @@ const Footer = () => {
     </FooterColumn>
   </div>
 
-  <div className="mb-4  text-white">
-   <FooterColumn title={t(FOOTER_CONTACT_INFO.title)}>
-              {/* This part has been removed */}
-              
-               <div className="text-sm text-gray-30 regular-14 ">
-    <p className="mb-2">Meander 787, 1181 WN,</p>
-    <p className="mb-2">Amstelveen (Shopping Center)</p>
-    <p className="mb-2 text-blue-500">info@fanashbeauty.nl</p>
-    <p className="mb-2">+31 6 86271027</p>
-</div>
+<div className="mb-4 text-white">
+  <FooterColumn title={t(FOOTER_CONTACT_INFO.title)}>
+    {/* This part has been removed */}
 
-               
-              
-            </FooterColumn>
-  </div>
+    <div className="text-sm text-gray-30 regular-14">
+      <p className="mb-3">Coming Soon at </p>
+      <p className="mb-3">Amstelveen (Shopping Center)</p>
+      <p className="mb-3 flex items-center">
+        <i className="material-icons inline-block mr-2" style={{ fontSize: '19px' }}>email</i>{" "}
+        <a href="mailto:info@fanashbeauty.nl" className="text-blue-500 ">
+          info@fanashbeauty.nl
+        </a>
+      </p>
+      <p className="mb-3 flex items-center">
+        <i className="material-icons inline-block mr-2" style={{ fontSize: '19px' }}>phone</i>{" "}
+        <a href="tel:+31686271027">+31 6 86271027</a>
+      </p>
+    </div>
+  </FooterColumn>
+</div>
 
 
   <div className="mb-4">
