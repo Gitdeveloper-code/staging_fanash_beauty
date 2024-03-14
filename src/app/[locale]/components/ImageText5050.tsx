@@ -161,12 +161,12 @@ const Section: React.FC<SectionProps> = ({ serviceName, imagePath, sectionNumber
     return (
         <div
             key={sectionNumber}
-            className="border border-tertiary p-4 flex items-center relative"
-            style={{ border: '2px solid #ccc', position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden', maxHeight: '500px' }}
+            className=" p-4 flex items-center relative"
+            style={{  position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden', maxHeight: '500px' }}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
-            <Image className="w-full h-full border border-tertiary" src={imagePath} width={500} height={500} alt="" style={{ filter: showDetails ? 'blur(8px)' : 'none', transition: 'filter 0.3s ease' }} />
+            <Image className="w-full h-full " src={imagePath} width={500} height={500} alt="" style={{ filter: showDetails ? 'blur(8px)' : 'none', transition: 'filter 0.3s ease' }} />
             {renderServiceDetails(serviceName, showDetails, selectedService)}
         </div>
     );
