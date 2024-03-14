@@ -16,7 +16,7 @@ export const TeamMembers = ({ name, design, description }: TeamProps) => {
                 <Link href="#">
                     <div className="p-4 sm:w-48 sm:flex-none">
                         <div className="w-full sm:w-48 h-64 sm:h-48 rounded-lg overflow-hidden">
-                            <Image className="object-cover w-full h-full " height={100} width={100} src="/asset/img/team.png" alt="Bonnie Avatar" />
+                            <Image className="object-cover w-full h-full " height={100} width={100} src="/asset/img/default.jpg" alt="Bonnie Avatar" />
                         </div>
                     </div>
                 </Link>
