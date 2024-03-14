@@ -24,7 +24,7 @@ async function connectToDatabase() {
 
 const getServices = async () => {
     try {
-        const response = await fetch("https://stage-fanashbeauty.netlify.app/api/services", { cache: "no-store" });
+        const response = await fetch("http://localhost:3000/api/services", { cache: "no-store" });
 
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
@@ -98,8 +98,8 @@ const Page = async () => {
                             <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:px-14 md:my-5">
                                 {ser_vice("theredingDiscription")}
                             </p>
-                        <div className='pt-5'>
-                            <Link href='./services/facial'>
+                            <div className='pt-5'>
+                            <Link href='./services/threading'>
                                 <StarButton title={ser_vice("learnmore")} />
                             </Link>
                            </div>
@@ -129,7 +129,7 @@ const Page = async () => {
                                 {ser_vice("waxingDiscription")}
                             </p>
                             <div className='pt-5'>
-                            <Link href='./services/facial'>
+                            <Link href='./services/waxing'>
                                 <StarButton title={ser_vice("learnmore")} />
                             </Link>
                            </div>
@@ -150,8 +150,8 @@ const Page = async () => {
                             <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:px-14 md:my-5">
                                 {ser_vice("sugarepilationDiscription")}
                             </p>
-                            <div className='pt-5'>
-                            <Link href='./services/facial'>
+                           <div className='pt-5'>
+                            <Link href='./services/sugarepilation'>
                                 <StarButton title={ser_vice("learnmore")} />
                             </Link>
                            </div>
@@ -180,7 +180,7 @@ const Page = async () => {
                             <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:px-14 md:my-5">
                                 {ser_vice("facialDiscription")}
                             </p>
-                            <div className='pt-5'>
+                           <div className='pt-5'>
                             <Link href='./services/facial'>
                                 <StarButton title={ser_vice("learnmore")} />
                             </Link>
@@ -202,8 +202,8 @@ const Page = async () => {
                             <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:px-14 md:my-5">
                                 {ser_vice("manicureDiscription")}
                             </p>
-                           <div className='pt-5'>
-                            <Link href='./services/facial'>
+                            <div className='pt-5'>
+                            <Link href='./services/manicure'>
                                 <StarButton title={ser_vice("learnmore")} />
                             </Link>
                            </div>
@@ -232,8 +232,8 @@ const Page = async () => {
                             <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:px-14 md:my-5">
                                 {ser_vice("pedicureDiscription")}
                             </p>
-                            <div className='pt-5'>
-                            <Link href='./services/facial'>
+                           <div className='pt-5'>
+                            <Link href='./services/pedicure'>
                                 <StarButton title={ser_vice("learnmore")} />
                             </Link>
                            </div>
@@ -253,8 +253,8 @@ const Page = async () => {
                             <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:px-14 md:my-5">
                                 {ser_vice("massageDiscription")}
                             </p>
-                            <div className='pt-5'>
-                            <Link href='./services/facial'>
+                           <div className='pt-5'>
+                            <Link href='./services/massage'>
                                 <StarButton title={ser_vice("learnmore")} />
                             </Link>
                            </div>
