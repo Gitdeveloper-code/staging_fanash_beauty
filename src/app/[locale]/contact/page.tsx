@@ -132,9 +132,9 @@ const Page = () => {
       />
       <Navbar />
       <div className="bg-black py-8 mt-5 mb-5">
-      <div>
+      {/* <div>
           <h3 style={{ color: "white", textAlign: "center", fontSize: "40px", fontWeight: "bold" }}>Get In <span style={{ color: "#bfa65c" }}>Touch!</span></h3>
-          </div>
+          </div> */}
         <div className="flex flex-wrap md:flex-nowrap mb-10 mx-auto md:px-6">
           {/* Left Section: Contact Form */}
          
@@ -327,7 +327,7 @@ const Page = () => {
           </div>
           {/*Right Section:  */}
           <div className="flex-auto px-4 mb-8 md:w-1/3 mt-8">
-          <div className="relative h-[450px] overflow-hidden  bg-cover bg-[50%] bg-no-repeat ">
+          <div className="relative h-[580px] overflow-hidden  bg-cover bg-[50%] bg-no-repeat ">
           <iframe
             className="object-cover rounded-lg"
             style={{ border: 1, height: "100%", width: "100%" }}
