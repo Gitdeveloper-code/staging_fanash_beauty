@@ -24,7 +24,7 @@ const StickyButton = ({ icon, action }: ButtonProps) => {
     return (
         <div>
             <button
-                className="fixed bottom-8 right-4 md:right-[2rem] flex items-center px-2 py-2 shadow z-30 text-white font-mono border border-tertiary rounded-md hover:bg-primary hover:text-secondary  font-medium"
+                className="fixed bottom-8 right-4 md:right-[2rem] flex items-center px-2 py-2 shadow z-30 text-white font-mono border border-black rounded-md hover:bg-primary hover:text-secondary  font-medium"
                 style={{ backgroundColor: '#ff6575' }}
                 onClick={toggleIframe}
             >
