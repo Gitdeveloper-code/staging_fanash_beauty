@@ -72,7 +72,7 @@ const Page = async () => {
                 <div>
 
                     <Hero
-                        path="/asset/img/hero.webp"
+                        path="https://img.freepik.com/free-photo/young-woman-hair-salon-radiating-elegance-generated-by-ai_188544-33041.jpg?t=st=1710409750~exp=1710413350~hmac=6882d02e459c5b21bfa9a1c6744496b162f9899254632a8f70138629d96b366d&w=1060"
                         height={600}
                         isVisible={true}
                         title='Fanash Beauty'
