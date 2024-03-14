@@ -16,7 +16,7 @@ const a = useTranslations('About');
         
         />
     <div className='flex items-center bg-black'>        
-        <div className='justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6'>
+        <div >
 
         <div className="flex flex-wrap ">
         
