@@ -41,7 +41,7 @@ const Page: React.FC = () => {
         height={400}
         isVisible={false}
         path='/asset/img/hero_opening.png'
-        title='Featured Job'
+        title='Join Us'
       />
        <div className='flex justify-center flex-wrap'>
       {jobs.map((item: Job, index: number) => (
