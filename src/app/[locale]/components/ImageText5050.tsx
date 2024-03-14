@@ -74,7 +74,7 @@ const ImageText5050: React.FC<ImageText5050> = ({
         const filteredServices = servicesApi.result.filter((item) => item.category === serviceName);
 
         return (
-            <div className="absolute bg-black p-4 shadow-md overflow-y-scroll scrollbar-hide" style={{ zIndex: 1, width: '50%', maxWidth: '500px', maxHeight: isMobile ? '200px' : '400px', overflowY: 'auto', ...(isMobile && { width: '90%' }) }}>
+            <div className="absolute bg-black p-4 text-white shadow-md overflow-y-scroll scrollbar-hide" style={{ zIndex: 1, width: '50%', maxWidth: '500px', maxHeight: isMobile ? '200px' : '400px', overflowY: 'auto', ...(isMobile && { width: '90%' }) }}>
                 <h3 className="text-xl font-bold mb-4 text-center text-tertiary">{selectedService.toUpperCase()}</h3>
                 <div style={{ width: '100%' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
