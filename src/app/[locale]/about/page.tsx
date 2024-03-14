@@ -103,7 +103,7 @@ const a = useTranslations('About');
             </div>
         </div>
     </section> */}
-    <div className='w-full mt-2'>
+    <div className='w-full'>
     <Faq/>
 
     </div>

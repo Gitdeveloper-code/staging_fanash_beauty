@@ -4,7 +4,7 @@ const Faq = () => {
 const f = useTranslations('faq');
   return (
     <div>
-        <section className="relative z-20 overflow-hidden bg-[#1e293b] pb-12 pt-4 dark:bg-dark lg:pb-[90px] lg:pt-[90px] border-2 border-tertiary ">
+        <section className="relative z-20 overflow-hidden bg-[#1e293b] pb-12 pt-4 dark:bg-dark lg:pb-[90px] lg:pt-[90px] border-0 ">
       <div className="container mx-auto">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
