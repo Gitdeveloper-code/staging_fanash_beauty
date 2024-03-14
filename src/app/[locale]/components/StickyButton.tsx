@@ -43,7 +43,7 @@ const StickyButton = ({ icon, action }: ButtonProps) => {
 
             {/* Conditional rendering of iframe */}
             {iframeVisible && (
-                <div className="fixed bottom-10 right-4 md:right-[1rem] flex items-center  shadow z-30  md:w-[31%] md:h-[80vh] rounded-md">
+                <div className="fixed bottom-8 md:bottom-10 right-4 md:right-[1rem] flex items-center  shadow z-30  md:w-[31%] md:h-[80vh] rounded-md">
                     {/* Close button */}
                     <button
                         className="absolute top-2 right-2 p-1 text-gray-500 hover:text-gray-800 focus:outline-none"
@@ -55,7 +55,7 @@ const StickyButton = ({ icon, action }: ButtonProps) => {
                     <iframe
                         src="https://fanash-beauty.salonized.com/widget_bookings/new"
                         title="Embedded Content"
-                        className="w-full h-[90vh] md:w-[100%] md:h-[85vh] rounded-md"
+                        className="w-full h-[86vh] md:w-[100%] md:h-[85vh] rounded-md"
                     ></iframe>
                 </div>
             )}
