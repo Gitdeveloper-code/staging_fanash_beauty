@@ -162,11 +162,11 @@ const Section: React.FC<SectionProps> = ({ serviceName, imagePath, sectionNumber
         <div
             key={sectionNumber}
             className=" p-4 flex items-center relative"
-            style={{  position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden', maxHeight: '500px' }}
+            style={{ border:"unset" , position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center', overflow: 'hidden', maxHeight: '500px' }}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
-            <Image className="w-full h-full " src={imagePath} width={500} height={500} alt="" style={{ filter: showDetails ? 'blur(8px)' : 'none', transition: 'filter 0.3s ease' }} />
+            <Image className="w-full h-full border-0" src={imagePath} width={500} height={500} alt="" style={{ filter: showDetails ? 'blur(8px)' : 'none', transition: 'filter 0.3s ease' }} />
             {renderServiceDetails(serviceName, showDetails, selectedService)}
         </div>
     );
