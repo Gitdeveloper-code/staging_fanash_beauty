@@ -60,7 +60,7 @@ const Navbar = () => {
                     <ul className="hidden h-full gap-8 lg:flex items-right py-3">
                         {NAV_LINKS.map((link) => (
                             <Link
-                                className="hover:bg-tertiary hover:text-primary rounded-md px-3 py-2 text-sm font-medium regular-16 text-white flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
+                                className="hover:bg-tertiary hover:text-white rounded-md px-3 py-2 text-sm font-medium regular-16 text-tertiary flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
                                 href={link.href}
                                 key={link.key}
                             >
@@ -71,9 +71,9 @@ const Navbar = () => {
                     <div className="flex items-center px-2">
                         <LocalSwitcher />
                         <div className="flex gap-3 text-tertiary text-4xl" style={{ lineHeight: "1.5rem" }}>
-                            <Link href='/login' className="hidden h-full gap-8 lg:flex items-right py-3">
+                            {/* <Link href='/login' className="hidden h-full gap-8 lg:flex items-right py-3">
                                 <Button title="Login" />
-                            </Link>
+                            </Link> */}
                             <IoIosMenu onClick={toggleSidebar} className="inline-block cursor-pointer lg:hidden" />
                         </div>
                     </div>
@@ -90,7 +90,7 @@ const Navbar = () => {
                         {/* Sidebar items */}
                         {NAV_LINKS.map((link) => (
                             <Link
-                                className="hover:bg-tertiary text-2xl hover:text-primary rounded-md px-3 py-2  font-medium  text-white flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold capitalize"
+                                className="hover:bg-tertiary text-2xl hover:text-white rounded-md px-3 py-2  font-medium  text-tertiary flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold capitalize"
                                 href={link.href}
                                 key={link.key}
                                 onClick={toggleSidebar} // Close the sidebar on item click
@@ -98,9 +98,9 @@ const Navbar = () => {
                                 {t(link.label)}
                             </Link>
                         ))}
-                        <Link href='/login' >
+                        {/* <Link href='/login' >
                             <Button title="Login" />
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
             )}
