@@ -98,9 +98,11 @@ const Page = async () => {
                             <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:px-14 md:my-5">
                                 {ser_vice("theredingDiscription")}
                             </p>
-                            <Link href='./services/threading'>
+                        <div className='pt-5'>
+                            <Link href='./services/facial'>
                                 <StarButton title={ser_vice("learnmore")} />
                             </Link>
+                           </div>
                         </div>
 
                         {/* Image */}
@@ -126,9 +128,11 @@ const Page = async () => {
                             <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:px-14 md:my-5">
                                 {ser_vice("waxingDiscription")}
                             </p>
-                            <Link href='./services/waxing'>
+                            <div className='pt-5'>
+                            <Link href='./services/facial'>
                                 <StarButton title={ser_vice("learnmore")} />
                             </Link>
+                           </div>
                         </div>
                     </div>
 
@@ -146,9 +150,11 @@ const Page = async () => {
                             <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:px-14 md:my-5">
                                 {ser_vice("sugarepilationDiscription")}
                             </p>
-                            <Link href='./services/sugarepilation'>
+                            <div className='pt-5'>
+                            <Link href='./services/facial'>
                                 <StarButton title={ser_vice("learnmore")} />
                             </Link>
+                           </div>
                         </div>
 
                         {/* Image */}
@@ -174,9 +180,11 @@ const Page = async () => {
                             <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:px-14 md:my-5">
                                 {ser_vice("facialDiscription")}
                             </p>
+                            <div className='pt-5'>
                             <Link href='./services/facial'>
                                 <StarButton title={ser_vice("learnmore")} />
                             </Link>
+                           </div>
                         </div>
                     </div>
 
@@ -194,9 +202,11 @@ const Page = async () => {
                             <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:px-14 md:my-5">
                                 {ser_vice("manicureDiscription")}
                             </p>
-                            <Link href='./services/manicure'>
+                           <div className='pt-5'>
+                            <Link href='./services/facial'>
                                 <StarButton title={ser_vice("learnmore")} />
                             </Link>
+                           </div>
                         </div>
 
                         {/* Image */}
@@ -222,9 +232,11 @@ const Page = async () => {
                             <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:px-14 md:my-5">
                                 {ser_vice("pedicureDiscription")}
                             </p>
-                            <Link href='./services/pedicure'>
+                            <div className='pt-5'>
+                            <Link href='./services/facial'>
                                 <StarButton title={ser_vice("learnmore")} />
                             </Link>
+                           </div>
                         </div>
                     </div>
 
@@ -241,9 +253,11 @@ const Page = async () => {
                             <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:px-14 md:my-5">
                                 {ser_vice("massageDiscription")}
                             </p>
-                            <Link href='./services/massage'>
+                            <div className='pt-5'>
+                            <Link href='./services/facial'>
                                 <StarButton title={ser_vice("learnmore")} />
                             </Link>
+                           </div>
                         </div>
 
                         {/* Image */}
