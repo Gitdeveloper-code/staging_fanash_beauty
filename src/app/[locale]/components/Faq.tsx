@@ -4,9 +4,9 @@ const Faq = () => {
   const f = useTranslations('faq');
 
   return (
-    <section className="relative z-20 overflow-hidden text-white bg-[#1e293b] pb-12 pt-4 dark:bg-dark lg:pb-[90px] lg:pt-[90px] border-0 w-full">
+    <section className="relative z-20 overflow-hidden bg-white text-black pb-12 pt-4 dark:bg-dark lg:pb-[90px] lg:pt-[90px] border-0 w-full">
       <div className="container mx-auto max-w-full px-4">
-        <div className="text-center  flex flex-wrap px-7 md:px-52 items-center text-base text-body-color text-white">
+        <div className="text-center  flex flex-wrap px-7 md:px-52 items-center text-base text-body-color text-black">
           <h2 className="text-2xl font-bold mx-auto  my-10 text-justify">{f("faqtitle1")}</h2>
           <p>
             {f("faqDetails1")}
