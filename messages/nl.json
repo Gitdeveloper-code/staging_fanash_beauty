@@ -4,7 +4,7 @@
     "about": "Over ons",
     "team": "Team",
     "collection": "Collectie",
-    "price":"Prijs",
+    "price": "Prijs",
     "contact": "Contact",
     "job": "Banen"
   },
@@ -13,7 +13,7 @@
     "testimonialdescription": "Flowbite is gewoon geweldig. Het bevat een overvloed aan voorgebouwde componenten en pagina's, vanaf het inlogscherm tot complexe dashboards. De perfecte keuze voor uw volgende SaaS-toepassing."
   },
   "Footer": {
-     "bookappointment": "Boek afspraak",
+    "bookappointment": "Boek afspraak",
     "copyright": "2024 Fanash Beauty | Alle rechten voorbehouden",
     "learnmore": "Meer informatie",
     "home": "Startpagina",
@@ -21,12 +21,12 @@
     "team": "Team",
     "collection": "Collectie",
     "job": "Banen",
-      "price":"Prijs",
+    "price": "Prijs",
     "contactus": "Neem contact op met ons",
-    "address":"Adres:",
+    "address": "Adres:",
     "admin": "Beheerder",
     "social": "Sociaal",
-    "changelanguage":"Verander taal"
+    "changelanguage": "Verander taal"
   },
 
   "About": {
@@ -48,9 +48,8 @@
     "bookyourslot": "Boek Je Plek",
     "fanashbeauty": "Fanash Beauty",
     "fanashbeautydescription": "Uitgebreide schoonheidsdiensten - waar kunstzinnigheid en schoonheid samenkomen",
-    
+
     "serviceweoffer": "Diensten die wij aanbieden.",
-    
 
     "threading": "EPILEREN MET DRAAD",
     "eyebrows": "wenkbrauwen.",
@@ -78,7 +77,7 @@
     "homepagequote": "Flowbite is gewoon geweldig. Het bevat tal van voorgebouwde componenten en pagina's, variërend van het aanmeldingsscherm tot een complex dashboard. De perfecte keuze voor jouw volgende SaaS-toepassing."
   },
   "Team": {
-     "bookyourslot": "Boek Je Plek",
+    "bookyourslot": "Boek Je Plek",
     "meetourstylist": "Ontmoet onze stylisten",
     "bonnieyellow": "Bonnie Yellow",
     "dermatologist": "Dermatoloog.",
@@ -96,27 +95,37 @@
 
   "Collection": {
     "bookyourslot": "Boek Je Plek",
-    "mycollection": "Mijn Collectie" 
+    "mycollection": "Mijn Collectie"
   },
   "Contact": {
-     "bookyourslot": "Boek Je Plek",
+    "sayhi!": "Zeg Hallo !",
+
+    "contactus": "NEEM CONTACT MET ONS OP",
     "contactformcheckboxtext": "Stuur mij een kopie van dit bericht",
-    "send": "VERZENDEN",
-    "technicalsupport": "Technische ondersteuning",
-    "technicalsupportmail": "support@example.com",
-    "technicalsupportnumber": "+1 234-567-89",
+    "send": "VERSTUREN",
 
-    "salesquestions": "Verkoopvragen",
-    "salesquestionsmail": "verkoop@example.com",
+    "businesshours": "OPENINGS TIJDEN",
+    "day": "Dag",
+    "hours": "Uren",
+    "monday": "Maandag",
+    "tuesday": "Dinsdag",
+    "wednesday": "Woensdag",
+    "thursday": "Donderdag",
+    "friday": "Vrijdag",
+    "saturday": "Zaterdag",
+    "sunday": "Zondag",
 
-    "press": "Pers",
-    "pressmail": "pers@example.com",
+    "testimonials": "Getuigenissen",
+    "manpreetkaur": "Manpreet Kaur",
+    "manpreetkaurdescription": "Fatma is een echte professional en een expert in nagelkunst. Ik bezocht haar na het zien van haar Google-recensies en was in eerste instantie onzeker. Echter, mijn bezoek en mijn ervaring met haar was zo ontspannend en precies zoals wat ik in haar recensies had gelezen. Ik was echt onder de indruk van haar communicatievaardigheden, haar passie voor haar werk en de aandacht voor het gemak van haar klanten.",
 
-    "bugreport": "Foutenrapport",
-    "bugsreportmail": "fouten@example.com"
+    "sheetalnaik": "Sheetal Naik",
+    "sheetalnaikdescription": "Fatma is een zeer vriendelijke persoon, ze stelt je op je gemak en doet haar werk met veel passie en geduld. Ik had dikke wenkbrauwen, ze nam haar tijd en zorgde ervoor dat ik geen pijn had. Ik vond het geweldig hoe zorgvuldig ze me als klant behandelde. Zeker 5 sterren",
+    "chanedraaijer": "Chane Draaijer",
+    "chanedraaijerdescription": "Ik kan absoluut aanraden om naar Fanash Beauty te gaan! Had echt goede service bij het instellen van mijn afspraak en was meer dan tevreden met mijn wax-, thread- en tintbehandelingen. De locatie is erg handig en de ruimte is prachtig en zeer schoon."
   },
   "Services": {
-     "makeup": "Visagie.",
+    "makeup": "Visagie.",
     "makeupdescription": "Make-up moet nooit worden gebruikt om jezelf te verbergen. Het moet worden gebruikt om je natuurlijke schoonheid te benadrukken.",
 
     "hairstyling": "Kapselstyling.",
@@ -141,95 +150,124 @@
 
     "massage": "Massage",
     "massageDiscription": "Massage is de kunst van het wegsmelten van stress en spanning, waardoor je je lichter, helderder en meer in vrede voelt.",
-  
+
     "learnmore": "Leer Meer"
-},
+  },
 
-"ServicesDetails":{
+  "ServicesDetails": {
+    "threading": "Draadwerk",
+    "theredingDetails": "De voordelen van threading zijn onder andere precisie, omdat het meer controle mogelijk maakt bij het vormgeven van de wenkbrauwen in vergelijking met andere methoden zoals waxen of epileren met een pincet. Het is ook relatief zacht voor de huid en vereist geen gebruik van chemicaliën. Bovendien, omdat het haar vanaf de wortel wordt verwijderd, blijft het over het algemeen langer weg dan bij andere methoden. Threading kan ook worden gebruikt om haar van andere delen van het gezicht te verwijderen, zoals de bovenlip, kin of wangen. Sommige mensen geven ook de voorkeur aan threading voor deze gebieden vanwege de precisie en minimale irritatie.",
 
-    
-  "threading": "Draadwerk",
-  "theredingDetails": "De voordelen van threading zijn onder andere precisie, omdat het meer controle mogelijk maakt bij het vormgeven van de wenkbrauwen in vergelijking met andere methoden zoals waxen of epileren met een pincet. Het is ook relatief zacht voor de huid en vereist geen gebruik van chemicaliën. Bovendien, omdat het haar vanaf de wortel wordt verwijderd, blijft het over het algemeen langer weg dan bij andere methoden. Threading kan ook worden gebruikt om haar van andere delen van het gezicht te verwijderen, zoals de bovenlip, kin of wangen. Sommige mensen geven ook de voorkeur aan threading voor deze gebieden vanwege de precisie en minimale irritatie.",
+    "threading2": "bovenlip threading.",
+    "theredingDetails2": "Upper lip threading biedt verschillende voordelen, waaronder precisie, minimaal ongemak, langdurige resultaten en geschiktheid voor verschillende haartypes. Als u overweegt om uw bovenlip te laten threaden, is het raadzaam om een ​​professionele schoonheidsspecialist of salon te bezoeken die ervaring heeft met deze techniek om veilige en effectieve haarverwijdering te garanderen.",
 
-  "threading2": "bovenlip threading.",
-   "theredingDetails2": "Upper lip threading biedt verschillende voordelen, waaronder precisie, minimaal ongemak, langdurige resultaten en geschiktheid voor verschillende haartypes. Als u overweegt om uw bovenlip te laten threaden, is het raadzaam om een ​​professionele schoonheidsspecialist of salon te bezoeken die ervaring heeft met deze techniek om veilige en effectieve haarverwijdering te garanderen.",
+    "threading3": "Chin threading",
+    "theredingDetails3": "De voordelen van threading zijn onder meer precisie, omdat het meer controle mogelijk maakt bij het vormgeven van de wenkbrauwen in vergelijking met andere methoden zoals waxen of epileren. Het is ook relatief zacht voor de huid en vereist geen gebruik van chemicaliën. Bovendien, omdat het haar vanaf de wortel wordt verwijderd, duurt het doorgaans langer dan andere methoden. Threading kan ook worden gebruikt om haar te verwijderen van andere delen van het gezicht, zoals de bovenlip, kin of wangen. Sommige mensen geven ook de voorkeur aan threading voor deze gebieden vanwege de precisie en minimale irritatie.",
 
-   "threading3": "Chin threading",
-   "theredingDetails3": "De voordelen van threading zijn onder meer precisie, omdat het meer controle mogelijk maakt bij het vormgeven van de wenkbrauwen in vergelijking met andere methoden zoals waxen of epileren. Het is ook relatief zacht voor de huid en vereist geen gebruik van chemicaliën. Bovendien, omdat het haar vanaf de wortel wordt verwijderd, duurt het doorgaans langer dan andere methoden. Threading kan ook worden gebruikt om haar te verwijderen van andere delen van het gezicht, zoals de bovenlip, kin of wangen. Sommige mensen geven ook de voorkeur aan threading voor deze gebieden vanwege de precisie en minimale irritatie.",
+    "threading4": "Forehead threading",
+    "theredingDetails4": "De voordelen van threading zijn onder meer precisie, omdat het meer controle mogelijk maakt bij het vormgeven van de wenkbrauwen in vergelijking met andere methoden zoals waxen of epileren. Het is ook relatief zacht voor de huid en vereist geen gebruik van chemicaliën. Bovendien, omdat het haar vanaf de wortel wordt verwijderd, duurt het doorgaans langer dan andere methoden. Threading kan ook worden gebruikt om haar te verwijderen van andere delen van het gezicht, zoals de bovenlip, kin of wangen. Sommige mensen geven ook de voorkeur aan threading voor deze gebieden vanwege de precisie en minimale irritatie.",
 
-   "threading4": "Forehead threading",
-   "theredingDetails4": "De voordelen van threading zijn onder meer precisie, omdat het meer controle mogelijk maakt bij het vormgeven van de wenkbrauwen in vergelijking met andere methoden zoals waxen of epileren. Het is ook relatief zacht voor de huid en vereist geen gebruik van chemicaliën. Bovendien, omdat het haar vanaf de wortel wordt verwijderd, duurt het doorgaans langer dan andere methoden. Threading kan ook worden gebruikt om haar te verwijderen van andere delen van het gezicht, zoals de bovenlip, kin of wangen. Sommige mensen geven ook de voorkeur aan threading voor deze gebieden vanwege de precisie en minimale irritatie.",
+    "waxing": "Waxen",
+    "waxingDetails": "Waxen zorgt voor langduriger resultaten vergeleken met scheren omdat het haar vanaf de wortel verwijdert. Het kan echter pijnlijk zijn, vooral voor mensen met een gevoelige huid of op meer gevoelige delen van het lichaam. Met regelmatig waxen groeit het haar meestal fijner en zachter terug in de loop van de tijd. Over het algemeen is waxen een populaire keuze voor het verwijderen van haar omdat het gladde resultaten oplevert en relatief snel kan worden gedaan, maar het niveau van ongemak en de duur van de resultaten variëren afhankelijk van individuele pijn tolerantie en haargroeicycli.",
 
-  "waxing": "Waxen",
-  "waxingDetails":"Waxen zorgt voor langduriger resultaten vergeleken met scheren omdat het haar vanaf de wortel verwijdert. Het kan echter pijnlijk zijn, vooral voor mensen met een gevoelige huid of op meer gevoelige delen van het lichaam. Met regelmatig waxen groeit het haar meestal fijner en zachter terug in de loop van de tijd. Over het algemeen is waxen een populaire keuze voor het verwijderen van haar omdat het gladde resultaten oplevert en relatief snel kan worden gedaan, maar het niveau van ongemak en de duur van de resultaten variëren afhankelijk van individuele pijn tolerantie en haargroeicycli.",
+    "waxing2": "Langdurige resultaten",
+    "waxingDetails2": "Waxen verwijdert haar vanaf de wortel, wat betekent dat het langer duurt voordat het haar terug groeit in vergelijking met scheren of het gebruik van ontharingscrèmes. Afhankelijk van individuele haargroeicycli, kunnen de resultaten twee tot zes weken aanhouden",
 
-  "waxing2": "Langdurige resultaten",
-   "waxingDetails2":"Waxen verwijdert haar vanaf de wortel, wat betekent dat het langer duurt voordat het haar terug groeit in vergelijking met scheren of het gebruik van ontharingscrèmes. Afhankelijk van individuele haargroeicycli, kunnen de resultaten twee tot zes weken aanhouden",
+    "waxing3": "Gladde huid",
+    "waxingDetails3": "Waxen verwijdert niet alleen haar, maar exfolieert ook de huid door dode huidcellen van het oppervlak te verwijderen. Dit kan ervoor zorgen dat de huid na de behandeling gladder en stralender aanvoelt.",
 
-   "waxing3": "Gladde huid",
-   "waxingDetails3":"Waxen verwijdert niet alleen haar, maar exfolieert ook de huid door dode huidcellen van het oppervlak te verwijderen. Dit kan ervoor zorgen dat de huid na de behandeling gladder en stralender aanvoelt.",
+    "waxing4": "Geschikt voor verschillende haartypes",
+    "waxingDetails4": "Waxen is effectief voor het verwijderen van haar van verschillende lengtes en texturen, waardoor het geschikt is voor de meeste mensen, ongeacht hun haartype",
 
-   "waxing4": "Geschikt voor verschillende haartypes",
-   "waxingDetails4":"Waxen is effectief voor het verwijderen van haar van verschillende lengtes en texturen, waardoor het geschikt is voor de meeste mensen, ongeacht hun haartype",
-  
-  "sugarepilation": "Suikerepilen",
-  "sugarepilationDetails":"Sugaring biedt verschillende voordelen ten opzichte van traditioneel waxen. Omdat de pasta voornamelijk aan het haar hecht in plaats van aan de huid, is er minder risico op irritatie, roodheid of allergische reacties. Bovendien kan de suikerpasta op kamertemperatuur worden aangebracht, waardoor het risico op brandwonden kleiner is in vergelijking met hete was. Bovendien is sugaring een natuurlijke en milieuvriendelijke methode voor het verwijderen van haar, aangezien de pasta is gemaakt van eenvoudige, biologisch afbreekbare ingrediënten.",
+    "sugarepilation": "Suikerepilen",
+    "sugarepilationDetails": "Sugaring biedt verschillende voordelen ten opzichte van traditioneel waxen. Omdat de pasta voornamelijk aan het haar hecht in plaats van aan de huid, is er minder risico op irritatie, roodheid of allergische reacties. Bovendien kan de suikerpasta op kamertemperatuur worden aangebracht, waardoor het risico op brandwonden kleiner is in vergelijking met hete was. Bovendien is sugaring een natuurlijke en milieuvriendelijke methode voor het verwijderen van haar, aangezien de pasta is gemaakt van eenvoudige, biologisch afbreekbare ingrediënten.",
 
-  "facial": "Gezichtsbehandeling",
-  "facialDetails":"Verbeterde huidtextuur: Gezichtsbehandelingen zoals exfoliatie, chemische peelings en microdermabrasie kunnen helpen bij het verwijderen van dode huidcellen, waardoor een gladdere, stralendere huid tevoorschijn komt.",
+    "facial": "Gezichtsbehandeling",
+    "facialDetails": "Verbeterde huidtextuur: Gezichtsbehandelingen zoals exfoliatie, chemische peelings en microdermabrasie kunnen helpen bij het verwijderen van dode huidcellen, waardoor een gladdere, stralendere huid tevoorschijn komt.",
 
+    "facial2": "Hydratatie",
+    "facialDetails2": " Facials bevatten vaak hydraterende behandelingen die de huid kunnen hydrateren en voeden, waardoor de vochtbalans behouden blijft en uitdroging wordt voorkomen. Diepe Reiniging: Gezichtsreinigingstechnieken, zoals stoom en extracties, kunnen helpen bij het verwijderen van onzuiverheden, overtollig vet en vuil van het huidoppervlak en de poriën, waardoor het risico op puistjes wordt verminderd en de huid helderder wordt.",
 
-  "facial2": "Hydratatie",
-  "facialDetails2":" Facials bevatten vaak hydraterende behandelingen die de huid kunnen hydrateren en voeden, waardoor de vochtbalans behouden blijft en uitdroging wordt voorkomen. Diepe Reiniging: Gezichtsreinigingstechnieken, zoals stoom en extracties, kunnen helpen bij het verwijderen van onzuiverheden, overtollig vet en vuil van het huidoppervlak en de poriën, waardoor het risico op puistjes wordt verminderd en de huid helderder wordt.",
+    "facial3": "Anti-verouderingseffecten",
+    "facialDetails3": "Veel gezichtsbehandelingen, waaronder die met antioxidanten, vitamines en collageenversterkende ingrediënten, kunnen helpen bij het verminderen van de zichtbaarheid van fijne lijntjes, rimpels en andere tekenen van veroudering, wat resulteert in een jeugdiger uiterlijk van de huid. Egale Teint: Bepaalde gezichtsbehandelingen, zoals chemische peelings en lasertherapieën, kunnen helpen bij het vervagen van donkere vlekken, hyperpigmentatie en een ongelijkmatige teint, waardoor een meer uniforme en gebalanceerde huidskleur ontstaat.",
 
-  "facial3": "Anti-verouderingseffecten",
-  "facialDetails3":"Veel gezichtsbehandelingen, waaronder die met antioxidanten, vitamines en collageenversterkende ingrediënten, kunnen helpen bij het verminderen van de zichtbaarheid van fijne lijntjes, rimpels en andere tekenen van veroudering, wat resulteert in een jeugdiger uiterlijk van de huid. Egale Teint: Bepaalde gezichtsbehandelingen, zoals chemische peelings en lasertherapieën, kunnen helpen bij het vervagen van donkere vlekken, hyperpigmentatie en een ongelijkmatige teint, waardoor een meer uniforme en gebalanceerde huidskleur ontstaat.",
+    "facial4": "Acnebeheer",
+    "facialDetails4": "Facials gericht op een acne-gevoelige huid kunnen behandelingen omvatten die zijn ontworpen om poriën te ontstoppen, ontstekingen te verminderen en acne-veroorzakende bacteriën te doden, waardoor het voorkomen en beheersen van puistjes wordt bevorderd. Verbeterde Bloedcirculatie: Gezichtsmassages en bepaalde behandelingen kunnen helpen bij het stimuleren van de bloedcirculatie naar de huid, wat een gezonde, rozige teint bevordert en de toevoer van zuurstof en voedingsstoffen naar huidcellen verbetert. Verstrakking en Versteviging: Sommige facials omvatten behandelingen zoals radiofrequentie, microstroom of ultrasone therapie, die kunnen helpen bij het verstevigen van verslapte huid en het verbeteren van de gezichtscontouren.",
 
+    "manicure": "Gezonde Nagels",
+    "manicureDetails": "Regelmatige manicures omvatten het reinigen, knippen en vormgeven van de nagels, wat helpt om ze gezond te houden en problemen zoals nagelriemen, ingegroeide nagels en nagelinfecties te voorkomen. Verbeterde Nagelgroei: Het masseren van de nagels en nagelriemen tijdens een manicure verhoogt de bloedcirculatie naar het nagelbed, wat de nagelgroei kan stimuleren en de nagels kan versterken. Verbeterde Uitstraling: Goed verzorgde nagels kunnen je algehele uitstraling verbeteren en zelfvertrouwen vergroten, zowel voor professionele als sociale gelegenheden.",
 
+    "manicure2": "Hydratatie en vochtigheid",
+    "manicureDetails2": "Manicures omvatten vaak het weken van de handen in warm water of het aanbrengen van hydraterende behandelingen, wat helpt om de huid te hydrateren en uitdroging en barsten te voorkomen. Exfoliatie: Veel manicures omvatten het scrubben van de handen en onderarmen om dode huidcellen te verwijderen en zachtere, gladdere huid te onthullen. Ontspanning en Stressverlichting: Een manicure krijgen kan een ontspannende ervaring zijn, waarbij de kans wordt geboden om te ontspannen en te ontstressen terwijl je een handmassage krijgt of in warm water weekt.",
 
-  "facial4": "Acnebeheer",
-  "facialDetails4":"Facials gericht op een acne-gevoelige huid kunnen behandelingen omvatten die zijn ontworpen om poriën te ontstoppen, ontstekingen te verminderen en acne-veroorzakende bacteriën te doden, waardoor het voorkomen en beheersen van puistjes wordt bevorderd. Verbeterde Bloedcirculatie: Gezichtsmassages en bepaalde behandelingen kunnen helpen bij het stimuleren van de bloedcirculatie naar de huid, wat een gezonde, rozige teint bevordert en de toevoer van zuurstof en voedingsstoffen naar huidcellen verbetert. Verstrakking en Versteviging: Sommige facials omvatten behandelingen zoals radiofrequentie, microstroom of ultrasone therapie, die kunnen helpen bij het verstevigen van verslapte huid en het verbeteren van de gezichtscontouren.",
+    "pedicure": "Pedicure",
+    "pedicureDetails": "Verbeterde voetgezondheid Pedicures omvatten het weken van de voeten in warm water, wat helpt om de huid en nagels te verzachten, waardoor het gemakkelijker wordt om dode huidcellen en eelt te verwijderen. Dit kan helpen om aandoeningen zoals gebarsten hielen en likdoorns te voorkomen. Nagelverzorging: Pedicures omvatten het knippen, vormgeven en polijsten van de teennagels, wat helpt om ingegroeide nagels te voorkomen en een gezonde nagelgroei te behouden. Goed verzorgde nagels verminderen ook het risico op nagelinfecties. Exfoliatie: Veel pedicures omvatten exfoliërende behandelingen om dode huidcellen van de voeten en onderbenen te verwijderen, waardoor de huid glad en zacht wordt.",
 
+    "pedicure2": "Hydratatie",
+    "pedicureDetails2": "Pedicures omvatten doorgaans het hydrateren van de voeten en onderbenen, wat helpt om de huid te hydrateren en uitdroging en barsten te voorkomen. Stressverlichting Net als manicures kunnen pedicures een ontspannende ervaring zijn, waarbij de kans wordt geboden om te ontspannen en te ontstressen terwijl je een voetmassage krijgt of in warm water weekt.",
 
-  "manicure": "Gezonde Nagels",
-  "manicureDetails":"Regelmatige manicures omvatten het reinigen, knippen en vormgeven van de nagels, wat helpt om ze gezond te houden en problemen zoals nagelriemen, ingegroeide nagels en nagelinfecties te voorkomen. Verbeterde Nagelgroei: Het masseren van de nagels en nagelriemen tijdens een manicure verhoogt de bloedcirculatie naar het nagelbed, wat de nagelgroei kan stimuleren en de nagels kan versterken. Verbeterde Uitstraling: Goed verzorgde nagels kunnen je algehele uitstraling verbeteren en zelfvertrouwen vergroten, zowel voor professionele als sociale gelegenheden.",
+    "massage": "Massage",
+    "massageDetails": "Regelmatige massagetherapie biedt een holistische benadering van gezondheid en welzijn, waarbij zowel de fysieke als de mentale gezondheid worden aangepakt. Of je nu verlichting zoekt van spierspanning, stressvermindering, of gewoon een moment van ontspanning en zelfzorg, massagetherapie kan talloze voordelen bieden voor je algehele gezondheid en kwaliteit van leven.",
 
-  "manicure2": "Hydratatie en vochtigheid",
-  "manicureDetails2":"Manicures omvatten vaak het weken van de handen in warm water of het aanbrengen van hydraterende behandelingen, wat helpt om de huid te hydrateren en uitdroging en barsten te voorkomen. Exfoliatie: Veel manicures omvatten het scrubben van de handen en onderarmen om dode huidcellen te verwijderen en zachtere, gladdere huid te onthullen. Ontspanning en Stressverlichting: Een manicure krijgen kan een ontspannende ervaring zijn, waarbij de kans wordt geboden om te ontspannen en te ontstressen terwijl je een handmassage krijgt of in warm water weekt.",
+    "massage2": "Ontspanning",
+    "massageDetails2": "Een van de meest directe voordelen van massage is ontspanning. De manipulatie van spieren helpt spanning los te laten en bevordert een gevoel van kalmte en ontspanning in het hele lichaam. Massage therapie is aangetoond om niveaus van stresshormonen zoals cortisol te verminderen, terwijl tegelijkertijd niveaus van serotonine en dopamine toenemen, neurotransmitters geassocieerd met ontspanning en geluk. Pijnverlichting Massage kan verschillende soorten pijn verlichten, waaronder spierpijn, spanningshoofdpijn, migraine en chronische aandoeningen zoals artritis en fibromyalgie. Het kan helpen om de bloedcirculatie te verbeteren en triggerpoints los te laten, waardoor pijnverlichting en ontspanning worden bevorderd."
+  },
 
-  "pedicure": "Pedicure",
-  "pedicureDetails":"Verbeterde voetgezondheid Pedicures omvatten het weken van de voeten in warm water, wat helpt om de huid en nagels te verzachten, waardoor het gemakkelijker wordt om dode huidcellen en eelt te verwijderen. Dit kan helpen om aandoeningen zoals gebarsten hielen en likdoorns te voorkomen. Nagelverzorging: Pedicures omvatten het knippen, vormgeven en polijsten van de teennagels, wat helpt om ingegroeide nagels te voorkomen en een gezonde nagelgroei te behouden. Goed verzorgde nagels verminderen ook het risico op nagelinfecties. Exfoliatie: Veel pedicures omvatten exfoliërende behandelingen om dode huidcellen van de voeten en onderbenen te verwijderen, waardoor de huid glad en zacht wordt.",
+  "faq": {
+    "faqtitle1": "WIE ZIJN WIJ?",
+    "faqDetails1": "Fanash Beauty is een gerenommeerde schoonheidssalon die de wereld van schoonheidstherapie herdefinieert door naadloos de gebieden van de schone kunsten en deskundige huidverzorging te integreren. Gelegen in het hart van het winkelcentrum van Amstelveen, is onze salon meer dan alleen een plek voor schoonheid; het is een artistiek canvas waar elke afspraak verandert in een meesterwerk.",
 
-  "pedicure2": "Hydratatie",
-  "pedicureDetails2":"Pedicures omvatten doorgaans het hydrateren van de voeten en onderbenen, wat helpt om de huid te hydrateren en uitdroging en barsten te voorkomen. Stressverlichting Net als manicures kunnen pedicures een ontspannende ervaring zijn, waarbij de kans wordt geboden om te ontspannen en te ontstressen terwijl je een voetmassage krijgt of in warm water weekt.",
+    "OurExpertise": "Onze expertise",
+    "OurExpertiseDetails": "Bij Fanash Beauty zijn we trots op onze toewijding aan uitmuntendheid. Onze teamleden zijn gecertificeerde schoonheidsspecialisten. Met jarenlange ervaring en een passie voor perfectie levert ons team ongeëvenaarde schoonheidsdiensten.",
 
-  "massage": "Massage",
-  "massageDetails":"Regelmatige massagetherapie biedt een holistische benadering van gezondheid en welzijn, waarbij zowel de fysieke als de mentale gezondheid worden aangepakt. Of je nu verlichting zoekt van spierspanning, stressvermindering, of gewoon een moment van ontspanning en zelfzorg, massagetherapie kan talloze voordelen bieden voor je algehele gezondheid en kwaliteit van leven.",
-  
-  "massage2": "Ontspanning",
-  "massageDetails2":"Een van de meest directe voordelen van massage is ontspanning. De manipulatie van spieren helpt spanning los te laten en bevordert een gevoel van kalmte en ontspanning in het hele lichaam. Massage therapie is aangetoond om niveaus van stresshormonen zoals cortisol te verminderen, terwijl tegelijkertijd niveaus van serotonine en dopamine toenemen, neurotransmitters geassocieerd met ontspanning en geluk. Pijnverlichting Massage kan verschillende soorten pijn verlichten, waaronder spierpijn, spanningshoofdpijn, migraine en chronische aandoeningen zoals artritis en fibromyalgie. Het kan helpen om de bloedcirculatie te verbeteren en triggerpoints los te laten, waardoor pijnverlichting en ontspanning worden bevorderd."
-  
+    "CraftingUniqueLooks": "Het creëren van unieke looks",
+    "CraftingLookperagrapg": "Wat Fanash Beauty onderscheidt, is onze toewijding aan het creëren van exclusieve looks geïnspireerd door de persoonlijke stijl, evenementbehoeften en individuele smaken van onze klanten. We geloven dat schoonheid een vorm van zelfexpressie is, en we werken nauw samen met onze klanten om hun unieke visies tot leven te brengen.",
 
-},
+    "TheFanashExperience": "De Fanash-ervaring",
+    "TheFanashExperagrapg": "Wij geloven dat ware schoonheid in de details ligt. Vanaf het moment dat je onze salon binnenstapt, ervaar je een niveau van zorg en aandacht zoals geen ander. Ons doel is niet alleen om je schoonheid te verbeteren, maar ook om je zelfvertrouwen en eigenwaarde te verhogen.",
 
-"faq":{
-  "faqtitle1":"WIE ZIJN WIJ?",
-  "faqDetails1":"Fanash Beauty is een gerenommeerde schoonheidssalon die de wereld van schoonheidstherapie herdefinieert door naadloos de gebieden van de schone kunsten en deskundige huidverzorging te integreren. Gelegen in het hart van het winkelcentrum van Amstelveen, is onze salon meer dan alleen een plek voor schoonheid; het is een artistiek canvas waar elke afspraak verandert in een meesterwerk.",
+    "ArtistryandBeauty": "Kunstzinnigheid en Schoonheid",
+    "ArtistryBeautyperagraph": "Fanash Beauty is waar kunstzinnigheid en schoonheid samenkomen. Elke behandeling, elke penseelstreek en elk huidverzorgingsregime getuigt van onze toewijding om schoonheidstherapie om te vormen tot een authentieke kunstvorm. Wij geloven dat jouw schoonheid net zo uniek moet zijn als jij bent.",
 
-  "OurExpertise":"Onze expertise",
-  "OurExpertiseDetails":"Bij Fanash Beauty zijn we trots op onze toewijding aan uitmuntendheid. Onze teamleden zijn gecertificeerde schoonheidsspecialisten. Met jarenlange ervaring en een passie voor perfectie levert ons team ongeëvenaarde schoonheidsdiensten.",
+    "Our Reputation": "Onze reputatie",
+    "OurReputationPera": "Met een perfecte vijfsterrenbeoordeling van al onze klantrecensies heeft Fanash Beauty een reputatie opgebouwd van uitmuntendheid en onwankelbare klanttevredenheid. Onze klanten vertrouwen erop dat wij uitzonderlijke schoonheidsdiensten bieden en een sfeer van warmte en professionaliteit creëren."
+  },
+  "Job": {
+    "jobTitle": "Kom Bij Ons!",
+    "beautician": "SCHOONHEIDSSPECIALISTE",
+    "amstelveennetherlands": "Amstelveen, Nederland",
+    "jobtype": "Deeltijd",
+    "jobdescription": "Functieomschrijving:",
+    "jobdescriptioncontent": "We zijn verheugd om een vacature aan te kondigen voor een ervaren Schoonheidsspecialiste in onze schoonheidssalon gelegen in Amstelveen, Nederland. We zijn op zoek naar een bekwame en gepassioneerde persoon die gespecialiseerd is in verschillende schoonheidsbehandelingen, waaronder threading, waxen, pedicure, manicure, gezichtsbehandelingen en massage. Als je toegewijd bent aan het leveren van uitzonderlijke schoonheidsdiensten en het creëren van een ontspannende en verjongende ervaring voor onze klanten, moedigen we je aan om te solliciteren.",
+    "responsibilities": "Verantwoordelijkheden",
+    "responsibilitiesdescription1": "Uitvoeren van threading, waxen, pedicure, manicure, gezichtsbehandelingen en massagetherapieën met precisie en deskundigheid",
+    "responsibilitiesdescription2": "Overleggen met klanten om hun schoonheidsbehoeften te begrijpen en geschikte behandelingen aan te bevelen.",
+    "responsibilitiesdescription3": "Een schone en georganiseerde werkplek onderhouden om een hygiënische omgeving te waarborgen.",
+    "responsibilitiesdescription4": "Op de hoogte blijven van de laatste schoonheidstrends en technieken om innovatieve diensten te bieden.",
+    "responsibilitiesdescription5": "Uitstekende klantenservice bieden en zorgen voor klanttevredenheid.",
+    "responsibilitiesdescription6": "Efficiënt omgaan met klantvragen, afspraken en betalingen.",
+    "responsibilitiesdescription7": "Schoonheidsproducten en -diensten aan klanten verkopen waar gepast.",
+    "responsibilitiesdescription8": "Voldoen aan alle veiligheids- en sanitaire normen.",
+    "responsibilitiesdescription9": "Samenwerken met het salon team om een gastvrije en professionele sfeer te creëren",
 
-"CraftingUniqueLooks":"Het creëren van unieke looks",
-"CraftingLookperagrapg" :"Wat Fanash Beauty onderscheidt, is onze toewijding aan het creëren van exclusieve looks geïnspireerd door de persoonlijke stijl, evenementbehoeften en individuele smaken van onze klanten. We geloven dat schoonheid een vorm van zelfexpressie is, en we werken nauw samen met onze klanten om hun unieke visies tot leven te brengen.",
+    "requirements": "Vereisten:",
+    "requirementsdescription1": "Aantoonbare ervaring als Schoonheidsspecialiste met expertise in threading, waxen, pedicure, manicure, gezichtsbehandelingen en massage",
+    "requirementsdescription2": "Geschikte certificering en licenties vereist voor het uitvoeren van schoonheidsbehandelingen in Nederland.",
+    "requirementsdescription3": "Grondige kennis van schoonheidsproducten, technieken en industriële trends.",
+    "requirementsdescription4": "Uitzonderlijke klantenservice en communicatievaardigheden.",
+    "requirementsdescription5": "Uitstekende aandacht voor detail en tijdmanagement vaardigheden.",
+    "requirementsdescription6": "Vermogen om in een team te werken en effectief samen te werken.",
+    "requirementsdescription7": "Professionele uitstraling en gedrag.",
+    "requirementsdescription8": "Vloeiend in Nederlands en Engels (zowel geschreven als gesproken).",
+    "requirementsdescription9": "Flexibiliteit om in het weekend en 's avonds te werken indien nodig.",
 
-"TheFanashExperience":"De Fanash-ervaring",
-"TheFanashExperagrapg":"Wij geloven dat ware schoonheid in de details ligt. Vanaf het moment dat je onze salon binnenstapt, ervaar je een niveau van zorg en aandacht zoals geen ander. Ons doel is niet alleen om je schoonheid te verbeteren, maar ook om je zelfvertrouwen en eigenwaarde te verhogen.",
-
-"ArtistryandBeauty":"Kunstzinnigheid en Schoonheid",
-"ArtistryBeautyperagraph":"Fanash Beauty is waar kunstzinnigheid en schoonheid samenkomen. Elke behandeling, elke penseelstreek en elk huidverzorgingsregime getuigt van onze toewijding om schoonheidstherapie om te vormen tot een authentieke kunstvorm. Wij geloven dat jouw schoonheid net zo uniek moet zijn als jij bent.",
-
-"Our Reputation":"Onze reputatie",
-"OurReputationPera":"Met een perfecte vijfsterrenbeoordeling van al onze klantrecensies heeft Fanash Beauty een reputatie opgebouwd van uitmuntendheid en onwankelbare klanttevredenheid. Onze klanten vertrouwen erop dat wij uitzonderlijke schoonheidsdiensten bieden en een sfeer van warmte en professionaliteit creëren."
-
- }
+    "benefits": "Voordelen:",
+    "benefitsdescription1": "Concurrerend salaris en prestatiegerichte incentives.",
+    "benefitsdescription2": "Doorlopende training en professionele ontwikkelingsmogelijkheden.",
+    "benefitsdescription3": "Toegang tot een breed scala aan hoogwaardige schoonheidsproducten.",
+    "benefitsdescription4": "Vriendelijke en ondersteunende werkomgeving.",
+    "benefitsdescription5": "Kansen voor carrièregroei en -vooruitgang.",
+    "benefitsdescription6": "Personeelskorting op schoonheidsbehandelingen en -producten.",
+    "benefitsdescription7": "Als je gepassioneerd bent over de schoonheidsindustrie en de vaardigheden en kwalificaties hebt die nodig zijn voor deze positie, nodigen we je uit om je sollicitatie in te dienen, inclusief je cv en een begeleidende brief waarin je uitlegt waarom jij de ideale kandidaat bent voor de rol. Sluit je aan bij ons team en help ons een luxe en onvergetelijke schoonheidservaring te creëren voor onze klanten in Amstelveen, Nederland."
+  }
 }

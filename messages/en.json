@@ -4,7 +4,7 @@
     "about": "About",
     "team": "Team",
     "collection": "Collection",
-    "price":"Price",
+    "price": "Price",
     "contact": "Contact",
     "job": "Job"
   },
@@ -22,17 +22,17 @@
     "team": "Team",
     "collection": "Collection",
     "job": "Job",
-    "price":"Price",
+    "price": "Price",
     "contactus": "Contact Us",
-    "address":"Address:",
+    "address": "Address:",
     "admin": "Admin",
     "social": "Social",
-    "changelanguage":"Change Language"
+    "changelanguage": "Change Language"
   },
 
   "About": {
     "abouttheauthor": "About Fanash Beauty",
-     "bookyourslot": "Book Your Slot",
+    "bookyourslot": "Book Your Slot",
     "whoweare?": "WHO WE ARE?",
     "fatmarahman": "Fatma Rahman",
     "aboutuspara": "Fanash Beauty is the brainchild of the talented and dedicated owner, Fatma Rahman. Fatma is a certified beauty therapist with extensive experience and a deep passion for the beauty industry. Her qualifications include iTec and QQI certifications, along with specialization in Dermalogica skin care from Ireland. Fatma's vision and commitment to excellence drive the salon's success and innovation. Fatma also holds a diploma in fine arts. At Fanash Beauty, our mission is to elevate beauty therapy to an art form, creating exclusive looks inspired by our customers' personal style, event needs, and individual taste. We blend the world of fine arts with beauty, turning every appointment into a canvas where we pay meticulous attention to detail.",
@@ -45,12 +45,11 @@
     "howlongwedeliveryourfirstblogpostdescription": "It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
   },
   "Home": {
-     "bookyourslot": "Book Your Slot",
+    "bookyourslot": "Book Your Slot",
     "fanashbeauty": "Fanash Beauty",
     "fanashbeautydescription": "Comprehensive beauty services - where artistry and beauty converge.",
 
     "serviceweoffer": "SERVICES WE OFFER",
-
 
     "threading": "THREADING",
     "eyebrows": "eye brows",
@@ -76,7 +75,7 @@
   },
 
   "Team": {
-   "bookyourslot": "Book Your Slot",
+    "bookyourslot": "Book Your Slot",
     "meetourstylist": "Meet our Stylists",
     "bonnieyellow": "Bonnie Yellow",
     "dermatologist": "Dermatologist",
@@ -95,25 +94,34 @@
     "mycollection": "My Collection"
   },
   "Contact": {
-    "bookyourslot": "Book Your Slot",
+    "sayhi!": "Say Hi !",
+
+    "contactus": "CONTACT US",
     "contactformcheckboxtext": "Send me a copy of this message",
     "send": "SEND",
-    "technicalsupport": "Technical support",
-    "technicalsupportmail": "support@example.com",
-    "technicalsupportnumber": "+1 234-567-89",
 
-    "salesquestions": "Sales questions",
-    "salesquestionsmail": "sales@example.com",
+    "businesshours": "BUSINESS HOURS",
+    "day": "Day",
+    "hours": "Hours",
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
 
-    "press": "Press",
-    "pressmail": "press@example.com",
+    "testimonials": "Testimonials",
+    "manpreetkaur": "Manpreet Kaur",
+    "manpreetkaurdescription": "Fatma is a thorough professional and an expert in nails art. I visited her seeing her google reviews and was uncertain at first. However, my visit and my experience with her was so relaxing and just like what i read in her reviews. I got really impressed with her communication skills, her passion towards her work and lookout for her client’s ease.",
 
-    "bugreport": "Bug report",
-    "bugsreportmail" : "bugs@example.com"
+    "sheetalnaik": "Sheetal Naik",
+    "sheetalnaikdescription": "Fatma is a very friendly person, she makes you comfortable and does her work with great passion and patience. I had thick eyebrows, she took her time and made sure that I had no pain. I loved how carefully she handled me as a customer. Definitely 5stars",
+    "chanedraaijer": "Chane Draaijer",
+    "chanedraaijerdescription": "Can absolutely recommend going to Fanash Beauty! Had really good service when setting my appointment and was more than satisfied with my waxing, threading and tinting treatments. The location is very convenient and the space is wonderful and very clean."
   },
- "Services":{
-
-     "makeup": "Make Up",
+  "Services": {
+    "makeup": "Make Up",
     "makeupdescription": "Makeup should never be used to hide yourself. It should be used to enhance your natural beauty",
 
     "hairstyling": "Hair Styling",
@@ -123,105 +131,135 @@
     "theredingDiscription": "Just as each thread contributes to the tapestry of beauty, so does every detail in threading enhance the allure of one's features.",
 
     "waxing": "Waxing",
-    "waxingDiscription":"Waxing isn't just a treatment; it's a ritual of self-care, where each strip signifies a step towards embracing your natural beauty.",
-    
+    "waxingDiscription": "Waxing isn't just a treatment; it's a ritual of self-care, where each strip signifies a step towards embracing your natural beauty.",
+
     "sugarepilation": "Sugar Epilation",
-    "sugarepilationDiscription":"Sugaring is not just a hair removal method; it's a gentle embrace of self-care, where each application represents a step towards nurturing your natural beauty.",
+    "sugarepilationDiscription": "Sugaring is not just a hair removal method; it's a gentle embrace of self-care, where each application represents a step towards nurturing your natural beauty.",
 
     "facial": "Facial",
-    "facialDiscription":"Facials aren't just about cleansing and moisturizing; they're about self-love and taking the time to care for yourself, both inside and out.",
+    "facialDiscription": "Facials aren't just about cleansing and moisturizing; they're about self-love and taking the time to care for yourself, both inside and out.",
 
     "manicure": "Manicure",
-    "manicureDiscription":"A manicure is the perfect finishing touch, adding polish to your look and confidence to your stride.",
+    "manicureDiscription": "A manicure is the perfect finishing touch, adding polish to your look and confidence to your stride.",
 
     "pedicure": "Pedicure",
-    "pedicureDiscription":"A pedicure isn't just about pretty toes; it's about stepping into confidence, one pampered foot at a time.",
+    "pedicureDiscription": "A pedicure isn't just about pretty toes; it's about stepping into confidence, one pampered foot at a time.",
 
     "massage": "Massage",
-    "massageDiscription":"Massage is the art of melting away stress and tension, leaving you feeling lighter, brighter, and more at peace.",
-    
-     "learnmore": " Learn More"
+    "massageDiscription": "Massage is the art of melting away stress and tension, leaving you feeling lighter, brighter, and more at peace.",
 
- },
-  "ServicesDetails":{
+    "learnmore": " Learn More"
+  },
+  "ServicesDetails": {
+    "threading": "Benefits of threading",
+    "theredingDetails": "Benefits of threading include precision, as it allows for more control in shaping the eyebrows compared to other methods like waxing or tweezing. It's also relatively gentle on the skin and doesn't involve the use of chemicals. Additionally, because it removes hair from the root, it typically lasts longer than other methods.Threading can also be used to remove hair from other parts of the face, such as the upper lip, chin, or cheeks. Some people prefer threading for these areas as well because of its precision and minimal irritation.",
 
-    
-   "threading": "Benefits of threading",
-   "theredingDetails": "Benefits of threading include precision, as it allows for more control in shaping the eyebrows compared to other methods like waxing or tweezing. It's also relatively gentle on the skin and doesn't involve the use of chemicals. Additionally, because it removes hair from the root, it typically lasts longer than other methods.Threading can also be used to remove hair from other parts of the face, such as the upper lip, chin, or cheeks. Some people prefer threading for these areas as well because of its precision and minimal irritation.",
+    "threading2": "Upper lip threading",
+    "theredingDetails2": "Upper lip threading offers a range of benefits, including precision, minimal discomfort, long-lasting results, and suitability for various hair types. If you're considering upper lip threading, it's advisable to visit a professional esthetician or salon experienced in this technique to ensure safe and effective hair removal.",
 
-   "threading2": "Upper lip threading",
-   "theredingDetails2": "Upper lip threading offers a range of benefits, including precision, minimal discomfort, long-lasting results, and suitability for various hair types. If you're considering upper lip threading, it's advisable to visit a professional esthetician or salon experienced in this technique to ensure safe and effective hair removal.",
+    "threading3": "Chin threading",
+    "theredingDetails3": "Benefits of threading include precision, as it allows for more control in shaping the eyebrows compared to other methods like waxing or tweezing. It's also relatively gentle on the skin and doesn't involve the use of chemicals. Additionally, because it removes hair from the root, it typically lasts longer than other methods.Threading can also be used to remove hair from other parts of the face, such as the upper lip, chin, or cheeks. Some people prefer threading for these areas as well because of its precision and minimal irritation.",
 
-   "threading3": "Chin threading",
-   "theredingDetails3": "Benefits of threading include precision, as it allows for more control in shaping the eyebrows compared to other methods like waxing or tweezing. It's also relatively gentle on the skin and doesn't involve the use of chemicals. Additionally, because it removes hair from the root, it typically lasts longer than other methods.Threading can also be used to remove hair from other parts of the face, such as the upper lip, chin, or cheeks. Some people prefer threading for these areas as well because of its precision and minimal irritation.",
+    "threading4": "Forehead threading",
+    "theredingDetails4": "Benefits of threading include precision, as it allows for more control in shaping the eyebrows compared to other methods like waxing or tweezing. It's also relatively gentle on the skin and doesn't involve the use of chemicals. Additionally, because it removes hair from the root, it typically lasts longer than other methods.Threading can also be used to remove hair from other parts of the face, such as the upper lip, chin, or cheeks. Some people prefer threading for these areas as well because of its precision and minimal irritation.",
 
-   "threading4": "Forehead threading",
-   "theredingDetails4": "Benefits of threading include precision, as it allows for more control in shaping the eyebrows compared to other methods like waxing or tweezing. It's also relatively gentle on the skin and doesn't involve the use of chemicals. Additionally, because it removes hair from the root, it typically lasts longer than other methods.Threading can also be used to remove hair from other parts of the face, such as the upper lip, chin, or cheeks. Some people prefer threading for these areas as well because of its precision and minimal irritation.",
+    "waxing": "Waxing",
+    "waxingDetails": "Waxing provides longer-lasting results compared to shaving because it removes hair from the root. However, it can be painful, especially for those with sensitive skin or in more sensitive areas of the body. With regular waxing, hair tends to grow back finer and softer over time.Overall, waxing is a popular choice for hair removal because it provides smooth results and can be done relatively quickly, but the level of discomfort and duration of results vary depending on individual pain tolerance and hair growth cycles",
 
-   
+    "waxing2": "Longer-lasting results",
+    "waxingDetails2": "Waxing removes hair from the root, which means it takes longer for hair to grow back compared to shaving or using depilatory creams. Depending on individual hair growth cycles, results can last from two to six weeks.",
+    "waxing3": "Smooth skin",
+    "waxingDetails3": "Waxing not only removes hair but also exfoliates the skin by removing dead skin cells from the surface. This can leave the skin feeling smoother and more radiant after the treatment.",
+    "waxing4": "Suitable for various hair types",
+    "waxingDetails4": "Waxing is effective for removing hair of different lengths and textures, making it suitable for most people, regardless of their hair type.",
 
-   "waxing": "Waxing",
-   "waxingDetails":"Waxing provides longer-lasting results compared to shaving because it removes hair from the root. However, it can be painful, especially for those with sensitive skin or in more sensitive areas of the body. With regular waxing, hair tends to grow back finer and softer over time.Overall, waxing is a popular choice for hair removal because it provides smooth results and can be done relatively quickly, but the level of discomfort and duration of results vary depending on individual pain tolerance and hair growth cycles",
+    "sugarepilation": "Sugar Epilation",
+    "sugarepilationDetails": "Sugaring offers several benefits over traditional waxing. Since the paste adheres primarily to the hair rather than the skin, there's less risk of irritation, redness, or allergic reactions. Additionally, sugaring paste can be applied at room temperature, reducing the risk of burns compared to hot wax. Furthermore, sugaring is a natural and environmentally friendly hair removal method since the paste is made from simple, biodegradable ingredients.",
 
-   "waxing2": "Longer-lasting results",
-   "waxingDetails2":"Waxing removes hair from the root, which means it takes longer for hair to grow back compared to shaving or using depilatory creams. Depending on individual hair growth cycles, results can last from two to six weeks.",
-   "waxing3": "Smooth skin",
-   "waxingDetails3":"Waxing not only removes hair but also exfoliates the skin by removing dead skin cells from the surface. This can leave the skin feeling smoother and more radiant after the treatment.",
-   "waxing4": "Suitable for various hair types",
-   "waxingDetails4":"Waxing is effective for removing hair of different lengths and textures, making it suitable for most people, regardless of their hair type.",
-   
-   "sugarepilation": "Sugar Epilation",
-   "sugarepilationDetails":"Sugaring offers several benefits over traditional waxing. Since the paste adheres primarily to the hair rather than the skin, there's less risk of irritation, redness, or allergic reactions. Additionally, sugaring paste can be applied at room temperature, reducing the risk of burns compared to hot wax. Furthermore, sugaring is a natural and environmentally friendly hair removal method since the paste is made from simple, biodegradable ingredients.",
+    "facial": "Facial",
+    "facialDetails": "Improved Skin Texture Facial treatments such as exfoliation, chemical peels, and microdermabrasion can help remove dead skin cells, revealing smoother, more radiant skin underneath.",
 
-   "facial": "Facial",
-   "facialDetails":"Improved Skin Texture Facial treatments such as exfoliation, chemical peels, and microdermabrasion can help remove dead skin cells, revealing smoother, more radiant skin underneath.",
+    "facial2": "Hydration",
+    "facialDetails2": " Facials often include moisturizing treatments that can hydrate and nourish the skin, helping to maintain its moisture balance and prevent dryness.Deep Cleansing: Facial cleansing techniques, such as steam and extractions, can help remove impurities, excess oil, and debris from the skin's surface and pores, reducing the risk of breakouts and promoting clearer skin.",
 
+    "facial3": "Anti-Aging Effects",
+    "facialDetails3": " Many facial treatments, including those containing antioxidants, vitamins, and collagen-boosting ingredients, can help reduce the appearance of fine lines, wrinkles, and other signs of aging, promoting a more youthful complexion.Even Skin Tone: Certain facial treatments, such as chemical peels and laser therapies, can help fade dark spots, hyperpigmentation, and uneven skin tone, resulting in a more uniform and balanced complexion",
 
-   "facial2": "Hydration",
-   "facialDetails2":" Facials often include moisturizing treatments that can hydrate and nourish the skin, helping to maintain its moisture balance and prevent dryness.Deep Cleansing: Facial cleansing techniques, such as steam and extractions, can help remove impurities, excess oil, and debris from the skin's surface and pores, reducing the risk of breakouts and promoting clearer skin.",
+    "facial4": "Acne Management",
+    "facialDetails4": " Facials targeting acne-prone skin may include treatments designed to unclog pores, reduce inflammation, and kill acne-causing bacteria, helping to prevent and manage breakouts.Improved Blood Circulation: Facial massages and certain treatments can help stimulate blood flow to the skin, promoting a healthy, rosy complexion and enhancing the delivery of oxygen and nutrients to skin cells.Tightening and Firming: Some facials incorporate treatments like radiofrequency, microcurrent, or ultrasound therapy, which can help tighten sagging skin and improve facial contours.",
 
-   "facial3": "Anti-Aging Effects",
-   "facialDetails3":" Many facial treatments, including those containing antioxidants, vitamins, and collagen-boosting ingredients, can help reduce the appearance of fine lines, wrinkles, and other signs of aging, promoting a more youthful complexion.Even Skin Tone: Certain facial treatments, such as chemical peels and laser therapies, can help fade dark spots, hyperpigmentation, and uneven skin tone, resulting in a more uniform and balanced complexion",
+    "manicure": "Healthy Nails",
+    "manicureDetails": " Regular manicures involve cleaning, trimming, and shaping the nails, which helps to keep them healthy and prevents issues such as hangnails, ingrown nails, and nail infections.Improved Nail Growth: Massaging the nails and cuticles during a manicure increases blood circulation to the nail bed, which can stimulate nail growth and strengthen the nails.Improved Appearance: Well-groomed nails can enhance your overall appearance and boost self-confidence, whether for professional or social occasions.",
 
-   "facial4": "Acne Management",
-   "facialDetails4":" Facials targeting acne-prone skin may include treatments designed to unclog pores, reduce inflammation, and kill acne-causing bacteria, helping to prevent and manage breakouts.Improved Blood Circulation: Facial massages and certain treatments can help stimulate blood flow to the skin, promoting a healthy, rosy complexion and enhancing the delivery of oxygen and nutrients to skin cells.Tightening and Firming: Some facials incorporate treatments like radiofrequency, microcurrent, or ultrasound therapy, which can help tighten sagging skin and improve facial contours.",
+    "manicure2": "Hydration and Moisture",
+    "manicureDetails2": " Manicures often include soaking the hands in warm water or applying moisturizing treatments, which helps to hydrate the skin and prevent dryness and cracking.Exfoliation: Many manicures include exfoliation of the hands and forearms to remove dead skin cells, revealing softer, smoother skin underneath.Relaxation and Stress Relief: Getting a manicure can be a relaxing experience, providing an opportunity to unwind and de-stress while receiving a hand massage or soaking in warm water.",
 
+    "pedicure": "Pedicure",
+    "pedicureDetails": "Improved Foot Health Pedicures involve soaking the feet in warm water, which helps to soften the skin and nails, making it easier to remove dead skin cells and calluses. This can help prevent conditions such as cracked heels and corns.Nail Care: Pedicures include trimming, shaping, and buffing the toenails, which helps to prevent ingrown nails and maintain healthy nail growth. Properly groomed nails also reduce the risk of nail infections.Exfoliation: Many pedicures include exfoliating treatments to remove dead skin cells from the feet and lower legs, leaving the skin smooth and soft.",
 
-   "manicure": "Healthy Nails",
-   "manicureDetails":" Regular manicures involve cleaning, trimming, and shaping the nails, which helps to keep them healthy and prevents issues such as hangnails, ingrown nails, and nail infections.Improved Nail Growth: Massaging the nails and cuticles during a manicure increases blood circulation to the nail bed, which can stimulate nail growth and strengthen the nails.Improved Appearance: Well-groomed nails can enhance your overall appearance and boost self-confidence, whether for professional or social occasions.",
+    "pedicure2": "Moisturization",
+    "pedicureDetails2": " Pedicures typically involve moisturizing the feet and lower legs, which helps to hydrate the skin and prevent dryness and cracking.Stress Relief  Like manicures, pedicures can be a relaxing experience, providing an opportunity to unwind and de-stress while receiving a foot massage or soaking in warm water.",
 
-   "manicure2": "Hydration and Moisture",
-   "manicureDetails2":" Manicures often include soaking the hands in warm water or applying moisturizing treatments, which helps to hydrate the skin and prevent dryness and cracking.Exfoliation: Many manicures include exfoliation of the hands and forearms to remove dead skin cells, revealing softer, smoother skin underneath.Relaxation and Stress Relief: Getting a manicure can be a relaxing experience, providing an opportunity to unwind and de-stress while receiving a hand massage or soaking in warm water.",
+    "massage": "Massage",
+    "massageDetails": "Regular massage therapy offers a holistic approach to health and wellness, addressing both physical and mental well-being. Whether you're seeking relief from muscle tension, stress reduction, or simply a moment of relaxation and self-care, massage therapy can provide numerous benefits for your overall health and quality of life.",
+    "massage2": "Relaxation",
+    "massageDetails2": "One of the most immediate benefits of massage is relaxation. The manipulation of muscles helps to release tension and promote a sense of calmness and relaxation throughout the body.Massage therapy has been shown to reduce levels of stress hormones such as cortisol, while simultaneously increasing levels of serotonin and dopamine, neurotransmitters associated with relaxation and happiness.Pain Relief Massage can alleviate various types of pain, including muscle pain, tension headaches, migraines, and chronic conditions such as arthritis and fibromyalgia. It can help to improve blood circulation and release trigger points, promoting pain relief and relaxation."
+  },
+  "faq": {
+    "faqtitle1": "WHO WE ARE?",
+    "faqDetails1": "Fanash Beauty is an esteemed beauty salon that redefines the world of beauty therapy by seamlessly integrating the realms of fine arts and expert skincare. Located at the heart of Amstelveen shopping center, our salon is more than just a place for beauty; it's an artistic canvas where every appointment transforms into a masterpiece.",
 
-   "pedicure": "Pedicure",
-   "pedicureDetails":"Improved Foot Health Pedicures involve soaking the feet in warm water, which helps to soften the skin and nails, making it easier to remove dead skin cells and calluses. This can help prevent conditions such as cracked heels and corns.Nail Care: Pedicures include trimming, shaping, and buffing the toenails, which helps to prevent ingrown nails and maintain healthy nail growth. Properly groomed nails also reduce the risk of nail infections.Exfoliation: Many pedicures include exfoliating treatments to remove dead skin cells from the feet and lower legs, leaving the skin smooth and soft.",
+    "OurExpertise": "Our Expertise",
+    "OurExpertiseDetails": "At Fanash Beauty, we take pride in our commitment to excellence. Our team members are certified beauty therapists. With years of expertise and a passion for perfection, our team is delivering unparalleled beauty services.",
 
-   "pedicure2": "Moisturization",
-   "pedicureDetails2":" Pedicures typically involve moisturizing the feet and lower legs, which helps to hydrate the skin and prevent dryness and cracking.Stress Relief  Like manicures, pedicures can be a relaxing experience, providing an opportunity to unwind and de-stress while receiving a foot massage or soaking in warm water.",
+    "CraftingUniqueLooks": "Crafting Unique Looks",
+    "CraftingLookperagrapg": "What sets Fanash Beauty apart is our dedication to crafting exclusive looks inspired by our clients' personal style, event needs, and individual tastes. We believe that beauty is a form of self-expression, and we work closely with our clients to bring their unique visions to life.",
+    "TheFanashExperience": "The Fanash Experience",
+    "TheFanashExperagrapg": "We believe that true beauty lies in the details. From the moment you step into our salon, you'll experience a level of care and attention like no other. Our goal is to not only enhance your beauty but also elevate your confidence and self-esteem.",
 
-   "massage": "Massage",
-   "massageDetails":"Regular massage therapy offers a holistic approach to health and wellness, addressing both physical and mental well-being. Whether you're seeking relief from muscle tension, stress reduction, or simply a moment of relaxation and self-care, massage therapy can provide numerous benefits for your overall health and quality of life.",
-   "massage2": "Relaxation",
-   "massageDetails2":"One of the most immediate benefits of massage is relaxation. The manipulation of muscles helps to release tension and promote a sense of calmness and relaxation throughout the body.Massage therapy has been shown to reduce levels of stress hormones such as cortisol, while simultaneously increasing levels of serotonin and dopamine, neurotransmitters associated with relaxation and happiness.Pain Relief Massage can alleviate various types of pain, including muscle pain, tension headaches, migraines, and chronic conditions such as arthritis and fibromyalgia. It can help to improve blood circulation and release trigger points, promoting pain relief and relaxation."
-   },
-   "faq":{
-    "faqtitle1":"WHO WE ARE?",
-    "faqDetails1":"Fanash Beauty is an esteemed beauty salon that redefines the world of beauty therapy by seamlessly integrating the realms of fine arts and expert skincare. Located at the heart of Amstelveen shopping center, our salon is more than just a place for beauty; it's an artistic canvas where every appointment transforms into a masterpiece.",
+    "ArtistryandBeauty": "Artistry and Beauty",
+    "ArtistryBeautyperagraph": "Fanash Beauty is where artistry and beauty converge. Every treatment, every stroke of the brush, and every skincare regimen is a testament to our commitment to transforming beauty therapy into a genuine art form. We believe that your beauty should be as unique as you are.",
 
-    "OurExpertise":"Our Expertise",
-    "OurExpertiseDetails":"At Fanash Beauty, we take pride in our commitment to excellence. Our team members are certified beauty therapists. With years of expertise and a passion for perfection, our team is delivering unparalleled beauty services.",
+    "Our Reputation": "Our Reputation",
+    "OurReputationPera": "With a perfect five-star rating from all our customer reviews, Fanash Beauty has earned a reputation for excellence and unwavering customer satisfaction. Our clients trust us to provide exceptional beauty services and an atmosphere of warmth and professionalism."
+  },
+  
+  "Job": {
+    "jobTitle": "Join Us!",
+    "beautician": "BEAUTICIAN",
+    "amstelveennetherlands": "Amstelveen, Netherlands",
+    "jobtype": "Part-Time",
+    "jobdescription": "Job Description:",
+    "jobdescriptioncontent": "We are excited to announce a job opening for an experienced Beautician at our Beauty Salon located in Amstelveen, Netherlands. We are looking for a skilled and passionate individual who specializes in various beauty treatments including threading, waxing, pedicure, manicure, facials, and massage. If you are dedicated to providing exceptional beauty services and creating a relaxing and rejuvenating experience for our clients, we encourage you to apply.",
+    "responsibilities": "Responsibilities",
+    "responsibilitiesdescription1": "Perform threading, waxing, pedicure, manicure, facial, and massage treatments with precision and expertise",
+    "responsibilitiesdescription2": "Consult with clients to understand their beauty needs and recommend suitable treatments.",
+    "responsibilitiesdescription3": "Maintain a clean and organized workspace to ensure a hygienic environment.",
+    "responsibilitiesdescription4": "Stay updated on the latest beauty trends and techniques to provide innovative services.",
+    "responsibilitiesdescription5": "Provide excellent customer service and ensure client satisfaction.",
+    "responsibilitiesdescription6": "Handle client inquiries, appointments, and payments efficiently.",
+    "responsibilitiesdescription7": "Upsell beauty products and services to clients as appropriate.",
+    "responsibilitiesdescription8": "Comply with all safety and sanitation standards.",
+    "responsibilitiesdescription9": "Collaborate with the salon team to create a welcoming and professional atmosphere",
 
-  "CraftingUniqueLooks":"Crafting Unique Looks",
-  "CraftingLookperagrapg" :"What sets Fanash Beauty apart is our dedication to crafting exclusive looks inspired by our clients' personal style, event needs, and individual tastes. We believe that beauty is a form of self-expression, and we work closely with our clients to bring their unique visions to life.",
- "TheFanashExperience":"The Fanash Experience",
-  "TheFanashExperagrapg":"We believe that true beauty lies in the details. From the moment you step into our salon, you'll experience a level of care and attention like no other. Our goal is to not only enhance your beauty but also elevate your confidence and self-esteem.",
+    "requirements": "Requirements:",
+    "requirementsdescription1": "Proven experience as a Beautician with expertise in threading, waxing, pedicure, manicure, facials, and massage",
+    "requirementsdescription2": "Appropriate certification and licenses required to perform beauty treatments in the Netherlands.",
+    "requirementsdescription3": "Strong knowledge of beauty products, techniques, and industry trends.",
+    "requirementsdescription4": "Exceptional customer service and communication skills.",
+    "requirementsdescription5": "Excellent attention to detail and time management abilities.",
+    "requirementsdescription6": "Ability to work in a team and collaborate effectively.",
+    "requirementsdescription7": "Professional appearance and demeanor.",
+    "requirementsdescription8": "Fluent in Dutch and English (both written and spoken).",
+    "requirementsdescription9": "Flexibility to work weekends and evenings as needed.",
 
-  "ArtistryandBeauty":"Artistry and Beauty",
-  "ArtistryBeautyperagraph":"Fanash Beauty is where artistry and beauty converge. Every treatment, every stroke of the brush, and every skincare regimen is a testament to our commitment to transforming beauty therapy into a genuine art form. We believe that your beauty should be as unique as you are.",
-
-  "Our Reputation":"Our Reputation",
-  "OurReputationPera":"With a perfect five-star rating from all our customer reviews, Fanash Beauty has earned a reputation for excellence and unwavering customer satisfaction. Our clients trust us to provide exceptional beauty services and an atmosphere of warmth and professionalism."
-
-
-   }
+    "benefits": "Benefits:",
+    "benefitsdescription1": "Competitive salary and performance-based incentives.",
+    "benefitsdescription2": "Ongoing training and professional development opportunities.",
+    "benefitsdescription3": "Access to a wide range of high-quality beauty products.",
+    "benefitsdescription4": "Friendly and supportive work environment.",
+    "benefitsdescription5": "Opportunities for career growth and advancement.",
+    "benefitsdescription6": "Employee discounts on beauty treatments and products.",
+    "benefitsdescription7": "If you are passionate about the beauty industry and have the skills and qualifications required for this position, we invite you to submit your application, including your resume and a cover letter explaining why you are the ideal candidate for the role. Join our team and help us create a luxurious and unforgettable beauty experience for our clients in Amstelveen, Netherlands."
+  }
 }

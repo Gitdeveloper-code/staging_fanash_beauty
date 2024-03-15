@@ -127,7 +127,7 @@ const Page = () => {
         height={500}
         isVisible={false}
         path="/asset/img/contact-banner.webp"
-        title="Say Hi !"
+        title={contact("sayhi!")}
         description=""
       />
       <Navbar />
@@ -140,7 +140,7 @@ const Page = () => {
          
           <div className="flex-auto px-4 mb-8 md:w-1/3 mt-8  text-black">
             <div className="h-full bg-white text-black rounded-lg shadow-lg p-6">
-            <h1 style={{fontWeight:"bold",fontSize:"20px",textAlign:"center",marginBottom:"10px",textTransform:"uppercase"}}>Contact Us</h1>
+            <h1 style={{fontWeight:"bold",fontSize:"20px",textAlign:"center",marginBottom:"10px",textTransform:"uppercase"}}>{contact("contactus")}</h1>
               <form
                 className="px-6 py-6 pt-6 pb-6 rounded-lg mb-6 bg-gray-100"
                 onSubmit={handleSubmit}
@@ -250,7 +250,7 @@ const Page = () => {
                     type="submit"
                     className="text-white contacts font-mono w-fit bg-tertiary hover:bg-primary hover:text-secondary focus:ring-4 focus:outline-none focus:ring-gray-500 font-medium text-sm px-5 py-2.5 text-center inline-flex gap-3 items-center border border-gray-300 shadow-lg rounded-md w-50"
                   >
-                    send
+                   {contact("send")}
                   </button>
                 </div>
               </form>
@@ -284,41 +284,41 @@ const Page = () => {
 
           <div className="flex-auto px-4 mb-8 md:w-1/3 mt-8  text-black">
             <div className="h-full bg-white text-black rounded-lg shadow-lg p-6">
-              <h1 style={{fontWeight:"bold",fontSize:"20px",textAlign:"center",marginBottom:"10px",textTransform:"uppercase"}}>Business Hours</h1>
+              <h1 style={{fontWeight:"bold",fontSize:"20px",textAlign:"center",marginBottom:"10px",textTransform:"uppercase"}}>{contact("businesshours")}</h1>
               <table className="table-auto w-full bg-gray-100">
                 <thead>
                   <tr>
-                    <th className="px-4 py-2 text-left">Day</th>
-                    <th className="px-4 py-2 text-left">Hours</th>
+                    <th className="px-4 py-2 text-left">{contact("day")}</th>
+                    <th className="px-4 py-2 text-left">{contact("hours")}</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="border px-4 py-2">Monday</td>
+                    <td className="border px-4 py-2">{contact("monday")}</td>
                     <td className="border px-4 py-2">12:00 - 18:00</td>
                   </tr>
                   <tr className="bg-gray-100 dark:bg-gray-200">
-                    <td className="border px-4 py-2">Tuesday</td>
+                    <td className="border px-4 py-2">{contact("tuesday")}</td>
                     <td className="border px-4 py-2">10:00 - 18:00</td>
                   </tr>
                   <tr>
-                    <td className="border px-4 py-2">Wednesday</td>
+                    <td className="border px-4 py-2">{contact("wednesday")}</td>
                     <td className="border px-4 py-2">10:00 - 18:00</td>
                   </tr>
                   <tr className="bg-gray-100 dark:bg-gray-200">
-                    <td className="border px-4 py-2">Thursday</td>
+                    <td className="border px-4 py-2">{contact("thursday")}</td>
                     <td className="border px-4 py-2">10:00 - 21:00</td>
                   </tr>
                   <tr>
-                    <td className="border px-4 py-2">Friday</td>
+                    <td className="border px-4 py-2">{contact("friday")}</td>
                     <td className="border px-4 py-2">10:00 - 18:00</td>
                   </tr>
                   <tr className="bg-gray-100 dark:bg-gray-200">
-                    <td className="border px-4 py-2">Saturday</td>
+                    <td className="border px-4 py-2">{contact("saturday")}</td>
                     <td className="border px-4 py-2">10:00 - 18:00</td>
                   </tr>
                   <tr>
-                    <td className="border px-4 py-2">Sunday</td>
+                    <td className="border px-4 py-2">{contact("sunday")}</td>
                     <td className="border px-4 py-2">12:00 - 18:00</td>
                   </tr>
                 </tbody>
@@ -342,7 +342,7 @@ const Page = () => {
       {/* testimonial */}
       <div className="container my-5 mx-auto md:px-6">
         <section className="px-5 mb-32 text-center">
-          <h2 className="mb-12 text-3xl font-bold text-white">Testimonials</h2>
+          <h2 className="mb-12 text-3xl font-bold text-white">{contact("testimonials")}</h2>
 
           <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
             <div className="mb-12 md:mb-0">
@@ -352,17 +352,11 @@ const Page = () => {
                   className="w-32 rounded-full shadow-lg dark:shadow-black/20"
                 />
               </div>
-              {/* <h5 className="mb-2 text-lg font-bold">Manpreet Kaur</h5> */}
               <h6 className="mb-4 font-medium  text-neutral-200">
-                Manpreet Kaur
+              {contact("manpreetkaur")}
               </h6>
               <p className="mb-4 text-neutral-200 text-center">
-                Fatma is a thorough professional and an expert in nails art. I
-                visited her seeing her google reviews and was uncertain at
-                first. However, my visit and my experience with her was so
-                relaxing and just like what i read in her reviews. I got really
-                impressed with her communication skills, her passion towards her
-                work and lookout for her client’s ease.
+              {contact("manpreetkaurdescription")}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 96 960 960"
@@ -446,14 +440,10 @@ const Page = () => {
               </div>
               {/* <h5 className="mb-2 text-lg font-bold">Lisa Cudrow</h5> */}
               <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
-                Sheetal Naik
+              {contact("sheetalnaik")}
               </h6>
               <p className="mb-4 text-neutral-200 text-center">
-                Fatma is a very friendly person, she makes you comfortable and
-                does her work with great passion and patience. I had thick
-                eyebrows, she took her time and made sure that I had no pain. I
-                loved how carefully she handled me as a customer. Definitely
-                5stars
+              {contact("sheetalnaikdescription")}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 96 960 960"
@@ -537,13 +527,10 @@ const Page = () => {
               </div>
               {/* <h5 className="mb-2 text-lg font-bold">John Smith</h5> */}
               <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
-                Chane Draaijer
+              {contact("chanedraaijer")}
               </h6>
               <p className="mb-4 text-neutral-200 text-center">
-                Can absolutely recommend going to Fanash Beauty! Had really good
-                service when setting my appointment and was more than satisfied
-                with my waxing, threading and tinting treatments. The location
-                is very convenient and the space is wonderful and very clean.
+              {contact("chanedraaijerdescription")}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 96 960 960"
