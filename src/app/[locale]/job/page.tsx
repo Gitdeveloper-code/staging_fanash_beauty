@@ -20,7 +20,7 @@ const Page: React.FC = () => {
     const getJobs = async () => {
       try {
         console.log("Fetching jobs...");
-        let response = await fetch("http://localhost:3000/api/jobs", {
+        let response = await fetch("https://stage-fanashbeauty.netlify.app/api/jobs", {
           cache: "no-store",
         });
         console.log("Response:", response);
