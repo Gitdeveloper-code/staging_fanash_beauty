@@ -47,8 +47,8 @@ export default function LocalSwitcher() {
             >
                 <span className="icon material-icons">
                     {localeActive === 'en' ? 
-                    <Image src="/asset/img/english.png" width={30} height={30} alt="fanash"></Image>
-                    : <Image src="/asset/img/dutch.png" width={30} height={30} alt="fanash"></Image> }
+                    <Image src="/asset/img/english.png" width={30} height={30} alt="fanash"/>
+                    : <Image src="/asset/img/dutch.png" width={30} height={30} alt="fanash"/> }
                 </span>
                 {localeActive === 'en' ? 'en' : 'nl'}
             </button>
