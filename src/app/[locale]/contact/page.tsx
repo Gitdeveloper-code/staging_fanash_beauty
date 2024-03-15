@@ -138,8 +138,8 @@ const Page = () => {
         <div className="flex flex-wrap md:flex-nowrap mb-10 mx-auto md:px-6">
           {/* Left Section: Contact Form */}
          
-          <div className="flex-auto px-4 mb-8 md:w-1/3 mt-8">
-            <div className="h-full bg-white dark:bg-[hsla(0,0%,5%,0.7)] rounded-lg shadow-lg p-6">
+          <div className="flex-auto px-4 mb-8 md:w-1/3 mt-8  bg-white text-black">
+            <div className="h-full bg-white text-black rounded-lg shadow-lg p-6">
             <h1 style={{fontWeight:"bold",fontSize:"20px",textAlign:"center",marginBottom:"10px",textTransform:"uppercase"}}>Contact Us</h1>
               <form
                 className="px-6 py-6 pt-6 pb-6 rounded-lg mb-6"
@@ -282,8 +282,8 @@ const Page = () => {
           )}
           {/*middle Section */}
 
-          <div className="flex-auto px-4 mb-8 md:w-1/3 mt-8">
-            <div className="h-full bg-white dark:bg-[hsla(0,0%,5%,0.7)] rounded-lg shadow-lg p-6">
+          <div className="flex-auto px-4 mb-8 md:w-1/3 mt-8  bg-white text-black">
+            <div className="h-full bg-white bg-black rounded-lg shadow-lg p-6">
               <h1 style={{fontWeight:"bold",fontSize:"20px",textAlign:"center",marginBottom:"10px",textTransform:"uppercase"}}>Business Hours</h1>
               <table className="table-auto w-full">
                 <thead>
