@@ -284,7 +284,7 @@ const Page = () => {
 
           <div className="flex-auto px-4 mb-8 md:w-1/3 mt-8">
             <div className="h-full bg-white dark:bg-[hsla(0,0%,5%,0.7)] rounded-lg shadow-lg p-6">
-              <h1 style={{fontWeight:"bold",fontSize:"20px",textAlign:"center",marginBottom:"10px",borderBottom:"2px solid #bfa65c",textTransform:"uppercase"}}>Business Hours</h1>
+              <h1 style={{fontWeight:"bold",fontSize:"20px",textAlign:"center",marginBottom:"10px",textTransform:"uppercase"}}>Business Hours</h1>
               <table className="table-auto w-full">
                 <thead>
                   <tr>
