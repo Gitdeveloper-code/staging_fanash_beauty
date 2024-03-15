@@ -13,7 +13,7 @@ const Page = () => {
         title2: `${wx('waxing2')}`,
         paragraph2: `${wx('waxingDetails2')}`,
         imagePath1: '/asset/img/waxing8.jpg',
-        imagePath2: '/asset/img/waxing5.avif',
+        imagePath2: '/asset/img/waxing10.jpg',
     },
     {
         title1: `${wx('waxing3')}`,

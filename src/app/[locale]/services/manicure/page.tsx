@@ -11,7 +11,7 @@ const Page = () => {
         paragraph1: `${mn('manicureDetails')}`,
         title2: `${mn('manicure2')}`,
         paragraph2: `${mn('manicureDetails2')}`,
-        imagePath1: '/asset/img/manicure1.avif',
+        imagePath1: '/asset/img/manicure.jpg',
         imagePath2: '/asset/img/manicure3.jpg',
     }
    

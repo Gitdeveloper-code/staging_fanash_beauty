@@ -13,7 +13,7 @@ const Page = () => {
         paragraph1: `${f('facialDetails')}`,
         title2: `${f('facial2')}`,
         paragraph2: `${f('facialDetails2')}`,
-        imagePath1: '/asset/img/facial1.avif',
+        imagePath1: '/asset/img/facial5.webp',
         imagePath2: '/asset/img/facial2.jpg',
     },
     {
@@ -22,7 +22,7 @@ const Page = () => {
         title2: `${f('facial4')}`,
         paragraph2: `${f('facialDetails4')}`,
         imagePath1: '/asset/img/facial3.jpg',
-        imagePath2: '/asset/img/facial4.avif',
+        imagePath2: '/asset/img/facial6.webp',
     }
     // Add more objects as needed
 ];
