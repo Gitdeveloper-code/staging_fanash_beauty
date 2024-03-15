@@ -55,7 +55,7 @@ const StickyButton = ({ icon, action }: ButtonProps) => {
                     <iframe
                         src="https://fanash-beauty.salonized.com/widget_bookings/new"
                         title="Embedded Content"
-                        className="w-full h-[86vh] md:w-[100%] md:h-[85vh] rounded-md"
+                        className="w-full h-[70vh] md:w-[100%] md:h-[85vh] rounded-md"
                     ></iframe>
                 </div>
             )}
