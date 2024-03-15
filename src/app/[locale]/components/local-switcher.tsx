@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from "next/image"
 import { useLocale } from 'next-intl';
 import { useRouter } from 'next/navigation';
 
@@ -42,12 +43,14 @@ export default function LocalSwitcher() {
             <button
                 onClick={() => onLanguageChange(localeActive === 'en' ? 'nl' : 'en')}
                 className={`rounded bg-transparent ${localeActive === 'en' ? 'text-color-en' : 'text-color-nl'
-                    }`}
+                    } flex items-center justify-center `}
             >
-                {/* <span className="icon material-icons"> */}
-                    {/* {localeActive === 'en' ? 'language' : 'translate'} */}
-                {/* </span> */}
-                {localeActive === 'en' ? 'ENGLISH' : 'DUTCH'}
+                <span className="icon material-icons">
+                    {localeActive === 'en' ? 
+                    <Image src="/asset/img/english.png" width={30} height={30} alt="fanash"></Image>
+                    : <Image src="/asset/img/dutch.png" width={30} height={30} alt="fanash"></Image> }
+                </span>
+                {localeActive === 'en' ? 'en' : 'nl'}
             </button>
         </div>
     );
