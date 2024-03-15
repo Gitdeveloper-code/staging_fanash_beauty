@@ -1,37 +1,29 @@
-"use client";
-import React, { useState, useEffect } from "react";
-import Hero from "../components/Hero";
-
+import Hero from '../components/Hero'
+import { useTranslations } from 'next-intl';
 
 const Page = () => {
-  
+  const a = useTranslations('About');
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2">
-      <div className="bg-gray-50 dark:bg-gray-900 col-span-2" style={{ backgroundColor: "#111827" }}>
-        <Hero
-          height={400}
-          isVisible={false}
-          path="/asset/img/login.png"
-          title="Reserve Your Slot"
-        />
-       <div style={{ backgroundColor: "#111827" }} className="flex justify-center"> 
- 
-  <iframe
-    src="https://fanash-beauty.salonized.com/widget_bookings/new"
-    title="Embedded Content"
-    className="w-full h-[90vh] md:w-[40%] md:h-[120vh] "
-  
-  > 
-</iframe>
-
-
-
-</div>
-
+    <div>
+      <Hero
+        path='/asset/img/login.png'
+        height={450}
+        isVisible={true}
+        title="Reserve Your Slot"
+      />
+      <div className="flex justify-center dark:bg-gray-900 py-10 ">
+        <div className="w-full md:w-[50%] lg:w-[40%]  h-[50rem]  rounded-tl-lg rounded-bl-lg  dark:bg-gray-300">
+          <h1 className='text-2xl text-black pt-10 pb-3 ml-10'>Make an appointment</h1>
+          {/* Iframe */}
+          <iframe
+            src="https://fanash-beauty.salonized.com/widget_bookings/new"
+            title="Embedded Content"
+            className="w-full h-full px-10 md:px-[60px] pb-32"
+          ></iframe>
+            
+        </div>
       </div>
-      <div className="col-span-1"></div>
-    
     </div>
   );
 };
