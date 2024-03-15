@@ -138,11 +138,11 @@ const Page = () => {
         <div className="flex flex-wrap md:flex-nowrap mb-10 mx-auto md:px-6">
           {/* Left Section: Contact Form */}
          
-          <div className="flex-auto px-4 mb-8 md:w-1/3 mt-8  bg-white text-black">
+          <div className="flex-auto px-4 mb-8 md:w-1/3 mt-8  text-black">
             <div className="h-full bg-white text-black rounded-lg shadow-lg p-6">
             <h1 style={{fontWeight:"bold",fontSize:"20px",textAlign:"center",marginBottom:"10px",textTransform:"uppercase"}}>Contact Us</h1>
               <form
-                className="px-6 py-6 pt-6 pb-6 rounded-lg mb-6"
+                className="px-6 py-6 pt-6 pb-6 rounded-lg mb-6 bg-gray-100"
                 onSubmit={handleSubmit}
                 method="POST"
               >
@@ -282,10 +282,10 @@ const Page = () => {
           )}
           {/*middle Section */}
 
-          <div className="flex-auto px-4 mb-8 md:w-1/3 mt-8  bg-white text-black">
-            <div className="h-full bg-white bg-black rounded-lg shadow-lg p-6">
+          <div className="flex-auto px-4 mb-8 md:w-1/3 mt-8  text-black">
+            <div className="h-full bg-white text-black rounded-lg shadow-lg p-6">
               <h1 style={{fontWeight:"bold",fontSize:"20px",textAlign:"center",marginBottom:"10px",textTransform:"uppercase"}}>Business Hours</h1>
-              <table className="table-auto w-full">
+              <table className="table-auto w-full bg-gray-100">
                 <thead>
                   <tr>
                     <th className="px-4 py-2 text-left">Day</th>
@@ -297,7 +297,7 @@ const Page = () => {
                     <td className="border px-4 py-2">Monday</td>
                     <td className="border px-4 py-2">12:00 - 18:00</td>
                   </tr>
-                  <tr className="bg-gray-100 dark:bg-gray-700">
+                  <tr className="bg-gray-100 dark:bg-gray-200">
                     <td className="border px-4 py-2">Tuesday</td>
                     <td className="border px-4 py-2">10:00 - 18:00</td>
                   </tr>
@@ -305,7 +305,7 @@ const Page = () => {
                     <td className="border px-4 py-2">Wednesday</td>
                     <td className="border px-4 py-2">10:00 - 18:00</td>
                   </tr>
-                  <tr className="bg-gray-100 dark:bg-gray-700">
+                  <tr className="bg-gray-100 dark:bg-gray-200">
                     <td className="border px-4 py-2">Thursday</td>
                     <td className="border px-4 py-2">10:00 - 21:00</td>
                   </tr>
@@ -313,7 +313,7 @@ const Page = () => {
                     <td className="border px-4 py-2">Friday</td>
                     <td className="border px-4 py-2">10:00 - 18:00</td>
                   </tr>
-                  <tr className="bg-gray-100 dark:bg-gray-700">
+                  <tr className="bg-gray-100 dark:bg-gray-200">
                     <td className="border px-4 py-2">Saturday</td>
                     <td className="border px-4 py-2">10:00 - 18:00</td>
                   </tr>
