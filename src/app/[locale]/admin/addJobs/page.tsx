@@ -26,7 +26,7 @@ const Page: React.FC = () => {
   const getJobs = async () => {
     try {
       console.log("Fetching jobs...");
-      let response = await fetch("http://localhost:3000/api/jobs", { cache: "no-store" });
+      let response = await fetch(`/api/jobs`, { cache: "no-store" });
       console.log("Response:", response);
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
@@ -70,7 +70,7 @@ const Page: React.FC = () => {
         throw new Error("All fields must be filled out");
       }
   
-      const result = await fetch("http://localhost:3000/api/jobs", {
+      const result = await fetch(`/api/jobs`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -104,7 +104,7 @@ const Page: React.FC = () => {
 
     try {
       console.log("Deleting item with id ", index);
-      const response = await fetch(`http://localhost:3000/api/jobs/${index}`, {
+      const response = await fetch(`/api/jobs/${index}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json"

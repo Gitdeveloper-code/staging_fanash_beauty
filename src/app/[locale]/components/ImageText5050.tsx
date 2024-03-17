@@ -43,7 +43,8 @@ const ImageText5050: React.FC<ImageText5050> = ({
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('https://stage-fanashbeauty.netlify.app/api/services', { cache: 'no-store' });
+                const response = await fetch(`/api/services`, { cache: 'no-store' });
+
                 if (!response.ok) {
                     throw new Error(`HTTP error! Status: ${response.status}`);
                 }
@@ -107,12 +108,12 @@ const ImageText5050: React.FC<ImageText5050> = ({
         <div>
             {/* First set of components */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-stretch p-3">
-                <div className="p-4 flex flex-col justify-center items-center order-2 sm:order-1">
-                    <h2 className="text-3xl text-white md:text-5xl dark:text-gray-300">{title1}</h2>
-                    <div className="line-container mt-5">
+                <div className="px-0 md:px-14 p-4 flex flex-col justify-center items-center order-2 sm:order-1">
+                    <h2 className="text-3xl text-white md:text-5xl dark:text-gray-300 hyphenate break-words">{title1}</h2>
+                    <div className="line-container my-5">
                         <div className="line bg-tertiary h-1 w-40 mx-auto"></div>
                     </div>
-                    <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:px-14 md:my-5">{paragraph1}</p>
+                    <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:my-5 tracking-tighter md:tracking-normal hyphenate break-words">{paragraph1}</p>
                 </div>
 
                 <div className="order-1 sm:order-2">
@@ -125,12 +126,12 @@ const ImageText5050: React.FC<ImageText5050> = ({
                 <div>
                     {renderSection(serviceName, imagePath2, 2)}
                 </div>
-                <div className="p-4 flex flex-col justify-center items-center">
-                    <h2 className="text-3xl text-white md:text-5xl dark:text-gray-300">{title2}</h2>
-                    <div className="line-container mt-5">
+                <div className="p-4 flex flex-col justify-center items-center px-0 md:px-14">
+                    <h2 className="text-3xl text-white md:text-5xl dark:text-gray-300 tracking-tighter hyphenate break-words">{title2}</h2>
+                    <div className="line-container my-5">
                         <div className="line bg-tertiary h-1 w-40 mx-auto"></div>
                     </div>
-                    <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:px-14 md:my-5">{paragraph2}</p>
+                    <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:my-5 tracking-tighter md:tracking-normal hyphenate break-words">{paragraph2}</p>
                 </div>
             </div>
         </div>

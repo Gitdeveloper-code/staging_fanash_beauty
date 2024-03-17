@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 
 const getJobs= async()=> {
-  let response= await fetch("https://stage-fanashbeauty.netlify.app/api/teams", {cache:"no-store"})
+  let response= await fetch(`${process.env.NEXT_PUBLIC_HOST_URL}/api/teams`, {cache:"no-store"})
   if (!response.ok){
     throw new Error(`HTTP error! Status: ${response.status}`);
     return {res:"Error"}
@@ -40,7 +40,7 @@ const team = await getTranslations('Team');
     
        
 
- <div className='dark:bg-gray-900 justify-center flex-1 max-w-6xl py-4 md:px-6  py-8  mx-auto max-w-screen-xl lg:py-16 lg:px-6'style={{ backgroundColor: "#111827" }}>
+  <div className='dark:bg-gray-900 justify-center flex-1 max-w-screen-xl py-4 md:px-6 mx-auto lg:py-16 lg:px-6' style={{ backgroundColor: "#111827" }}>
        <div className="flex flex-wrap ">
         <About1/>
         </div>

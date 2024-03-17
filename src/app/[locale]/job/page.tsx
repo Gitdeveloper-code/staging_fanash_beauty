@@ -14,30 +14,30 @@ interface Job {
 const Page: React.FC = () => {
   const job = useTranslations("Job");
 
-  const [jobs, setJobs] = useState<Job[]>([]);
+//   const [jobs, setJobs] = useState<Job[]>([]);
 
-  useEffect(() => {
-    const getJobs = async () => {
-      try {
-        console.log("Fetching jobs...");
-        let response = await fetch("https://stage-fanashbeauty.netlify.app/api/jobs", {
-          cache: "no-store",
-        });
-        console.log("Response:", response);
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        const data = await response.json();
-        console.log("Fetched data:", data);
-        setJobs(data.result || []);
-      } catch (error) {
-        console.error("Error fetching jobs:", error);
-        // Handle error gracefully
-      }
-    };
+//   useEffect(() => {
+//     const getJobs = async () => {
+//       try {
+//         console.log("Fetching jobs...");
+//         let response = await fetch(`/api/jobs`, {
+//           cache: "no-store",
+//         });
+//         console.log("Response:", response);
+//         if (!response.ok) {
+//           throw new Error(`HTTP error! Status: ${response.status}`);
+//         }
+//         const data = await response.json();
+//         console.log("Fetched data:", data);
+//         setJobs(data.result || []);
+//       } catch (error) {
+//         console.error("Error fetching jobs:", error);
+//         // Handle error gracefully
+//       }
+//     };
 
-    getJobs();
-  }, []);
+//     getJobs();
+//   }, []);
 
   return (
     <div className="items-center">
@@ -48,9 +48,9 @@ const Page: React.FC = () => {
       title={job("jobTitle")}
     />
     <div className="flex justify-center flex-wrap">
-      {jobs.map((item: Job, index: number) => (
+      {/* {jobs.map((item: Job, index: number) => ( */}
         <div
-          key={index}
+          // key={index}
           id="openings"
           className="container p-5 m-5 md:m-5 bg-white border rounded-xl md:w-[90%] mx-auto"
         >
@@ -147,7 +147,7 @@ const Page: React.FC = () => {
             </div>
           </div>
         </div>
-      ))}
+      {/* ))} */}
     </div>
   </div>
   );

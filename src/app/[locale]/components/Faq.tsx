@@ -7,32 +7,32 @@ const Faq = () => {
     <section className="relative z-20 overflow-hidden bg-black text-white pb-12 pt-4 dark:bg-dark lg:pb-[90px] lg:pt-[90px] border-0 w-full">
       <div className="container mx-auto max-w-full px-4">
         <div className="text-center  flex flex-wrap px-7 md:px-52 items-center text-base text-body-color text-white">
-          <h2 className="text-2xl font-bold mx-auto  my-10 text-justify">{f("faqtitle1")}</h2>
+          <h2 className="text-2xl font-bold mx-auto tracking-tighter md:tracking-normal my-10 text-justify">{f("faqtitle1")}</h2>
           <p>
             {f("faqDetails1")}
           </p>
 
-          <h2 className="text-2xl mx-auto font-bold  my-10 text-justify">{f("OurExpertise")}</h2>
+          <h2 className="text-2xl mx-auto font-bold  my-10 text-justify tracking-tighter md:tracking-normal">{f("OurExpertise")}</h2>
           <p>
             {f("OurExpertiseDetails")}
           </p>
 
-          <h2 className="text-2xl mx-auto font-bold  my-10 text-justify">{f("CraftingUniqueLooks")}</h2>
+          <h2 className="text-2xl mx-auto font-bold  my-10 text-justify tracking-tighter md:tracking-normal">{f("CraftingUniqueLooks")}</h2>
           <p>
             {f("CraftingLookperagrapg")}
           </p>
 
-          <h2 className="text-2xl mx-auto font-bold  my-10 text-justify">{f("TheFanashExperience")}</h2>
+          <h2 className="text-2xl mx-auto font-bold  my-10 text-justify tracking-tighter md:tracking-normal">{f("TheFanashExperience")}</h2>
           <p>
             {f("TheFanashExperagrapg")}
           </p>
 
-          <h2 className="text-2xl mx-auto font-bold  my-10 text-justify">{f("ArtistryandBeauty")}</h2>
+          <h2 className="text-2xl mx-auto font-bold  my-10 text-justify tracking-tighter md:tracking-normal">{f("ArtistryandBeauty")}</h2>
           <p>
             {f("ArtistryBeautyperagraph")}
           </p>
 
-          <h2 className="text-2xl mx-auto font-bold  my-10 text-justify">{f("Our Reputation")}</h2>
+          <h2 className="text-2xl mx-auto font-bold  my-10 text-justify tracking-tighter md:tracking-normal">{f("Our Reputation")}</h2>
           <p>
             {f("OurReputationPera")}
           </p>

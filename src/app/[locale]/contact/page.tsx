@@ -522,8 +522,7 @@ const Page = () => {
               <div className="mb-6 flex justify-center">
                 <img
                   src="https://media.istockphoto.com/id/1337144146/vector/default-avatar-profile-icon-vector.jpg?s=612x612&w=0&k=20&c=BIbFwuv7FxTWvh5S3vB6bkT0Qv8Vn8N5Ffseq84ClGI="
-                  className="w-32 rounded-full shadow-lg dark:shadow-black/20"
-                 
+                  className="w-32 rounded-full shadow-lg dark:shadow-black/20" 
                 />
               </div>
               {/* <h5 className="mb-2 text-lg font-bold">John Smith</h5> */}

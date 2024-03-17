@@ -19,7 +19,7 @@ const Page = () => {
 
   const fetchTeamMembers = async () => {
     try {
-      const response = await fetch("http://localhost:3000/api/teams", { cache: "no-store" });
+      const response = await fetch(`/api/teams`, { cache: "no-store" });
 
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
@@ -63,7 +63,7 @@ const Page = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:3000/api/teams", {
+      const response = await fetch(`/api/teams`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -91,7 +91,7 @@ const Page = () => {
   const deleteTeamMember = async (id: string) => {
     try {
       console.log("Deleting team member with id ", id);
-      const response = await fetch(`http://localhost:3000/api/teams/${id}`, {
+      const response = await fetch(`/api/teams/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json"

@@ -10,7 +10,7 @@ const a = useTranslations('About');
                 {/* Author's Picture */}
                 <div className="relative lg:max-w-md">
 
-                    <Image  src="/asset/img/fatma.png" alt="aboutimage" height={700} width={700} 
+                    <Image src="/asset/img/Fatma.png" alt="aboutimage" height={700} width={700} 
                         
                         className=" object-cover w-96 bg-cover bg-center rounded h-96 border-2 border-tertiary"/>
                    
@@ -20,7 +20,7 @@ const a = useTranslations('About');
                 {/* Author's Name */}
                 <div className="pl-4 mb-6 border-l-4 border-tertiary ">
                     {/* <span className="text-sm text-tertiary uppercase dark:text-gray-400">{a("whoweare?")}</span> */}
-                    <h1 className="mt-2 text-3xl font-black text-gray-700 md:text-5xl dark:text-gray-300">
+                    <h1 className="mt-2 text-3xl font-black md:text-5xl text-gray-300">
                         Fatma Rahman
                     </h1>
                 </div>

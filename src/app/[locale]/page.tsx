@@ -24,7 +24,7 @@ async function connectToDatabase() {
 
 const getServices = async () => {
     try {
-        const response = await fetch("http://localhost:3000/api/services", { cache: "no-store" });
+        const response = await fetch(`${process.env.NEXT_PUBLIC_HOST_URL}/api/services`, { cache: "no-store" });
 
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
@@ -88,14 +88,14 @@ const Page = async () => {
 
                     <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 items-stretch p-3'>
                         {/* Text */}
-                        <div className='p-4 flex flex-col justify-center items-center order-2 sm:order-1'>
-                            <h2 className="text-3xl text-white md:text-5xl dark:text-gray-300">
+                        <div className='p-4 px-0 md:px-14 flex flex-col justify-center items-center order-2 sm:order-1'>
+                            <h2 className="text-3xl text-white md:text-5xl dark:text-gray-300 tracking-tighter md:tracking-normal hyphenate break-words">
                                 {ser_vice("threading")}
                             </h2>
-                            <div className="line-container mt-5">
+                            <div className="line-container my-5 ">
                                 <div className="line bg-tertiary h-1 w-40 mx-auto"></div>
                             </div>
-                            <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:px-14 md:my-5">
+                            <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:my-5 tracking-tighter md:tracking-normal hyphenate break-words">
                                 {ser_vice("theredingDiscription")}
                             </p>
                             <div className='pt-5'>
@@ -118,14 +118,14 @@ const Page = async () => {
                         </div>
 
                         {/* Text */}
-                        <div className='p-4 flex flex-col justify-center items-center'>
-                            <h2 className="text-3xl text-white md:text-5xl dark:text-gray-300">
+                        <div className=' p-4 flex flex-col justify-center items-center px-0 md:px-14'>
+                            <h2 className="text-3xl text-white md:text-5xl dark:text-gray-300 tracking-tighter md:tracking-normal hyphenate break-words">
                                 {ser_vice("waxing")}
                             </h2>
-                            <div className="line-container mt-5">
+                            <div className="line-container my-5">
                                 <div className="line bg-tertiary h-1 w-40 mx-auto"></div>
                             </div>
-                            <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:px-14 md:my-5">
+                            <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:my-5 tracking-tighter md:tracking-normal hyphenate break-words">
                                 {ser_vice("waxingDiscription")}
                             </p>
                             <div className='pt-5'>
@@ -140,14 +140,14 @@ const Page = async () => {
 
                     <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 items-stretch p-3'>
                         {/* Text */}
-                        <div className='p-4 flex flex-col justify-center items-center order-2 sm:order-1'>
-                            <h2 className="text-3xl text-white md:text-5xl dark:text-gray-300">
+                        <div className='px-0 md:px-14 p-4 flex flex-col justify-center items-center order-2 sm:order-1'>
+                            <h2 className="text-3xl text-white md:text-5xl dark:text-gray-300 tracking-tighter md:tracking-normal hyphenate break-words">
                                 {ser_vice("sugarepilation")}
                             </h2>
-                            <div className="line-container mt-5">
+                            <div className="line-container my-5">
                                 <div className="line bg-tertiary h-1 w-40 mx-auto"></div>
                             </div>
-                            <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:px-14 md:my-5">
+                            <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:my-5 tracking-tighter md:tracking-normal hyphenate break-words">
                                 {ser_vice("sugarepilationDiscription")}
                             </p>
                            <div className='pt-5'>
@@ -170,14 +170,14 @@ const Page = async () => {
                         </div>
 
                         {/* Text */}
-                        <div className='p-4 flex flex-col justify-center items-center'>
-                            <h2 className="text-3xl text-white md:text-5xl dark:text-gray-300">
+                        <div className='p-4 px-0 md:px-14 flex flex-col justify-center items-center'>
+                            <h2 className="text-3xl text-white md:text-5xl dark:text-gray-300 tracking-tighter md:tracking-normal hyphenate break-words">
                                 {ser_vice("facial")}
                             </h2>
-                            <div className="line-container mt-5">
+                            <div className="line-container my-5">
                                 <div className="line bg-tertiary h-1 w-40 mx-auto"></div>
                             </div>
-                            <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:px-14 md:my-5">
+                            <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:px-14 md:my-5 tracking-tighter md:tracking-normal hyphenate break-words">
                                 {ser_vice("facialDiscription")}
                             </p>
                            <div className='pt-5'>
@@ -192,14 +192,14 @@ const Page = async () => {
 
                     <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 items-stretch p-3'>
                         {/* Text */}
-                        <div className='p-4 flex flex-col justify-center items-center order-2 sm:order-1'>
-                            <h2 className="text-3xl text-white md:text-5xl dark:text-gray-300">
+                        <div className='p-4 md:px-14 flex flex-col justify-center items-center order-2 sm:order-1'>
+                            <h2 className="text-3xl text-white md:text-5xl dark:text-gray-300 tracking-tighter md:tracking-normal hyphenate break-words">
                                 {ser_vice("manicure")}
                             </h2>
-                            <div className="line-container mt-5">
+                            <div className="line-container my-5">
                                 <div className="line bg-tertiary h-1 w-40 mx-auto"></div>
                             </div>
-                            <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:px-14 md:my-5">
+                            <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:px-14 md:my-5 tracking-tighter md:tracking-normal hyphenate break-words">
                                 {ser_vice("manicureDiscription")}
                             </p>
                             <div className='pt-5'>
@@ -222,14 +222,14 @@ const Page = async () => {
                         </div>
 
                         {/* Text */}
-                        <div className='p-4 flex flex-col justify-center items-center'>
-                            <h2 className="text-3xl text-white md:text-5xl dark:text-gray-300">
+                        <div className='p-4 md:px-14 flex flex-col justify-center items-center'>
+                            <h2 className="text-3xl text-white md:text-5xl dark:text-gray-300 tracking-tighter md:tracking-normal hyphenate break-words">
                                 {ser_vice("pedicure")}
                             </h2>
-                            <div className="line-container mt-5">
+                            <div className="line-container my-5">
                                 <div className="line bg-tertiary h-1 w-40 mx-auto"></div>
                             </div>
-                            <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:px-14 md:my-5">
+                            <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:my-5 tracking-tighter md:tracking-normal hyphenate break-words">
                                 {ser_vice("pedicureDiscription")}
                             </p>
                            <div className='pt-5'>
@@ -243,14 +243,14 @@ const Page = async () => {
 
                     <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 items-stretch p-3'>
                         {/* Text */}
-                        <div className='p-4 flex flex-col justify-center items-center order-2 sm:order-1'>
-                            <h2 className="text-3xl text-white md:text-5xl dark:text-gray-300">
+                        <div className='p-4 px-0 md:px-14 flex flex-col justify-center items-center order-2 sm:order-1'>
+                            <h2 className="text-3xl text-white md:text-5xl dark:text-gray-300 tracking-tighter md:tracking-normal hyphenate break-words">
                                 {ser_vice("massage")}
                             </h2>
-                            <div className="line-container mt-5">
+                            <div className="line-container my-5">
                                 <div className="line bg-tertiary h-1 w-40 mx-auto"></div>
                             </div>
-                            <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:px-14 md:my-5">
+                            <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:my-5 tracking-tighter md:tracking-normal hyphenate break-words">
                                 {ser_vice("massageDiscription")}
                             </p>
                            <div className='pt-5'>

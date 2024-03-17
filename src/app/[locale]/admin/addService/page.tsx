@@ -23,7 +23,7 @@ interface Service {
 
   const fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:3000/api/services", { cache: "no-store" });
+      const response = await fetch(`/api/services`, { cache: "no-store" });
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
@@ -56,7 +56,7 @@ interface Service {
     };
 
     try {
-      const result = await fetch("http://localhost:3000/api/services", {
+      const result = await fetch(`/api/services`, {
         method: "POST",
         body: JSON.stringify(data)
       });
@@ -86,7 +86,7 @@ interface Service {
 
   const deleteService = async (id: string) => {
     try {
-      const response = await fetch(`http://localhost:3000/api/services/${id}`, {
+      const response = await fetch(`/api/services/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json"
