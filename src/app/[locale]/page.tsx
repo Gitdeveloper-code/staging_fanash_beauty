@@ -88,7 +88,7 @@ const Page = async () => {
 
                     <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 items-stretch p-3'>
                         {/* Text */}
-                        <div className='p-4 px-0 md:px-14 flex flex-col justify-center items-center order-2 sm:order-1'>
+                        <div className='py-4 px-0 lg:px-14 flex flex-col justify-center items-center order-2 sm:order-1'>
                             <h2 className="text-3xl text-white md:text-5xl dark:text-gray-300 tracking-tighter md:tracking-normal hyphenate break-words">
                                 {ser_vice("threading")}
                             </h2>
@@ -118,7 +118,7 @@ const Page = async () => {
                         </div>
 
                         {/* Text */}
-                        <div className=' p-4 flex flex-col justify-center items-center px-0 md:px-14'>
+                        <div className=' py-4 flex flex-col justify-center items-center px-0 lg:px-14'>
                             <h2 className="text-3xl text-white md:text-5xl dark:text-gray-300 tracking-tighter md:tracking-normal hyphenate break-words">
                                 {ser_vice("waxing")}
                             </h2>
@@ -140,7 +140,7 @@ const Page = async () => {
 
                     <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 items-stretch p-3'>
                         {/* Text */}
-                        <div className='px-0 md:px-14 p-4 flex flex-col justify-center items-center order-2 sm:order-1'>
+                        <div className='px-0 lg:px-14 py-4 flex flex-col justify-center items-center order-2 sm:order-1'>
                             <h2 className="text-3xl text-white md:text-5xl dark:text-gray-300 tracking-tighter md:tracking-normal hyphenate break-words">
                                 {ser_vice("sugarepilation")}
                             </h2>
@@ -170,7 +170,7 @@ const Page = async () => {
                         </div>
 
                         {/* Text */}
-                        <div className='p-4 px-0 md:px-14 flex flex-col justify-center items-center'>
+                        <div className='py-4 px-0 lg:px-14 flex flex-col justify-center items-center'>
                             <h2 className="text-3xl text-white md:text-5xl dark:text-gray-300 tracking-tighter md:tracking-normal hyphenate break-words">
                                 {ser_vice("facial")}
                             </h2>
@@ -192,7 +192,7 @@ const Page = async () => {
 
                     <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 items-stretch p-3'>
                         {/* Text */}
-                        <div className='p-4 md:px-14 flex flex-col justify-center items-center order-2 sm:order-1'>
+                        <div className='py-4 lg:px-14 flex flex-col justify-center items-center order-2 sm:order-1'>
                             <h2 className="text-3xl text-white md:text-5xl dark:text-gray-300 tracking-tighter md:tracking-normal hyphenate break-words">
                                 {ser_vice("manicure")}
                             </h2>
@@ -222,7 +222,7 @@ const Page = async () => {
                         </div>
 
                         {/* Text */}
-                        <div className='p-4 md:px-14 flex flex-col justify-center items-center'>
+                        <div className='py-4 lg:px-14 flex flex-col justify-center items-center'>
                             <h2 className="text-3xl text-white md:text-5xl dark:text-gray-300 tracking-tighter md:tracking-normal hyphenate break-words">
                                 {ser_vice("pedicure")}
                             </h2>
@@ -243,7 +243,7 @@ const Page = async () => {
 
                     <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 items-stretch p-3'>
                         {/* Text */}
-                        <div className='p-4 px-0 md:px-14 flex flex-col justify-center items-center order-2 sm:order-1'>
+                        <div className='py-4 px-0 lg:px-14 flex flex-col justify-center items-center order-2 sm:order-1'>
                             <h2 className="text-3xl text-white md:text-5xl dark:text-gray-300 tracking-tighter md:tracking-normal hyphenate break-words">
                                 {ser_vice("massage")}
                             </h2>

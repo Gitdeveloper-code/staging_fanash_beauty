@@ -116,17 +116,17 @@ const ImageText5050: React.FC<ImageText5050> = ({
                     <p className="text-base leading-7 text-white dark:text-gray-400 text-justify md:my-5 tracking-tighter md:tracking-normal hyphenate break-words">{paragraph1}</p>
                 </div>
 
-                <div className="order-1 sm:order-2">
+                <div className="order-1 sm:order-2 flex items-center">
                     {renderSection(serviceName, imagePath1, 1)}
                 </div>
             </div>
 
             {/* Second set of components */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-stretch p-3">
-                <div>
+                <div className=" flex items-center">
                     {renderSection(serviceName, imagePath2, 2)}
                 </div>
-                <div className="p-4 flex flex-col justify-center items-center px-0 md:px-14">
+                <div className="p-4 flex flex-col justify-center items-center px-0 lg:px-14">
                     <h2 className="text-3xl text-white md:text-5xl dark:text-gray-300 tracking-tighter hyphenate break-words">{title2}</h2>
                     <div className="line-container my-5">
                         <div className="line bg-tertiary h-1 w-40 mx-auto"></div>
