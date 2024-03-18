@@ -46,27 +46,10 @@ const Page = () => {
       const json = await result.json();
       console.log(json); 
 
-      let token = json.responseData.token;
-      console.log(token);
-
-      localStorage.setItem("token", token);
 
       if (!result.ok) {
         throw new Error(`HTTP error! Status: ${result.status}`);
       }
-      const headers = {
-        Authorization: `Bearer ${token}`
-      };
-
-      const fetchDataResult = await fetch("https://dummyjson.com/products/1", {
-        headers: {
-          "Content-Type": "application/json",
-          "Authorization": `Bearer ${token}`,
-        }
-      });
-      const products = await fetchDataResult.json();
-      console.log(products);
-
       console.log(result);
       // await fetchData();
       alert("Login Successfully!");

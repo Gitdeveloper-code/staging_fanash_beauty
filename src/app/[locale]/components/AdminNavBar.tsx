@@ -5,6 +5,7 @@ import Button from "./Button"
 import React, { useState } from 'react';
 import { IoIosMenu } from "react-icons/io";
 import {LINKS, NAV_LINKS } from "../constants";
+import { NextResponse } from "next/server";
 
 
 
@@ -14,6 +15,21 @@ const Navbar = () => {
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
+  const logOut = async()=>{
+    localStorage.removeItem('token');
+    const result = await fetch(`/api/logOut`, {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json',
+        }
+      });
+      if (!result.ok) {
+        throw new Error(`HTTP error! Status: ${result.status}`);
+      }
+      console.log(result);
+
+    return NextResponse.redirect(`${process.env.NEXT_PUBLIC_HOST_URL}`),{status:307}
+  }
   
   const Logo = () => {
     const [isHovering, setIsHovered] = useState(false);
@@ -71,6 +87,7 @@ const Navbar = () => {
                 <Link href='/'>
                 <Button
                 title="Logout"
+                action={()=>logOut()}
                 />
                 </Link>
                

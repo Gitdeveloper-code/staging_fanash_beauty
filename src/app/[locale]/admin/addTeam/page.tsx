@@ -1,10 +1,15 @@
 // ./src/app/[locale]/admin/addTeam/page.tsx
 
-"use client"; // Add this line at the top to mark the component as a Client Component
+"use client"; 
 
 import React, { useState, useEffect } from 'react';
-import Button from '../../components/Button'; // Adjust the path based on your project structure
-import AdminNavBar from '../../components/AdminNavBar'; // Adjust the path based on your project structure
+import Button from '../../components/Button'; 
+import AdminNavBar from '../../components/AdminNavBar'; 
+import { useRouter } from 'next/navigation'
+import styles from '../loader.module.css'
+const jwt = require('jsonwebtoken');
+import { jwtDecode } from "jwt-decode";
+import { getCookies, setCookie, } from 'cookies-next';
 interface TeamMember {
   name: string;
   design?: string; 
@@ -16,6 +21,10 @@ const Page = () => {
   const [design, setDesign] = useState("");
   const [description, setDescription] = useState("");
   const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
+  const [authorized, setAuthorized] = useState(false);
+  const router = useRouter();
+  const [loading, setLoading] = useState(true);
+
 
   const fetchTeamMembers = async () => {
     try {
@@ -26,7 +35,7 @@ const Page = () => {
       }
 
       const data = await response.json();
-      console.log(data.result)
+      // console.log(data.result)
       let abs = data.result.map((item:any)=>{
       
          
@@ -35,12 +44,75 @@ const Page = () => {
           name: item.name, // Assuming a 'name' property
         };
       })
-      console.log(abs);
+      // console.log(abs);
       setTeamMembers(data.result);
     } catch (error) {
       console.error('Error fetching team members:', error);
     }
   };
+
+  useEffect(() => {
+
+    const checkAuthorization = async () => {
+      const getToken = getCookies({ secure: process.env.NODE_ENV === 'production' })
+      // console.log(getToken);
+      let token = getToken.token
+      // console.log("Token is here", token);
+      if (!token) {
+        window.location.href = "/login";
+      }
+      // if (!token && loading) {
+      //   return <div>Loading...</div>; // Show loading indicator
+      // }
+      else if (typeof token !== 'string') {
+        throw new Error('Invalid token format');
+      } else {
+        // console.log("string hai")
+        setAuthorized(true);
+        setLoading(false);
+
+      }
+      if (!token) {
+
+        // console.log("Token is not present in localStorage");
+        router.push('/');
+      }
+      else {
+        try {
+          // console.log("yeppie")
+
+          const decodedToken: any = jwtDecode(token);
+          // console.log(decodedToken);
+
+
+          if (decodedToken && decodedToken.role === 'admin') {
+            // console.log("Token is authorized");
+            setAuthorized(true);
+            setLoading(false);
+            fetchTeamMembers();
+
+          } else {
+            console.log("User is not authorized");
+            router.push('/');
+          }
+        } catch (error) {
+          console.error('Error verifying token:', error);
+          router.push('/');
+        }
+      }
+    };
+
+    checkAuthorization();
+
+  }, []);
+  if (!authorized) {
+    return (
+      <div className={styles['loader-overlay']}>
+        <div className={styles.loader}></div>
+      </div>
+    );
+  }
+
   const handleDelete = async (id: string) => {
     const confirmation = window.confirm('Are you sure you want to delete this item?');
 
@@ -90,7 +162,7 @@ const Page = () => {
 
   const deleteTeamMember = async (id: string) => {
     try {
-      console.log("Deleting team member with id ", id);
+      // console.log("Deleting team member with id ", id);
       const response = await fetch(`/api/teams/${id}`, {
         method: "DELETE",
         headers: {
@@ -104,7 +176,7 @@ const Page = () => {
       }
   
       const data = await response.json();
-      console.log(data); 
+      // console.log(data); 
   
       fetchTeamMembers(); 
       // alert("Team member deleted successfully!")
@@ -116,12 +188,23 @@ const Page = () => {
     }
   };
   
-  useEffect(() => {
-    fetchTeamMembers();
-  }, []);
+ 
 
   return (
     <div className='flex flex-col w-full'>
+
+       {/* loadercontent */}
+
+       {loading && (
+        <div className={styles['loader-overlay']}>
+          <div className={styles.loader}>
+          </div>
+          <div className={styles['loading-text']}>Loading...</div>
+        </div>
+      )}
+      {/* main content */}
+      {!loading && (
+        <>
       <AdminNavBar />
 
       <div className='flex flex-col items-center justify-center w-full m-4'>
@@ -204,6 +287,8 @@ const Page = () => {
           </table>
         </div>
       </div>
+      </>
+       ) }
     </div>
   );
 };
